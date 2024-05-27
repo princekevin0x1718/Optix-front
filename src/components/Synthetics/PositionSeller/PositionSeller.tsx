@@ -593,7 +593,7 @@ export function PositionSeller(p: Props) {
       value={
         receiveToken && (
           <TokenSelector
-            label={t`Receive`}
+            // label={t`Receive`}
             className={cx("PositionSeller-token-selector", {
               warning: isNotEnoughReceiveTokenLiquidity,
             })}

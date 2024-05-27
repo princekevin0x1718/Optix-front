@@ -57,8 +57,11 @@
   }
 
   .chart-token-menu-items.menu-items {
-    max-width: 55rem;
-    top: 5.5rem;
+    background: #292B3B;
+    border: solid 1px #434359;
+    border-radius: 8px;
+    max-width: 30rem;
+    top: 0rem;
     right: unset;
     left: 0;
     cursor: auto;
@@ -136,7 +139,7 @@
 
 @media (max-width: 1100px) {
   .chart-token-menu-items.menu-items {
-    top: 5.7rem;
+    top: 0rem;
   }
 }
 

@@ -24,7 +24,7 @@ export default function SearchInput({ value, setValue, onKeyDown, className, pla
     <div className={classNames}>
       <input
         type="text"
-        placeholder={placeholder ?? t`Search Token`}
+        placeholder={placeholder ?? t`Search`}
         value={value}
         onChange={setValue}
         onKeyDown={onKeyDown}

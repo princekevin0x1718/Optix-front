@@ -866,8 +866,9 @@ export const Exchange = forwardRef(
     const POSITIONS = "Positions";
     const ORDERS = "Orders";
     const TRADES = "Trades";
+    const CLAIMS = "Claims"
 
-    const LIST_SECTIONS = [POSITIONS, flagOrdersEnabled && ORDERS, TRADES].filter(Boolean);
+    const LIST_SECTIONS = [POSITIONS, flagOrdersEnabled && ORDERS, TRADES, CLAIMS].filter(Boolean);
     let [listSection, setListSection] = useLocalStorageByChainId(chainId, "List-section-v2", LIST_SECTIONS[0]);
     const LIST_SECTIONS_LABELS = {
       [ORDERS]: orders.length ? t`Orders (${orders.length})` : t`Orders`,
@@ -910,7 +911,7 @@ export const Exchange = forwardRef(
             />
             <div className="align-right Exchange-should-show-position-lines">
               {renderCancelOrderButton()}
-              <Checkbox
+              {/* <Checkbox
                 isChecked={shouldShowPositionLines}
                 setIsChecked={setShouldShowPositionLines}
                 className={cx("muted chart-positions", { active: shouldShowPositionLines })}
@@ -918,7 +919,7 @@ export const Exchange = forwardRef(
                 <span>
                   <Trans>Chart positions</Trans>
                 </span>
-              </Checkbox>
+              </Checkbox> */}
             </div>
           </div>
           {listSection === POSITIONS && (
@@ -988,6 +989,18 @@ export const Exchange = forwardRef(
               shouldShowPaginationButtons={true}
             />
           )}
+          {listSection === CLAIMS && (
+            <TradeHistory
+              account={account}
+              infoTokens={infoTokens}
+              getTokenInfo={getTokenInfo}
+              chainId={chainId}
+              nativeTokenAddress={nativeTokenAddress}
+              shouldShowPaginationButtons={true}
+            />
+          )
+
+          }
         </div>
       );
     };

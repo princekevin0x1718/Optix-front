@@ -1,3 +1,26 @@
+.selector {
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+}
+
+.selector>.selector {
+  padding: 1rem 2rem;
+  border: solid 1px transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.selector>.selector:active,
+.selector>.selector:hover,
+.selector>.selector:focus {
+  border: solid 1px #434359 !important;
+  background: #252734;
+  border-radius: 8px;
+  color: #FFD718;
+}
+
+
 .chart-token-selector {
   border: none;
   background: transparent;
@@ -35,8 +58,11 @@
 }
 
 .chart-token-menu-items.menu-items {
-  max-width: 45rem;
-  top: 6.8rem;
+  background: #292B3B;
+  border: solid 1px #434359;
+  border-radius: 8px;
+  max-width: 30rem;
+  top: 0rem;
   right: unset;
   left: 0;
   cursor: auto;
@@ -50,7 +76,7 @@
 
 .chart-token-list {
   overflow-x: auto;
-  max-height: 20rem;
+  max-height: 60rem;
   padding-bottom: 1rem;
 
   table {
@@ -126,7 +152,7 @@
 
 @media (max-width: 1100px) {
   .chart-token-menu-items.menu-items {
-    top: 5.05rem;
+    top: 0rem;
   }
 }
 

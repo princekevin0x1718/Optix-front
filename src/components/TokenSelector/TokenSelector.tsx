@@ -15,6 +15,7 @@ import { BigNumber } from "ethers";
 import { convertToUsd } from "domain/synthetics/tokens";
 import SearchInput from "components/SearchInput/SearchInput";
 import TokenIcon from "components/TokenIcon/TokenIcon";
+import { Popover } from "@headlessui/react";
 
 type TokenState = {
   disabled?: boolean;
@@ -23,7 +24,7 @@ type TokenState = {
 
 type Props = {
   chainId: number;
-  label?: string;
+  // label?: string;
   className?: string;
   tokenAddress: string;
   tokens: Token[];
@@ -163,102 +164,113 @@ export default function TokenSelector(props: Props) {
   }
 
   return (
-    <div className={cx("TokenSelector", { disabled }, props.className)} onClick={(event) => event.stopPropagation()}>
-      <Modal
-        isVisible={isModalVisible}
-        setIsVisible={setIsModalVisible}
-        label={props.label}
-        headerContent={() => (
-          <SearchInput
-            className="mt-md"
-            value={searchKeyword}
-            setValue={onSearchKeywordChange}
-            onKeyDown={_handleKeyDown}
-          />
-        )}
-      >
-        <div className="TokenSelector-tokens">
-          {sortedFilteredTokens.map((token, tokenIndex) => {
-            let info = infoTokens?.[token.address] || ({} as TokenInfo);
+    <Popover>
+      {({ open, close }) => {
+        return (
+          <div className={cx("TokenSelector", { disabled }, props.className)} onClick={(event) => event.stopPropagation()}>
+            {/* <Modal
+              isVisible={isModalVisible}
+              setIsVisible={setIsModalVisible}
+              label={props.label}
+              headerContent={() => (
+              )}
+            > */}
+            <Popover.Panel as="div" className="menu-items token-selector-container">
+              <SearchInput
+                className="mt-md"
+                value={searchKeyword}
+                setValue={onSearchKeywordChange}
+                onKeyDown={_handleKeyDown}
+              />
+              <div className="TokenSelector-tokens" style={{marginTop: "1rem"}}>
+                {sortedFilteredTokens.map((token, tokenIndex) => {
+                  let info = infoTokens?.[token.address] || ({} as TokenInfo);
 
-            let mintAmount;
-            let balance = info.balance;
-            if (showMintingCap && mintingCap && info.usdgAmount) {
-              mintAmount = mintingCap.sub(info.usdgAmount);
-            }
-            if (mintAmount && mintAmount.lt(0)) {
-              mintAmount = bigNumberify(0);
-            }
-            let balanceUsd;
-            if (balance && info.maxPrice) {
-              balanceUsd = balance.mul(info.maxPrice).div(expandDecimals(1, token.decimals));
-            }
+                  let mintAmount;
+                  let balance = info.balance;
+                  if (showMintingCap && mintingCap && info.usdgAmount) {
+                    mintAmount = mintingCap.sub(info.usdgAmount);
+                  }
+                  if (mintAmount && mintAmount.lt(0)) {
+                    mintAmount = bigNumberify(0);
+                  }
+                  let balanceUsd;
+                  if (balance && info.maxPrice) {
+                    balanceUsd = balance.mul(info.maxPrice).div(expandDecimals(1, token.decimals));
+                  }
 
-            const tokenState = getTokenState(info) || {};
+                  const tokenState = getTokenState(info) || {};
 
-            return (
-              <div
-                key={token.address}
-                className={cx("TokenSelector-token-row", { disabled: tokenState.disabled })}
-                onClick={() => !tokenState.disabled && onSelectToken(token)}
-              >
-                {tokenState.disabled && tokenState.message && (
-                  <TooltipWithPortal
-                    className="TokenSelector-tooltip"
-                    handle={<div className="TokenSelector-tooltip-backing" />}
-                    position={tokenIndex < filteredTokens.length / 2 ? "bottom" : "top"}
-                    disableHandleStyle
-                    closeOnDoubleClick
-                    fitHandleWidth
-                    renderContent={() => tokenState.message}
-                  />
-                )}
-                <div className="Token-info">
-                  {showTokenImgInDropdown && (
-                    <TokenIcon symbol={token.symbol} className="token-logo" displaySize={40} importSize={40} />
-                  )}
-                  <div className="Token-symbol">
-                    <div className="Token-text">{token.symbol}</div>
-                    <span className="text-accent">{token.name}</span>
-                  </div>
-                </div>
-                <div className="Token-balance">
-                  {showBalances && balance && (
-                    <div className="Token-text">
-                      {balance.gt(0) && formatAmount(balance, token.decimals, 4, true)}
-                      {balance.eq(0) && "-"}
+                  return (
+                    <div
+                      key={token.address}
+                      className={cx("TokenSelector-token-row", { disabled: tokenState.disabled })}
+                      onClick={() => {!tokenState.disabled && onSelectToken(token); close()}}
+                    >
+                      {tokenState.disabled && tokenState.message && (
+                        <TooltipWithPortal
+                          className="TokenSelector-tooltip"
+                          handle={<div className="TokenSelector-tooltip-backing" />}
+                          position={tokenIndex < filteredTokens.length / 2 ? "bottom" : "top"}
+                          disableHandleStyle
+                          closeOnDoubleClick
+                          fitHandleWidth
+                          renderContent={() => tokenState.message}
+                        />
+                      )}
+                      <div className="Token-info">
+                        {showTokenImgInDropdown && (
+                          <TokenIcon symbol={token.symbol} className="token-logo" displaySize={40} importSize={40} />
+                        )}
+                        <div className="Token-symbol" style={{textAlign: "left"}}>
+                          <div className="Token-text">{token.symbol}</div>
+                          <span className="text-accent">{token.name}</span>
+                        </div>
+                      </div>
+                      <div className="Token-balance">
+                        {showBalances && balance && (
+                          <div className="Token-text">
+                            {balance.gt(0) && formatAmount(balance, token.decimals, 4, true)}
+                            {balance.eq(0) && "-"}
+                          </div>
+                        )}
+                        <span className="text-accent">
+                          {mintAmount && <div>Mintable: {formatAmount(mintAmount, token.decimals, 2, true)} USDG</div>}
+                          {showMintingCap && !mintAmount && <div>-</div>}
+                          {!showMintingCap && showBalances && balanceUsd && balanceUsd.gt(0) && (
+                            <div>${formatAmount(balanceUsd, 30, 2, true)}</div>
+                          )}
+                        </span>
+                      </div>
                     </div>
-                  )}
-                  <span className="text-accent">
-                    {mintAmount && <div>Mintable: {formatAmount(mintAmount, token.decimals, 2, true)} USDG</div>}
-                    {showMintingCap && !mintAmount && <div>-</div>}
-                    {!showMintingCap && showBalances && balanceUsd && balanceUsd.gt(0) && (
-                      <div>${formatAmount(balanceUsd, 30, 2, true)}</div>
-                    )}
-                  </span>
-                </div>
+                  );
+                })}
               </div>
-            );
-          })}
-        </div>
-      </Modal>
-      {selectedTokenLabel ? (
-        <div className="TokenSelector-box" onClick={() => setIsModalVisible(true)}>
-          {selectedTokenLabel}
-          {!showNewCaret && <BiChevronDown className="TokenSelector-caret" />}
-        </div>
-      ) : (
-        <div className="TokenSelector-box" onClick={() => setIsModalVisible(true)}>
-          <span className="inline-items-center">
-            {showSymbolImage && (
-              <TokenIcon className="mr-xs" symbol={tokenInfo.symbol} importSize={24} displaySize={20} />
+            </Popover.Panel>
+            {selectedTokenLabel ? (
+              <Popover.Button as="div">
+                <div className="TokenSelector-box" onClick={() => setIsModalVisible(true)}>
+                  {selectedTokenLabel}
+                  {!showNewCaret && <BiChevronDown className="TokenSelector-caret" />}
+                </div>
+              </Popover.Button>
+            ) : (
+              <Popover.Button as="div">
+                <div className="TokenSelector-box" onClick={() => setIsModalVisible(true)}>
+                  <span className="inline-items-center" style={{display: "flex"}}>
+                    {showSymbolImage && (
+                      <TokenIcon className="mr-xs" symbol={tokenInfo.symbol} importSize={24} displaySize={20} />
+                    )}
+                    <span className="Token-symbol-text">{tokenInfo.symbol}</span>
+                  </span>
+                  {showNewCaret && <img src={dropDownIcon} alt="Dropdown Icon" className="TokenSelector-box-caret" />}
+                  {!showNewCaret && <BiChevronDown className="TokenSelector-caret" />}
+                </div>
+              </Popover.Button>
             )}
-            <span className="Token-symbol-text">{tokenInfo.symbol}</span>
-          </span>
-          {showNewCaret && <img src={dropDownIcon} alt="Dropdown Icon" className="TokenSelector-box-caret" />}
-          {!showNewCaret && <BiChevronDown className="TokenSelector-caret" />}
-        </div>
-      )}
-    </div>
+          </div>
+        );
+      }}
+    </Popover>
   );
 }

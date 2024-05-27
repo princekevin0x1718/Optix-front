@@ -1,7 +1,7 @@
 import React from "react";
 import cx from "classnames";
 import "./Footer.css";
-import logoImg from "img/ic_gmx_footer.svg";
+import logoImg from "img/ic_optix_footer_logo.svg";
 import { NavLink } from "react-router-dom";
 import { isHomeSite, getAppBaseUrl, shouldShowRedirectModal } from "lib/legacy";
 import { getFooterLinks, SOCIAL_LINKS } from "./constants";
@@ -27,7 +27,13 @@ export default function Footer({ showRedirectModal, redirectPopupTimestamp }: Pr
             );
           })}
         </div>
-        <div className="Footer-links">
+        <div style={{maxWidth: "130rem", margin: "auto"}}>
+          <div style={{borderTop: "solid 1px #434359", paddingBottom: "2rem"}}></div>
+          <span className="Footer-links-optix">
+            Optix 2024 All Rights Reserved
+          </span>
+        </div>
+        {/* <div className="Footer-links">
           {getFooterLinks(isHome).map(({ external, label, link, isAppLink }) => {
             if (external) {
               return (
@@ -62,7 +68,7 @@ export default function Footer({ showRedirectModal, redirectPopupTimestamp }: Pr
               </NavLink>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </div>
   );

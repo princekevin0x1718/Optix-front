@@ -10,6 +10,11 @@
   border: none;
 }
 
+.token-selector-container {
+  padding: 2rem;
+  background: #292B3B !important;
+}
+
 .TokenSelector .Modal .Modal-content .Modal-body {
   scroll-margin-right: 38.75rem;
   overscroll-behavior: smooth;
@@ -127,11 +132,11 @@
 }
 
 .TokenSelector-token-row:hover {
-  background: var(--dark-blue-hover);
+  background: #451EC1
 }
 
 .TokenSelector-token-row:active {
-  background: var(--dark-blue-active);
+  background: #451EC1;
 }
 
 .TokenSelector.right .Modal {

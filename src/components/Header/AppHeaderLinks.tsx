@@ -37,6 +37,11 @@ export function AppHeaderLinks({ small, openSettings, clickCloseIcon, showRedire
         </div>
       )}
       <div className="App-header-link-container">
+        <HeaderLink to="/trade" showRedirectModal={showRedirectModal}>
+          <Trans>Trade</Trans>
+        </HeaderLink>
+      </div>
+      <div className="App-header-link-container">
         <HeaderLink to="/dashboard" showRedirectModal={showRedirectModal}>
           <Trans>Dashboard</Trans>
         </HeaderLink>
@@ -49,21 +54,6 @@ export function AppHeaderLinks({ small, openSettings, clickCloseIcon, showRedire
       <div className="App-header-link-container">
         <HeaderLink to="/buy" showRedirectModal={showRedirectModal}>
           <Trans>Buy</Trans>
-        </HeaderLink>
-      </div>
-      <div className="App-header-link-container">
-        <HeaderLink to="/referrals" showRedirectModal={showRedirectModal}>
-          <Trans>Referrals</Trans>
-        </HeaderLink>
-      </div>
-      <div className="App-header-link-container">
-        <HeaderLink to="/leaderboard" showRedirectModal={showRedirectModal} isActive={isLeaderboardActive}>
-          <Trans>Leaderboard</Trans>
-        </HeaderLink>
-      </div>
-      <div className="App-header-link-container">
-        <HeaderLink to="/ecosystem" showRedirectModal={showRedirectModal}>
-          <Trans>Ecosystem</Trans>
         </HeaderLink>
       </div>
       <div className="App-header-link-container">

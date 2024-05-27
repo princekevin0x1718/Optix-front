@@ -517,12 +517,40 @@ export default function TradeHistory(props) {
 
   return (
     <div className="TradeHistory">
-      {tradesWithMessages.length === 0 && (
-        <div className="TradeHistory-row App-box">
-          <Trans>No trades yet</Trans>
-        </div>
-      )}
-      {tradesWithMessages.length > 0 &&
+      <table className="Exchange-list Orders App-box large">
+        <tbody>
+          <tr className="Exchange-list-header">
+            <th>
+              <div>
+                <Trans>ACTION</Trans>
+              </div>
+            </th>
+            <th>
+              <div>
+                <Trans>MARKET</Trans>
+              </div>
+            </th>
+            <th>
+              <div>
+                <Trans>SIZE</Trans>
+              </div>
+            </th>
+            <th>
+              <div>
+                <Trans>PRICE</Trans>
+              </div>
+            </th>
+          </tr>
+          {tradesWithMessages.length === 0 && (
+            <div className="TradeHistory-row App-box">
+              <Trans>No trades yet</Trans>
+            </div>
+          )}
+          {/* {renderEmptyRow()}
+          {renderLargeList()} */}
+        </tbody>
+      </table>
+      {/* {tradesWithMessages.length > 0 &&
         tradesWithMessages.map((trade, index) => {
           const tradeData = trade.data;
           const txUrl = getExplorerUrl(chainId) + "tx/" + tradeData.txhash;
@@ -551,7 +579,7 @@ export default function TradeHistory(props) {
               </div>
             </div>
           );
-        })}
+        })} */}
       {shouldShowPaginationButtons && (
         <Pagination page={currentPage} pageCount={pageCount} onPageChange={(page) => setCurrentPage(page)} />
       )}

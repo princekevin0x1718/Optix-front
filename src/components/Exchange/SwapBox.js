@@ -1562,7 +1562,8 @@ export default function SwapBox(props) {
     }
 
     if (swapOption !== opt) {
-      history.push(`/v1/${opt.toLowerCase()}`);
+      // history.push(`/v1/${opt.toLowerCase()}`);
+      history.push(`/trade/v1/${opt.toLowerCase()}`);
     }
   };
 

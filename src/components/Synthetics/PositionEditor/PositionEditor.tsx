@@ -651,7 +651,7 @@ export function PositionEditor(p: Props) {
             >
               {availableSwapTokens ? (
                 <TokenSelector
-                  label={OPERATION_LABELS[operation]}
+                  // label={OPERATION_LABELS[operation]}
                   chainId={chainId}
                   tokenAddress={selectedCollateralAddress!}
                   onSelectToken={(token) => setSelectedCollateralAddress(token.address)}

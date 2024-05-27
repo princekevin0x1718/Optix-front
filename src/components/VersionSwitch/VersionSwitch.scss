@@ -11,6 +11,7 @@
   cursor: pointer;
   color: var(--text-gray);
   line-height: 1;
+  background: #1E1E2D;
 
   &.v1 {
     border-top-left-radius: 3px;
@@ -28,12 +29,12 @@
   }
 
   &.v1.active {
-    background: #f3b50c;
-    color: #000000;
+    background: linear-gradient(to right, #451EC1, #6030F8);
+    color: #ffffff;
   }
 
   &.v2.active {
-    background: var(--primary-btn-bg);
+    background: linear-gradient(to right, #451EC1, #6030F8);
     color: rgba(255, 255, 255, 1);
   }
 }

@@ -7,14 +7,19 @@
   right: 0;
 }
 
+.App-header-container {
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+  max-width: 192rem;
+  margin: auto;
+}
+
 .App-header.large {
   height: 6.2rem;
   backdrop-filter: blur(4px);
   display: flex;
   justify-content: space-between;
   position: relative;
-  padding-left: 3.2rem;
-  padding-right: 3.2rem;
   background: transparent 0% 0% no-repeat padding-box;
   border-bottom: 1px solid #ffffff10;
 }
@@ -23,7 +28,7 @@
   height: 1.3rem;
   width: 100%;
   content: " ";
-  background: transparent linear-gradient(180deg, #00000030 0%, #00000000 100%) 0% 0% no-repeat padding-box;
+  // background: transparent linear-gradient(180deg, #00000030 0%, #00000000 100%) 0% 0% no-repeat padding-box;
   position: absolute;
   bottom: -1.3rem;
   left: 0;
@@ -32,6 +37,7 @@
 .App-header.large .App-header-links {
   display: flex;
   min-width: 0;
+  height: 100%;
 }
 
 .App-header-link-home {
@@ -68,6 +74,8 @@
   padding: 1.5rem 1.6rem;
   text-decoration: none;
   display: block;
+  // height: 100%;
+  // border-top: solid transparent;
 }
 
 .App-header-drawer .App-header-link-container .a:hover,
@@ -78,6 +86,7 @@
 .App-header-drawer .App-header-link-container a.active {
   background: #303fd024;
   color: white;
+  // border-top: solid #6131FA;
 }
 
 .App-header.large .App-header-link-container {
@@ -177,10 +186,12 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  border-top: solid transparent;
 }
 
 .App-header-container-left a.active {
   color: white;
+  border-top: solid #6131fa !important;
 }
 
 .App-header-container-right {

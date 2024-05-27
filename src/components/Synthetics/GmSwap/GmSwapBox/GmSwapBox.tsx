@@ -919,7 +919,7 @@ export function GmSwapBox(p: Props) {
           >
             {firstTokenAddress && isSingle ? (
               <TokenSelector
-                label={isDeposit ? t`Pay` : t`Receive`}
+                // label={isDeposit ? t`Pay` : t`Receive`}
                 chainId={chainId}
                 tokenAddress={firstTokenAddress}
                 onSelectToken={(token) => setFirstTokenAddress(token.address)}

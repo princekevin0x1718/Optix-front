@@ -95,11 +95,11 @@ function NavIcons({ selectorLabel }) {
 
   return (
     <>
-      <button className="transparent">
+      <button className="transparent" style={{paddingRight: "0.4rem"}}>
         <img className="network-dropdown-icon" src={icon} alt={selectorLabel} />
       </button>
-      <div className="network-dropdown-seperator" />
-      <button className="transparent">
+      {/* <div className="network-dropdown-seperator" /> */}
+      <button className="transparent" style={{paddingLeft: "0rem"}}>
         <HiDotsVertical color="white" size={20} />
       </button>
     </>
@@ -133,7 +133,7 @@ function DesktopDropdown({ setActiveModal, selectorLabel, networkOptions, openSe
               </div>
             </div>
           </Menu.Item>
-          <Menu.Item>
+          {/* <Menu.Item>
             <div
               className="network-dropdown-menu-item menu-item last-dropdown-menu"
               onClick={() => setActiveModal(LANGUAGE_MODAL_KEY)}
@@ -147,7 +147,7 @@ function DesktopDropdown({ setActiveModal, selectorLabel, networkOptions, openSe
                 </span>
               </div>
             </div>
-          </Menu.Item>
+          </Menu.Item> */}
         </Menu.Items>
       </Menu>
     </div>

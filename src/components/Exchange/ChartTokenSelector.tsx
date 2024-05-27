@@ -10,8 +10,11 @@ import { InfoTokens, Token } from "domain/tokens/types";
 import { getUsd } from "domain/tokens";
 import { BigNumberish } from "ethers";
 import SearchInput from "components/SearchInput/SearchInput";
+import CustomSelect from "components/CustomSelect/CustomSelect";
 import TokenIcon from "components/TokenIcon/TokenIcon";
 import { t } from "@lingui/macro";
+import star_gold from "img/ic_star_gold.svg"
+import star_gray from "img/ic_star_gray.svg"
 
 type ChartToken = Token & {
   maxInUsd?: BigNumberish;
@@ -123,6 +126,17 @@ export default function ChartTokenSelector(props: Props) {
             </Popover.Button>
             <div className="chart-token-menu">
               <Popover.Panel as="div" className="menu-items chart-token-menu-items">
+                <CustomSelect
+                  className="m-md"
+                  // value={searchKeyword}
+                  // setValue={({ target }) => setSearchKeyword(target.value)}
+                  // onKeyDown={(e) => {
+                  //   if (e.key === "Enter" && filteredTokens.length > 0) {
+                  //     onSelect(filteredTokens[0]);
+                  //     close();
+                  //   }
+                  // }}
+                />
                 <SearchInput
                   className="m-md"
                   value={searchKeyword}
@@ -134,9 +148,9 @@ export default function ChartTokenSelector(props: Props) {
                     }
                   }}
                 />
-                <div className="divider" />
+                {/* <div className="divider" /> */}
                 <div className="chart-token-list">
-                  <table>
+                  {/* <table>
                     {filteredTokens.length > 0 && (
                       <thead className="table-head">
                         <tr>
@@ -195,7 +209,26 @@ export default function ChartTokenSelector(props: Props) {
                         );
                       })}
                     </tbody>
-                  </table>
+                  </table> */}
+                  {filteredTokens.map((option) => {
+                    return (
+                      <div className="selector" key={option.address} onClick={() => {onSelect(option); close()}}>
+                        <div className="selector inline-items-center">
+                          <div>
+                            <TokenIcon
+                              className="ChartToken-list-icon"
+                              symbol={option.symbol}
+                              displaySize={25}
+                              importSize={24}
+                            />
+                            &nbsp;&nbsp;
+                            {option.symbol} {!isSwap && "/ USD"}
+                          </div>
+                          <img src={star_gold} alt="star" />
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </Popover.Panel>
             </div>

@@ -16,6 +16,7 @@ import { HeaderLink } from "./HeaderLink";
 import useWallet from "lib/wallets/useWallet";
 import { useConnectModal } from "@rainbow-me/rainbowkit";
 import { useTradePageVersion } from "lib/useTradePageVersion";
+import LanguageModalButton from "components/NetworkDropdown/LanguageModalButton";
 
 type Props = {
   openSettings: () => void;
@@ -76,6 +77,7 @@ export function AppHeaderUser({ openSettings, small, disconnectAccountAndCloseSe
 
         {showConnectionOptions && openConnectModal ? (
           <>
+            <LanguageModalButton />
             <ConnectWalletButton onClick={openConnectModal} imgSrc={connectWalletImg}>
               {small ? <Trans>Connect</Trans> : <Trans>Connect Wallet</Trans>}
             </ConnectWalletButton>

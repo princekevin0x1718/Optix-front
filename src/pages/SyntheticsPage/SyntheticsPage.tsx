@@ -276,7 +276,7 @@ export function SyntheticsPage(p: Props) {
                     <Plural value={selectedOrdersKeysArr.length} one="Cancel order" other="Cancel # orders" />
                   </button>
                 )}
-                <Checkbox
+                {/* <Checkbox
                   isChecked={shouldShowPositionLines}
                   setIsChecked={setShouldShowPositionLines}
                   className={cx("muted chart-positions", { active: shouldShowPositionLines })}
@@ -284,7 +284,7 @@ export function SyntheticsPage(p: Props) {
                   <span>
                     <Trans>Chart positions</Trans>
                   </span>
-                </Checkbox>
+                </Checkbox> */}
               </div>
             </div>
 

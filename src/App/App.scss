@@ -27,18 +27,20 @@ $app-card-padding: 1.5rem;
   display: flex;
   justify-content: space-between;
   position: relative;
-  padding-left: 3.2rem;
-  padding-right: 3.2rem;
+  // padding-left: 3.2rem;
+  // padding-right: 3.2rem;
   background: transparent 0% 0% no-repeat padding-box;
   border-bottom: 1px solid #ffffff10;
   z-index: 1;
+  max-width: 185rem;
+  margin: auto;
 }
 
 .App-header.large::after {
   height: 1.3rem;
   width: 100%;
   content: " ";
-  background: transparent linear-gradient(180deg, #00000030 0%, #00000000 100%) 0% 0% no-repeat padding-box;
+  // background: transparent linear-gradient(180deg, #00000030 0%, #00000000 100%) 0% 0% no-repeat padding-box;
   position: absolute;
   bottom: -1.3rem;
   left: 0;
@@ -46,6 +48,7 @@ $app-card-padding: 1.5rem;
 
 .App-header.large .App-header-links {
   display: flex;
+  height: 100%;
 }
 
 .App-header.small {
@@ -88,6 +91,8 @@ $app-card-padding: 1.5rem;
   padding: 1.5rem 1.6rem;
   text-decoration: none;
   display: block;
+  // height: 100%;
+  // border-top: solid transparent;
 }
 
 .App-header-drawer .App-header-link-container .a:hover,
@@ -98,6 +103,7 @@ $app-card-padding: 1.5rem;
 .App-header-drawer .App-header-link-container a.active {
   background: #303fd024;
   color: white;
+  // border-top: solid #6131FA;
 }
 
 .App-header-links-header {
@@ -160,7 +166,7 @@ $app-card-padding: 1.5rem;
 .App-box-solid {
   position: relative;
   border-radius: 0.4rem;
-  background: #16182e;
+  background: #292B3B;
   font-size: var(--font-base);
 }
 
@@ -687,6 +693,7 @@ button.App-connect-wallet:hover {
 .App-header-container-left .a.active,
 .App-header-container-left a.active {
   color: white;
+  border-top: solid #6131fa !important;
 }
 
 .Toastify {
@@ -941,6 +948,7 @@ button.App-button-option:disabled {
 
 .App-content {
   position: static !important;
+  background: #252734;
 }
 
 .App-footer {

@@ -15,6 +15,9 @@
 
 .network-dropdown {
   display: inline-flex;
+  background-color: #2D3043;
+  border: solid 1px #2C2C47;
+  border-radius: 4px;
 }
 .network-dropdown-items {
   min-width: 17rem;

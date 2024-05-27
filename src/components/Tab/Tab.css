@@ -5,7 +5,8 @@
   border-radius: 3px;
   overflow: hidden;
   color: rgba(255, 255, 255, 0.7);
-  background: linear-gradient(90deg, rgba(30, 34, 61, 0.9) 0%, rgba(38, 43, 71, 0.9) 100%);
+  /* background: linear-gradient(90deg, rgba(30, 34, 61, 0.9) 0%, rgba(38, 43, 71, 0.9) 100%); */
+  background: #1E1E2D;
   box-shadow: inset 0px 0px 30px 5px rgba(255, 255, 255, 0.01);
 }
 
@@ -20,6 +21,7 @@
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   cursor: pointer;
+  border: solid 1px #434359;
 }
 
 .Tab.block .Tab-option:hover {
@@ -27,10 +29,24 @@
   background: #3a3f798f;
 }
 
-.Tab.block .Tab-option.active {
+.Tab.block .Tab-option:nth-child(1).active {
   opacity: 1;
   pointer-events: none;
-  background: var(--primary-btn-bg);
+  background: linear-gradient(to right, #266D14, #28994E);
+  color: rgba(255, 255, 255, 1);
+}
+
+.Tab.block .Tab-option:nth-child(2).active {
+  opacity: 1;
+  pointer-events: none;
+  background: linear-gradient(to right, #C11E1E, #F83030);
+  color: rgba(255, 255, 255, 1);
+}
+
+.Tab.block .Tab-option:nth-child(3).active {
+  opacity: 1;
+  pointer-events: none;
+  background: linear-gradient(to right, #451EC1, #6030F8);
   color: rgba(255, 255, 255, 1);
 }
 

@@ -224,7 +224,7 @@ a.plain {
 }
 
 .default-btn {
-  background: #2d42fc;
+  background: linear-gradient(to right, #451EC1, #6030F8);
   border-radius: 4px;
   font-size: var(--font-sm);
   line-height: 2rem;
@@ -534,7 +534,7 @@ button.btn-link:hover .logout-icon {
 }
 
 .inline-items-center {
-  display: inline-flex;
+  // display: inline-flex;
   align-items: center;
 }
 

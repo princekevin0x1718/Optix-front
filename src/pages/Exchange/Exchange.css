@@ -1,5 +1,5 @@
 .Exchange {
-  max-width: 155rem;
+  max-width: 185rem;
   margin: auto;
   justify-content: space-between;
 }
@@ -54,9 +54,10 @@
   display: grid;
   grid-template-columns: 1fr auto;
   grid-gap: 1.5rem;
-  padding: 3.1rem;
-  padding-top: 0rem;
+  padding: 3.2rem;
   margin-top: -1.5rem;
+  border-radius: 4px;
+  background: #1E1E2D;
 }
 
 .Exchange-position-list-orders {
@@ -288,7 +289,8 @@
 }
 
 .ExchangeChart-info {
-  background: var(--dark-blue-bg);
+  /* background: var(--dark-blue-bg); */
+  background: #292B3B;
   border-radius: 0.4rem;
   font-size: var(--font-base);
   padding: 0.9rem 0.31rem;
@@ -541,7 +543,8 @@ table.Exchange-list.Orders td {
 }
 
 table.Exchange-list tr {
-  border-bottom: 1px solid #23263b;
+  background: #292B3B;
+  border-bottom: 1px solid #434359;
 }
 
 table.Exchange-list tbody tr:last-child {
@@ -555,7 +558,7 @@ table.Exchange-list tr:hover {
 }
 
 table.Exchange-list tr.Exchange-list-header {
-  background: none;
+  background: #292B3B;
   font-size: var(--font-md);
 }
 
@@ -712,7 +715,9 @@ table.Position-list .Exchange-list-item-active {
   padding: 1.5rem;
   margin-bottom: 1.05rem;
   border-radius: 0.3rem;
-  background: linear-gradient(90deg, rgba(30, 34, 61, 0.9) 0%, rgba(38, 43, 71, 0.9) 100%);
+  /* background: linear-gradient(90deg, rgba(30, 34, 61, 0.9) 0%, rgba(38, 43, 71, 0.9) 100%); */
+  background: #252734;
+  border: solid 1px #2D3043;
   outline: 0.05rem solid transparent;
   outline-offset: -0.1rem;
 }
@@ -807,6 +812,10 @@ input.Exchange-swap-input.small {
   padding-top: 0.31rem;
 }
 
+.Exchange-swap-button-container>button {
+  background: linear-gradient(to right, #451EC1, #6030F8) !important;
+}
+
 .Exchange-swap-button {
   display: block;
   width: 100%;
@@ -835,7 +844,7 @@ input.Exchange-swap-input.small {
   border-radius: 3.1rem;
   cursor: pointer;
   user-select: none;
-  background: var(--primary-btn-bg);
+  background: linear-gradient(to right, #451EC1, #6030F8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1012,6 +1021,8 @@ table.Exchange-list-small td {
 }
 
 .ExchangeChart-header {
+  background: #292B3B;
+  border-radius: 8px;
   display: grid;
   grid-template-columns: auto 116.32px;
   grid-column-gap: 1rem;

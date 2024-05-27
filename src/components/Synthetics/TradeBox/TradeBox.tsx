@@ -840,7 +840,7 @@ export function TradeBox(p: Props) {
         >
           {fromTokenAddress && (
             <TokenSelector
-              label={t`Pay`}
+              // label={t`Pay`}
               chainId={chainId}
               tokenAddress={fromTokenAddress}
               onSelectToken={handleSelectFromTokenAddress}
@@ -875,7 +875,7 @@ export function TradeBox(p: Props) {
           >
             {toTokenAddress && (
               <TokenSelector
-                label={t`Receive`}
+                // label={t`Receive`}
                 chainId={chainId}
                 tokenAddress={toTokenAddress}
                 onSelectToken={handleSelectToTokenAddress}

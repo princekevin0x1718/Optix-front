@@ -259,7 +259,10 @@ function FullApp() {
               <Route exact path="/price_impact_rebates_stats">
                 <PriceImpactRebatesStatsPage />
               </Route>
-              <Route exact path="/v1/:tradeType?">
+              <Route exact path={"/trade/v1"}>
+                <Exchange ref={exchangeRef} openSettings={openSettings} />
+              </Route>
+              <Route exact path="/trade/v1/:tradeType?">
                 <Exchange ref={exchangeRef} openSettings={openSettings} />
               </Route>
               <Route exact path="/dashboard">
