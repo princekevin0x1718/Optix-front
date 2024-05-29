@@ -26,7 +26,7 @@ export function AppHeaderLinks({ small, openSettings, clickCloseIcon, showRedire
       {small && (
         <div className="App-header-links-header">
           <Link className="App-header-link-main" to="/">
-            <img src={logoImg} alt="GMX Logo" />
+            <img src={logoImg} alt="OPX Logo" />
           </Link>
           <div
             className="App-header-menu-icon-block mobile-cross-menu"
@@ -54,6 +54,11 @@ export function AppHeaderLinks({ small, openSettings, clickCloseIcon, showRedire
       <div className="App-header-link-container">
         <HeaderLink to="/buy" showRedirectModal={showRedirectModal}>
           <Trans>Buy</Trans>
+        </HeaderLink>
+      </div>
+      <div className="App-header-link-container">
+        <HeaderLink to="/leaderboard" showRedirectModal={showRedirectModal} isActive={isLeaderboardActive}>
+          <Trans>Leaderboard</Trans>
         </HeaderLink>
       </div>
       <div className="App-header-link-container">

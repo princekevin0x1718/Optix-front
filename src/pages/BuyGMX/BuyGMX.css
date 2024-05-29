@@ -1,11 +1,13 @@
 .BuyGMXGLP {
-  background: #101124;
+  background: #252734 !important;
   justify-content: space-between;
+  padding-top: 0rem !important;
 }
 
 .BuyGMXGLP-container {
   padding-bottom: 3.1rem;
   width: 100%;
+  background: #1E1E2D;
 }
 
 .BuyGMXGLP-description {

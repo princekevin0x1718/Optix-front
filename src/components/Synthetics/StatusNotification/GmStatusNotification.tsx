@@ -62,7 +62,7 @@ export function GmStatusNotification({
   const title = useMemo(() => {
     if (isDeposit) {
       if (!pendingDepositData) {
-        return t`Unknown buy GM order`;
+        return t`Unknown buy OPTIX order`;
       }
 
       let longToken: TokenData | undefined;
@@ -107,7 +107,7 @@ export function GmStatusNotification({
       return (
         <Trans>
           <div className="inline-flex">
-            Buying GM:&nbsp;<span>{indexName}</span>
+            Buying OPTIX:&nbsp;<span>{indexName}</span>
             <span className="subtext gm-toast">[{poolName}]</span>
           </div>{" "}
           <span>with {tokensText}</span>
@@ -115,7 +115,7 @@ export function GmStatusNotification({
       );
     } else {
       if (!pendingWithdrawalData) {
-        return t`Unknown sell GM order`;
+        return t`Unknown sell OPTIX order`;
       }
 
       const marketInfo = getByKey(marketsInfoData, pendingWithdrawalData.marketAddress);
@@ -125,7 +125,7 @@ export function GmStatusNotification({
       return (
         <Trans>
           <div className="inline-flex">
-            Selling GM:&nbsp;<span>{indexName}</span>
+            Selling OPTIX:&nbsp;<span>{indexName}</span>
             <span className="subtext gm-toast">[{poolName}]</span>
           </div>
         </Trans>

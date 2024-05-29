@@ -130,7 +130,7 @@ export function PoolSelector({
 
   function displayPoolLabel(marketInfo: MarketInfo | undefined) {
     if (!marketInfo) return "...";
-    const name = showAllPools ? `GM: ${getMarketIndexName(marketInfo)}` : getMarketPoolName(marketInfo);
+    const name = showAllPools ? `OPTIX: ${getMarketIndexName(marketInfo)}` : getMarketPoolName(marketInfo);
 
     if (marketsOptions?.length > 1) {
       return (

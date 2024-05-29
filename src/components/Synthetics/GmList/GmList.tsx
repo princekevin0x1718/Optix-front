@@ -79,7 +79,7 @@ export function GmList({
           {!hideTitle && (
             <>
               <div className="App-card-title">
-                <Trans>GM Pools</Trans>
+                <Trans>OPTIX Pools</Trans>
                 <img src={currentIcons.network} width="16" alt="Network Icon" />
               </div>
               <div className="App-card-divider"></div>
@@ -105,7 +105,7 @@ export function GmList({
                     position="bottom-end"
                     renderContent={() => (
                       <p className="text-white">
-                        <Trans>Available amount to deposit into the specific GM pool.</Trans>
+                        <Trans>Available amount to deposit into the specific OPTIX pool.</Trans>
                       </p>
                     )}
                   />
@@ -130,14 +130,14 @@ export function GmList({
                             APR is based on the fees collected for the past {daysConsidered} days while extrapolating
                             the current borrowing fee.{" "}
                             <ExternalLink href="https://docs.gmx.io/docs/providing-liquidity/v2/#token-pricing">
-                              Read more about GM token pricing
+                              Read more about OPTIX token pricing
                             </ExternalLink>
                             .
                           </p>
                           <p>The APR is an estimate as actual fees are auto-compounded into the pool in real time.</p>
                           <p>
-                            Check GM pools' performance against other LP Positions in the{" "}
-                            <ExternalLink href="https://dune.com/gmx-io/gmx-analytics">GMX Dune Dashboard</ExternalLink>
+                            Check OPTIX pools' performance against other LP Positions in the{" "}
+                            <ExternalLink href="https://dune.com/gmx-io/gmx-analytics">OPX Dune Dashboard</ExternalLink>
                             .
                           </p>
                         </Trans>
@@ -270,7 +270,7 @@ export function GmList({
 
       {isMobile && (
         <>
-          {!hideTitle && <PageTitle title={t`GM Pools`} />}
+          {!hideTitle && <PageTitle title={t`OPTIX Pools`} />}
 
           <div className="token-grid">
             {sortedMarketsByIndexToken.map((token, index) => {
@@ -349,7 +349,7 @@ export function GmList({
                           position="bottom-start"
                           renderContent={() => (
                             <p className="text-white">
-                              <Trans>Available amount to deposit into the specific GM pool.</Trans>
+                              <Trans>Available amount to deposit into the specific OPTIX pool.</Trans>
                             </p>
                           )}
                         />
@@ -472,7 +472,7 @@ function MintableAmount({ mintableInfo, market, token, longToken, shortToken }) 
         <>
           <p className="text-white">
             <Trans>
-              {longToken.symbol} and {shortToken.symbol} can be used to buy GM tokens for this market up to the
+              {longToken.symbol} and {shortToken.symbol} can be used to buy OPTIX tokens for this market up to the
               specified buying caps.
             </Trans>
           </p>

@@ -198,7 +198,7 @@ export default function ClaimEsGmx() {
   let initialStakingAmount;
   let nextStakingAmount;
 
-  let stakingToken = "staked GMX";
+  let stakingToken = "staked OPX";
 
   const shouldShowStakingAmounts = false;
 
@@ -380,7 +380,7 @@ export default function ClaimEsGmx() {
                 isChecked={selectedOption === VEST_WITH_GMX_ARB}
                 setIsChecked={() => setSelectedOption(VEST_WITH_GMX_ARB)}
               >
-                <Trans>Vest with GMX on Arbitrum</Trans>
+                <Trans>Vest with OPX on Arbitrum</Trans>
                 <img src={arbitrumIcon} alt="Arbitrum" />
               </Checkbox>
               <Checkbox
@@ -388,7 +388,7 @@ export default function ClaimEsGmx() {
                 isChecked={selectedOption === VEST_WITH_GLP_ARB}
                 setIsChecked={() => setSelectedOption(VEST_WITH_GLP_ARB)}
               >
-                <Trans>Vest with GLP on Arbitrum</Trans>
+                <Trans>Vest with OPX on Arbitrum</Trans>
                 <img src={arbitrumIcon} alt="Arbitrum" />
               </Checkbox>
               <Checkbox
@@ -396,7 +396,7 @@ export default function ClaimEsGmx() {
                 isChecked={selectedOption === VEST_WITH_GMX_AVAX}
                 setIsChecked={() => setSelectedOption(VEST_WITH_GMX_AVAX)}
               >
-                <Trans>Vest with GMX on Avalanche</Trans>
+                <Trans>Vest with OPX on Avalanche</Trans>
                 <img src={avaIcon} alt="Avalanche" />
               </Checkbox>
               <Checkbox
@@ -404,7 +404,7 @@ export default function ClaimEsGmx() {
                 isChecked={selectedOption === VEST_WITH_GLP_AVAX}
                 setIsChecked={() => setSelectedOption(VEST_WITH_GLP_AVAX)}
               >
-                <Trans>Vest with GLP on Avalanche</Trans>
+                <Trans>Vest with OPX on Avalanche</Trans>
                 <img src={avaIcon} alt="Avalanche" />
               </Checkbox>
             </div>

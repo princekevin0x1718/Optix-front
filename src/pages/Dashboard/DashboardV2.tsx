@@ -65,6 +65,8 @@ import { useTradePageVersion } from "lib/useTradePageVersion";
 import useWallet from "lib/wallets/useWallet";
 import { groupBy } from "lodash";
 import AssetDropdown from "./AssetDropdown";
+import Optix from '../../img/optix.svg';
+import Arbitrum from '../../img/arbitrum-arb-logo.svg';
 
 const ACTIVE_CHAIN_IDS = [ARBITRUM, AVALANCHE];
 
@@ -363,7 +365,7 @@ export default function DashboardV2() {
                     <br />
                     Get lower fees to{" "}
                     <Link to="/buy_glp" target="_blank" rel="noopener noreferrer">
-                      buy GLP
+                      buy OPX
                     </Link>{" "}
                     with {tokenInfo.symbol}, and to{" "}
                     <Link to="/trade" target="_blank" rel="noopener noreferrer">
@@ -590,14 +592,14 @@ export default function DashboardV2() {
                       handle={`$${formatAmount(tvl, USD_DECIMALS, 0, true)}`}
                       position="bottom-end"
                       renderContent={() => (
-                        <span>{t`Assets Under Management: GMX staked (All chains) + GLP pool (${chainName}) +  GM Pools (${chainName}).`}</span>
+                        <span>{t`Assets Under Management: OPX staked (All chains) + OPX pool (${chainName}) +  OPTIX Pools (${chainName}).`}</span>
                       )}
                     />
                   </div>
                 </div>
                 <div className="App-card-row">
                   <div className="label">
-                    <Trans>GLP Pool</Trans>
+                    <Trans>OPX Pool</Trans>
                   </div>
                   <div>
                     <TooltipComponent
@@ -605,7 +607,7 @@ export default function DashboardV2() {
                       position="bottom-end"
                       renderContent={() => (
                         <Trans>
-                          <p>Total value of tokens in GLP pool ({chainName}).</p>
+                          <p>Total value of tokens in OPX pool ({chainName}).</p>
                           <p>
                             This value may be higher on other websites due to the collateral of positions being included
                             in the calculation.
@@ -617,7 +619,7 @@ export default function DashboardV2() {
                 </div>
                 <div className="App-card-row">
                   <div className="label">
-                    <Trans>GM Pools</Trans>
+                    <Trans>OPTIX Pools</Trans>
                   </div>
                   <div>
                     <TooltipComponent
@@ -625,7 +627,7 @@ export default function DashboardV2() {
                       position="bottom-end"
                       renderContent={() => (
                         <Trans>
-                          <p>GM Pools total value ({chainName}).</p>
+                          <p>OPTIX Pools total value ({chainName}).</p>
                         </Trans>
                       )}
                     />
@@ -814,24 +816,21 @@ export default function DashboardV2() {
               tradePageVersion === 1 ? (
                 <>
                   <Trans>
-                    GMX is the utility and governance token. Accrues 30% and 27% of V1 and V2 markets generated fees,
-                    respectively.
+                    OPX is the utility and governance token. Accrues 30% and 27% of V1 and V2 markets generated fees, respectively.
                   </Trans>
                   <br />
                   <Trans>
-                    GLP is the liquidity provider token for GMX V1 markets. Accrues 70% of the V1 markets generated
-                    fees.
+                    OPTIX is the liquidity provider token for OPX V2 markets. Accrues 63% of the V2 markets generated fees
                   </Trans>
                 </>
               ) : (
                 <>
                   <Trans>
-                    GMX is the utility and governance token. Accrues 30% and 27% of V1 and V2 markets generated fees,
-                    respectively.
+                    OPX is the utility and governance token. Accrues 30% and 27% of V1 and V2 markets generated fees, respectively.
                   </Trans>
                   <br />
                   <Trans>
-                    GM is the liquidity provider token for GMX V2 markets. Accrues 63% of the V2 markets generated fees.
+                    OPTIX is the liquidity provider token for OPX V2 markets. Accrues 63% of the V2 markets generated fees
                   </Trans>
                 </>
               )
@@ -844,14 +843,16 @@ export default function DashboardV2() {
                   <div className="App-card-title">
                     <div className="App-card-title-mark">
                       <div className="App-card-title-mark-icon">
-                        <img src={currentIcons.gmx} width="40" alt="GMX Token Icon" />
+                        {/* <img src={currentIcons.gmx} width="40" alt="GMX Token Icon" /> */}
+                        <img src={Optix} width="40" alt="OPTIX Token Icon" />
+                        <img src={Arbitrum} width={"20"} alt="arbitrum" style={{position: 'absolute', right: "-4px", bottom: "0"}} />
                       </div>
                       <div className="App-card-title-mark-info">
-                        <div className="App-card-title-mark-title">GMX</div>
-                        <div className="App-card-title-mark-subtitle">GMX</div>
+                        <div className="App-card-title-mark-title">OPX</div>
+                        <div className="App-card-title-mark-subtitle">OPX</div>
                       </div>
                       <div>
-                        <AssetDropdown assetSymbol="GMX" />
+                        {/* <AssetDropdown assetSymbol="GMX" /> */}
                       </div>
                     </div>
                   </div>
@@ -890,7 +891,7 @@ export default function DashboardV2() {
                       <div className="label">
                         <Trans>Supply</Trans>
                       </div>
-                      <div>{formatAmount(totalGmxSupply, GMX_DECIMALS, 0, true)} GMX</div>
+                      <div>{formatAmount(totalGmxSupply, GMX_DECIMALS, 0, true)} OPX</div>
                     </div>
                     <div className="App-card-row">
                       <div className="label">
@@ -927,14 +928,15 @@ export default function DashboardV2() {
                     <div className="App-card-title">
                       <div className="App-card-title-mark">
                         <div className="App-card-title-mark-icon">
-                          <img src={currentIcons.glp} width="40" alt="GLP Icon" />
+                          <img src={Optix} width="40" alt="OPTIX Token Icon" />
+                          <img src={Arbitrum} width={"20"} alt="arbitrum" style={{position: 'absolute', right: "-4px", bottom: "0"}} />
                         </div>
                         <div className="App-card-title-mark-info">
-                          <div className="App-card-title-mark-title">GLP</div>
-                          <div className="App-card-title-mark-subtitle">GLP</div>
+                          <div className="App-card-title-mark-title">OPTIX</div>
+                          <div className="App-card-title-mark-subtitle">OPTIX</div>
                         </div>
                         <div>
-                          <AssetDropdown assetSymbol="GLP" />
+                          {/* <AssetDropdown assetSymbol="GLP" /> */}
                         </div>
                       </div>
                     </div>
@@ -950,7 +952,7 @@ export default function DashboardV2() {
                         <div className="label">
                           <Trans>Supply</Trans>
                         </div>
-                        <div>{formatAmount(glpSupply, GLP_DECIMALS, 0, true)} GLP</div>
+                        <div>{formatAmount(glpSupply, GLP_DECIMALS, 0, true)} OPX</div>
                       </div>
                       <div className="App-card-row">
                         <div className="label">
@@ -972,7 +974,7 @@ export default function DashboardV2() {
                       </div>
                     </div>
                   </div>
-                  <InteractivePieChart data={glpPool} label={t`GLP Pool`} />
+                  <InteractivePieChart data={glpPool} label={t`OPX Pool`} />
                 </div>
               )}
               {isV2 && <GMCard />}
@@ -981,7 +983,7 @@ export default function DashboardV2() {
               <>
                 <div className="token-table-wrapper App-card">
                   <div className="App-card-title">
-                    <Trans>GLP Index Composition</Trans>{" "}
+                    <Trans>OPX Index Composition</Trans>{" "}
                     <img src={currentIcons.network} width="16" alt="Network Icon" />
                   </div>
                   <div className="App-card-divider" />
@@ -1091,7 +1093,7 @@ export default function DashboardV2() {
                 </div>
 
                 <div className="glp-composition-small">
-                  <PageTitle title={t`GLP Index Composition`} />
+                  <PageTitle title={t`OPX Index Composition`} />
                 </div>
 
                 <div className="token-grid">
@@ -1248,11 +1250,12 @@ function GMCard() {
         <div className="App-card-title">
           <div className="App-card-title-mark">
             <div className="App-card-title-mark-icon">
-              <img src={currentIcons.gm} width="40" alt="GM Icon" />
+              <img src={Optix} width="40" alt="OPTIX Token Icon" />
+              <img src={Arbitrum} width={"20"} alt="arbitrum" style={{position: 'absolute', right: "-4px", bottom: "0"}} />
             </div>
             <div className="App-card-title-mark-info">
-              <div className="App-card-title-mark-title">GM</div>
-              <div className="App-card-title-mark-subtitle">GM</div>
+              <div className="App-card-title-mark-title">OPTIX</div>
+              <div className="App-card-title-mark-subtitle">OPTIX</div>
             </div>
             <div>
               <AssetDropdown assetSymbol="GM" />
@@ -1286,7 +1289,7 @@ function GMCard() {
           </div>
         </div>
       </div>
-      <InteractivePieChart data={chartData} label={t`GM Markets`} />
+      <InteractivePieChart data={chartData} label={t`OPTIX Markets`} />
     </div>
   );
 }

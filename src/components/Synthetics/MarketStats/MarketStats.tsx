@@ -176,7 +176,7 @@ export function MarketStats(p: Props) {
               renderContent={() => {
                 return (
                   <div>
-                    <Trans>GM Token pricing includes positions' Pending PnL, Impact Pool Amount and Borrow Fees.</Trans>
+                    <Trans>OPTIX Token pricing includes positions' Pending PnL, Impact Pool Amount and Borrow Fees.</Trans>
                   </div>
                 );
               }}
@@ -230,12 +230,12 @@ export function MarketStats(p: Props) {
                   <div>
                     {marketInfo?.isSameCollaterals ? (
                       <Trans>
-                        {marketInfo?.longToken.symbol} can be used to buy GM for this market up to the specified buying
+                        {marketInfo?.longToken.symbol} can be used to buy OPTIX for this market up to the specified buying
                         caps.
                       </Trans>
                     ) : (
                       <Trans>
-                        {marketInfo?.longToken.symbol} and {marketInfo?.shortToken.symbol} can be used to buy GM for
+                        {marketInfo?.longToken.symbol} and {marketInfo?.shortToken.symbol} can be used to buy OPTIX for
                         this market up to the specified buying caps.
                       </Trans>
                     )}
@@ -287,12 +287,12 @@ export function MarketStats(p: Props) {
                 <div>
                   {marketInfo?.isSameCollaterals ? (
                     <Trans>
-                      GM can be sold for {longToken?.symbol} for this market up to the specified selling caps. The
+                      OPTIX can be sold for {longToken?.symbol} for this market up to the specified selling caps. The
                       remaining tokens in the pool are reserved for currently open positions.
                     </Trans>
                   ) : (
                     <Trans>
-                      GM can be sold for {longToken?.symbol} and {shortToken?.symbol} for this market up to the
+                      OPTIX can be sold for {longToken?.symbol} and {shortToken?.symbol} for this market up to the
                       specified selling caps. The remaining tokens in the pool are reserved for currently open
                       positions.
                     </Trans>

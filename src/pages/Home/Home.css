@@ -220,15 +220,15 @@
 .Home-token-card-options {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 1.5rem;
-  grid-row-gap: 1.5rem;
+  grid-column-gap: 5.5rem;
+  grid-row-gap: 3.5rem;
 }
 
 .Home-token-card-option {
   position: relative;
   padding: 2.325rem;
-  max-width: 59.2rem;
-  background: #16182e;
+  /* max-width: 59.2rem; */
+  background: #434359;
   box-shadow: 0px 0.5rem 1.3rem #00000085;
   border-radius: 4px;
   display: flex;

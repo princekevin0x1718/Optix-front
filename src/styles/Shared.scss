@@ -284,10 +284,12 @@ a.plain {
 }
 
 .default-container {
-  max-width: var(--default-container-max-width);
+  // max-width: var(--default-container-max-width);
+  max-width: 77%;
   padding-left: var(--default-container-padding);
   padding-right: var(--default-container-padding);
   margin: 0 auto;
+  padding-top: 2.65rem;
 
   @media (max-width: 600px) {
     padding-left: var(--default-container-padding-mobile);
@@ -448,7 +450,9 @@ button.btn-link:hover .logout-icon {
   display: flex;
   flex-direction: column;
   padding-bottom: calc(4.65rem + 20rem);
-  padding-top: 4.65rem;
+  padding-top: 2.5rem;
+  background-color: #1E1E2D;
+  margin-top: 2rem;
 }
 
 .flex,

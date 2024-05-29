@@ -29,8 +29,8 @@ export const appEventsData: EventData[] = [
     bodyText: [
       `Arbitrum STIP incentives are live for:`,
       "",
-      "• Arbitrum GM Pools Liquidity.",
-      "• Arbitrum GMX V2 Trading.",
+      "• Arbitrum OPTIX Pools Liquidity.",
+      "• Arbitrum OPX V2 Trading.",
     ],
     link: {
       text: "Read more.",
@@ -43,7 +43,7 @@ export const appEventsData: EventData[] = [
     title: "Incentives are live",
     isActive: true,
     endDate: "31 Oct 2024, 12:00",
-    bodyText: "Arbitrum STIP incentives are live for Arbitrum GM pools and GLP to GM migrations.",
+    bodyText: "Arbitrum STIP incentives are live for Arbitrum OPTIX pools and OPX to OPTIX migrations.",
     link: {
       text: "Read more",
       href: "https://gmxio.notion.site/GMX-S-T-I-P-Incentives-Distribution-1a5ab9ca432b4f1798ff8810ce51fec3",
@@ -55,7 +55,7 @@ export const appEventsData: EventData[] = [
     title: "Binance Web3 Wallet Trading Campaign is Live",
     isActive: true,
     endDate: "09 Apr 2024, 23:59",
-    bodyText: ["Complete any or all of the six GMX campaign tasks and qualify for rewards!"],
+    bodyText: ["Complete any or all of the six OPX campaign tasks and qualify for rewards!"],
     link: {
       text: "Check your tasks and their completion status",
       href: "https://www.binance.com/en/activity/mission/gmx-airdrop",
@@ -64,27 +64,27 @@ export const appEventsData: EventData[] = [
   },
   {
     id: "btc-eth-single-token-markets",
-    title: "New BTC/USD and ETH/USD single token GM pools",
+    title: "New BTC/USD and ETH/USD single token OPTIX pools",
     isActive: true,
     endDate: "2 May 2024, 23:59",
     bodyText: [
-      "Use only BTC or ETH to provide liquidity to BTC/USD or ETH/USD. Now, you can buy GM without being exposed to stablecoins.",
+      "Use only BTC or ETH to provide liquidity to BTC/USD or ETH/USD. Now, you can buy OPTIX without being exposed to stablecoins.",
     ],
     link: {
-      text: "View GM pools",
+      text: "View OPTIX pools",
       href: "/#/pools",
     },
   },
   {
     id: "delegate-voting-power",
-    title: "Delegate your GMX Voting Power",
+    title: "Delegate your OPX Voting Power",
     isActive: true,
     endDate: "6 Jun 2024, 23:59",
     bodyText: (
       <>
-        <ExternalLink href="https://www.tally.xyz/gov/gmx">The GMX DAO is now live on Tally</ExternalLink>. Please{" "}
+        <ExternalLink href="https://www.tally.xyz/gov/gmx">The OPX DAO is now live on Tally</ExternalLink>. Please{" "}
         <ExternalLink href="https://www.tally.xyz/gov/gmx/my-voting-power">delegate your voting power</ExternalLink>{" "}
-        before staking or claiming GMX rewards.
+        before staking or claiming OPX rewards.
       </>
     ),
   },

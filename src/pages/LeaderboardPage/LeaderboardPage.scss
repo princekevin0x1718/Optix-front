@@ -10,8 +10,10 @@ $tabs-threshold: 990px;
 .Leaderboard-Title {
   display: flex;
   justify-content: space-between;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  // margin-top: 3rem;
+  // margin-bottom: 2rem;
+  max-width: 77%;
+  // margin: 3rem auto 2rem;
 }
 
 .Leaderboard-Title h1 {
@@ -30,6 +32,19 @@ $tabs-threshold: 990px;
 .Leaderboard-Title__description {
   color: rgb(183, 183, 189);
   line-height: 2.15rem;
+}
+
+.GlobalLeaderboards {
+  background: #252734;
+  margin-top: -2.5rem;
+  margin-bottom: -2.5rem;
+}
+
+.GlobalLeaderboards>div {
+  max-width: 77%;
+  margin: 0 auto 0;
+  background: #1E1E2D;
+  padding: 2.5rem;
 }
 
 .GlobalLeaderboards .LeaderboardContainer__competition-tabs .Tab {
@@ -574,10 +589,11 @@ table.Table.Exchange-list th {
 }
 
 .GlobalLeaderboards__table {
-  max-width: var(--default-container-max-width);
+  max-width: 100%;
+  // max-width: var(--default-container-max-width);
   margin: 0 auto;
-  padding-left: var(--default-container-padding);
-  padding-right: var(--default-container-padding);
+  // padding-left: var(--default-container-padding);
+  // padding-right: var(--default-container-padding);
 
   @media (max-width: 1200px) {
     padding-left: 0;

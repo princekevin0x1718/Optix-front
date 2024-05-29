@@ -18,6 +18,8 @@ import { useMarketTokensAPR } from "domain/synthetics/markets/useMarketTokensAPR
 import { mergeWith } from "lodash";
 import { formatAmount } from "lib/numbers";
 import type { MarketTokensAPRData } from "domain/synthetics/markets/types";
+import Optix from '../../img/optix.svg';
+import Arbitrum from '../../img/arbitrum-arb-logo.svg';
 
 const glpIcon = getIcon("common", "glp");
 const gmxIcon = getIcon("common", "gmx");
@@ -98,12 +100,17 @@ export default function TokenCard({ showRedirectModal }: Props) {
       <div className="Home-token-card-option">
         <div>
           <div className="Home-token-card-option-icon">
-            <img src={gmxIcon} width="40" alt="GMX Icons" /> GMX
+            <div className="App-card-title-mark-icon">
+              {/* <img src={currentIcons.gmx} width="40" alt="GMX Token Icon" /> */}
+              <img src={Optix} width="40" alt="OPTIX Token Icon" />
+              <img src={Arbitrum} width={"20"} alt="arbitrum" style={{position: 'absolute', right: "-4px", bottom: "0"}} />
+            </div>
+            OPX
           </div>
           <div className="Home-token-card-option-info">
             <div className="Home-token-card-option-title">
               <Trans>
-                GMX is the utility and governance token. Accrues 30% and 27% of V1 and V2 markets generated fees,
+                OPX is the utility and governance token. Accrues 30% and 27% of V1 and V2 markets generated fees,
                 respectively.
               </Trans>
             </div>
@@ -130,19 +137,23 @@ export default function TokenCard({ showRedirectModal }: Props) {
       <div className="Home-token-card-option">
         <div>
           <div className="Home-token-card-option-icon">
-            <img src={gmIcon} alt="gmxBigIcon" /> GM
+          <div className="App-card-title-mark-icon">
+              {/* <img src={currentIcons.gmx} width="40" alt="GMX Token Icon" /> */}
+              <img src={Optix} width="40" alt="OPTIX Token Icon" />
+              <img src={Arbitrum} width={"20"} alt="arbitrum" style={{position: 'absolute', right: "-4px", bottom: "0"}} />
+            </div> OPTIX
           </div>
           <div className="Home-token-card-option-info">
             <div className="Home-token-card-option-title">
               <Trans>
-                GM is the liquidity provider token for GMX V2 markets. Accrues 63% of the V2 markets generated fees.
+              OPTIX is the liquidity provider token for OPX V2 markets. Accrues 63% of the V2 markets generated fees.
               </Trans>
             </div>
           </div>
           {arbitrumIncentiveState?.lp?.isActive && (
             <BannerButton
               className="mt-md"
-              label="Arbitrum GM Pools are incentivized."
+              label="Arbitrum OPTIX Pools are incentivized."
               link="https://gmxio.notion.site/GMX-S-T-I-P-Incentives-Distribution-1a5ab9ca432b4f1798ff8810ce51fec3#dc108b8a0a114c609ead534d1908d2fa"
             />
           )}
@@ -175,17 +186,68 @@ export default function TokenCard({ showRedirectModal }: Props) {
       <div className="Home-token-card-option">
         <div>
           <div className="Home-token-card-option-icon">
-            <img src={glpIcon} width="40" alt="GLP Icon" /> GLP
+            <div className="App-card-title-mark-icon">
+              {/* <img src={currentIcons.gmx} width="40" alt="GMX Token Icon" /> */}
+              <img src={Optix} width="40" alt="OPTIX Token Icon" />
+              <img src={Arbitrum} width={"20"} alt="arbitrum" style={{position: 'absolute', right: "-4px", bottom: "0"}} />
+            </div> OPX
           </div>
           <div className="Home-token-card-option-info">
             <div className="Home-token-card-option-title">
               <Trans>
-                GLP is the liquidity provider token for GMX V1 markets. Accrues 70% of the V1 markets generated fees.
+                OPTIX is the liquidity provider token for OPX V2 markets. Accrues 63% of the V2 markets generated fees
               </Trans>
               {arbitrumIncentiveState?.migration?.isActive && (
                 <BannerButton
                   className="mt-md"
-                  label="Migrating from GLP to GM is incentivized in Arbitrum."
+                  label="Migrating from OPX to OPTIX is incentivized in Arbitrum."
+                  link="https://gmxio.notion.site/GMX-S-T-I-P-Incentives-Distribution-1a5ab9ca432b4f1798ff8810ce51fec3#a2d1ea61dd1147b195b7e3bd769348d3"
+                />
+              )}
+            </div>
+            <div className="Home-token-card-option-apr">
+              <Trans>Arbitrum APR:</Trans> <APRLabel chainId={ARBITRUM} label="glpAprTotal" key="ARBITRUM" />,{" "}
+              <Trans>Avalanche APR:</Trans> <APRLabel chainId={AVALANCHE} label="glpAprTotal" key="AVALANCHE" />
+            </div>
+          </div>
+        </div>
+        <div className="Home-token-card-option-action">
+          <div className="buy">
+            <BuyLink to="/buy_glp" className="default-btn" network={ARBITRUM}>
+              <Trans>View on Arbitrum</Trans>
+            </BuyLink>
+            <BuyLink to="/buy_glp" className="default-btn" network={AVALANCHE}>
+              <Trans>View on Avalanche</Trans>
+            </BuyLink>
+          </div>
+          <a
+            href="https://docs.gmx.io/docs/providing-liquidity/v1"
+            target="_blank"
+            rel="noreferrer"
+            className="default-btn read-more"
+          >
+            <Trans>Read more</Trans>
+          </a>
+        </div>
+      </div>
+      <div className="Home-token-card-option">
+        <div>
+          <div className="Home-token-card-option-icon">
+            <div className="App-card-title-mark-icon">
+              {/* <img src={currentIcons.gmx} width="40" alt="GMX Token Icon" /> */}
+              <img src={Optix} width="40" alt="OPTIX Token Icon" />
+              <img src={Arbitrum} width={"20"} alt="arbitrum" style={{position: 'absolute', right: "-4px", bottom: "0"}} />
+            </div> OPX
+          </div>
+          <div className="Home-token-card-option-info">
+            <div className="Home-token-card-option-title">
+              <Trans>
+                OPTIX is the liquidity provider token for OPX V2 markets. Accrues 63% of the V2 markets generated fees
+              </Trans>
+              {arbitrumIncentiveState?.migration?.isActive && (
+                <BannerButton
+                  className="mt-md"
+                  label="Migrating from OPX to OPTIX is incentivized in Arbitrum."
                   link="https://gmxio.notion.site/GMX-S-T-I-P-Incentives-Distribution-1a5ab9ca432b4f1798ff8810ce51fec3#a2d1ea61dd1147b195b7e3bd769348d3"
                 />
               )}

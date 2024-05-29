@@ -22,8 +22,8 @@ import { useCallback, useMemo } from "react";
 import { Link } from "react-router-dom";
 
 const INCENTIVE_TYPE_MAP = {
-  1001: t`GM Airdrop`,
-  1002: t`GLP to GM Airdrop`,
+  1001: t`OPTIX Airdrop`,
+  1002: t`OPX to OPTIX Airdrop`,
   1003: t`TRADING Airdrop`,
 };
 
@@ -55,120 +55,120 @@ function getNormalizedIncentive(incentive: UserIncentiveData, tokens: Token[]) {
   };
 }
 
-export default function UserIncentiveDistributionList() {
-  const { account, active } = useWallet();
-  const { openConnectModal } = useConnectModal();
-  const { chainId } = useChainId();
-  const tokens = getTokens(chainId);
-  const userIncentiveData = useUserIncentiveData(chainId, account);
+// export default function UserIncentiveDistributionList() {
+//   const { account, active } = useWallet();
+//   const { openConnectModal } = useConnectModal();
+//   const { chainId } = useChainId();
+//   const tokens = getTokens(chainId);
+//   const userIncentiveData = useUserIncentiveData(chainId, account);
 
-  const normalizedIncentiveData: NormalizedIncentiveData[] = useMemo(
-    () => userIncentiveData?.data?.map((incentive) => getNormalizedIncentive(incentive, tokens)) ?? [],
-    [userIncentiveData, tokens]
-  );
+//   const normalizedIncentiveData: NormalizedIncentiveData[] = useMemo(
+//     () => userIncentiveData?.data?.map((incentive) => getNormalizedIncentive(incentive, tokens)) ?? [],
+//     [userIncentiveData, tokens]
+//   );
 
-  const { currentPage, getCurrentData, setCurrentPage, pageCount } = usePagination(
-    "UserIncentiveDistributionList",
-    normalizedIncentiveData
-  );
-  const currentIncentiveData = getCurrentData();
+//   const { currentPage, getCurrentData, setCurrentPage, pageCount } = usePagination(
+//     "UserIncentiveDistributionList",
+//     normalizedIncentiveData
+//   );
+//   const currentIncentiveData = getCurrentData();
 
-  if (!userIncentiveData?.data?.length) {
-    return (
-      <EmptyMessage
-        tooltipText={t`Incentives are airdropped weekly.`}
-        message={t`No incentives distribution history yet.`}
-        className="mt-sm"
-      >
-        {!active && (
-          <div className="mt-md">
-            <Button variant="secondary" onClick={openConnectModal}>
-              <Trans>Connect Wallet</Trans>
-            </Button>
-          </div>
-        )}
-      </EmptyMessage>
-    );
-  }
+//   if (!userIncentiveData?.data?.length) {
+//     return (
+//       <EmptyMessage
+//         tooltipText={t`Incentives are airdropped weekly.`}
+//         message={t`No incentives distribution history yet.`}
+//         className="mt-sm"
+//       >
+//         {!active && (
+//           <div className="mt-md">
+//             <Button variant="secondary" onClick={openConnectModal}>
+//               <Trans>Connect Wallet</Trans>
+//             </Button>
+//           </div>
+//         )}
+//       </EmptyMessage>
+//     );
+//   }
 
-  return (
-    <div>
-      <Card title={t`Incentives Distribution History`} tooltipText={t`Incentives are airdropped weekly.`}>
-        <div className="table-wrapper">
-          <table className="referral-table">
-            <thead>
-              <tr>
-                <th className="table-head" scope="col">
-                  <Trans>Date</Trans>
-                </th>
-                <th className="table-head" scope="col">
-                  <Trans>Type</Trans>
-                </th>
-                <th className="table-head" scope="col">
-                  <Trans>Amount</Trans>
-                </th>
-                <th className="table-head" scope="col">
-                  <Trans>Transaction</Trans>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {currentIncentiveData?.map((incentive) => (
-                <IncentiveItem incentive={incentive} key={incentive.id} />
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </Card>
-      <Pagination page={currentPage} pageCount={pageCount} onPageChange={(page) => setCurrentPage(page)} />
-    </div>
-  );
-}
+//   return (
+//     <div>
+//       <Card title={t`Incentives Distribution History`} tooltipText={t`Incentives are airdropped weekly.`}>
+//         <div className="table-wrapper">
+//           <table className="referral-table">
+//             <thead>
+//               <tr>
+//                 <th className="table-head" scope="col">
+//                   <Trans>Date</Trans>
+//                 </th>
+//                 <th className="table-head" scope="col">
+//                   <Trans>Type</Trans>
+//                 </th>
+//                 <th className="table-head" scope="col">
+//                   <Trans>Amount</Trans>
+//                 </th>
+//                 <th className="table-head" scope="col">
+//                   <Trans>Transaction</Trans>
+//                 </th>
+//               </tr>
+//             </thead>
+//             <tbody>
+//               {currentIncentiveData?.map((incentive) => (
+//                 <IncentiveItem incentive={incentive} key={incentive.id} />
+//               ))}
+//             </tbody>
+//           </table>
+//         </div>
+//       </Card>
+//       <Pagination page={currentPage} pageCount={pageCount} onPageChange={(page) => setCurrentPage(page)} />
+//     </div>
+//   );
+// }
 
-function IncentiveItem({ incentive }: { incentive: NormalizedIncentiveData }) {
-  const { tokenIncentiveDetails, totalUsd, timestamp, typeId, transactionHash } = incentive;
-  const { chainId } = useChainId();
-  const explorerURL = getExplorerUrl(chainId);
+// function IncentiveItem({ incentive }: { incentive: NormalizedIncentiveData }) {
+//   const { tokenIncentiveDetails, totalUsd, timestamp, typeId, transactionHash } = incentive;
+//   const { chainId } = useChainId();
+//   const explorerURL = getExplorerUrl(chainId);
 
-  const isCompetition = typeId >= 2000 && typeId < 3000;
-  const typeStr = isCompetition ? t`COMPETITION Airdrop` : INCENTIVE_TYPE_MAP[typeId];
-  const tooltipData = INCENTIVE_TOOLTIP_MAP[typeId];
+//   const isCompetition = typeId >= 2000 && typeId < 3000;
+//   const typeStr = isCompetition ? t`COMPETITION Airdrop` : INCENTIVE_TYPE_MAP[typeId];
+//   const tooltipData = INCENTIVE_TOOLTIP_MAP[typeId];
 
-  const renderTotalTooltipContent = useCallback(() => {
-    return tokenIncentiveDetails.map((tokenInfo) => (
-      <StatsTooltipRow
-        key={tokenInfo.id}
-        showDollar={false}
-        label={tokenInfo.tokenInfo?.symbol}
-        value={formatTokenAmount(tokenInfo.tokenAmount, tokenInfo.tokenInfo?.decimals, "", {
-          useCommas: true,
-        })}
-      />
-    ));
-  }, [tokenIncentiveDetails]);
-  const renderTooltipTypeContent = useCallback(
-    () =>
-      tooltipData ? (
-        <Link className="link-underline" to={tooltipData.link}>
-          {tooltipData.text}
-        </Link>
-      ) : null,
-    [tooltipData]
-  );
-  const type = tooltipData ? <Tooltip handle={typeStr} renderContent={renderTooltipTypeContent} /> : typeStr;
+//   const renderTotalTooltipContent = useCallback(() => {
+//     return tokenIncentiveDetails.map((tokenInfo) => (
+//       <StatsTooltipRow
+//         key={tokenInfo.id}
+//         showDollar={false}
+//         label={tokenInfo.tokenInfo?.symbol}
+//         value={formatTokenAmount(tokenInfo.tokenAmount, tokenInfo.tokenInfo?.decimals, "", {
+//           useCommas: true,
+//         })}
+//       />
+//     ));
+//   }, [tokenIncentiveDetails]);
+//   const renderTooltipTypeContent = useCallback(
+//     () =>
+//       tooltipData ? (
+//         <Link className="link-underline" to={tooltipData.link}>
+//           {tooltipData.text}
+//         </Link>
+//       ) : null,
+//     [tooltipData]
+//   );
+//   const type = tooltipData ? <Tooltip handle={typeStr} renderContent={renderTooltipTypeContent} /> : typeStr;
 
-  return (
-    <tr>
-      <td data-label="Date">{formatDate(timestamp)}</td>
-      <td data-label="Type">{type}</td>
-      <td data-label="Amount">
-        <Tooltip handle={formatUsd(totalUsd)} className="nowrap" renderContent={renderTotalTooltipContent} />
-      </td>
-      <td data-label="Transaction">
-        <ExternalLink href={`${explorerURL}tx/${transactionHash}`}>
-          {shortenAddressOrEns(transactionHash, 13)}
-        </ExternalLink>
-      </td>
-    </tr>
-  );
-}
+//   return (
+//     <tr>
+//       <td data-label="Date">{formatDate(timestamp)}</td>
+//       <td data-label="Type">{type}</td>
+//       <td data-label="Amount">
+//         <Tooltip handle={formatUsd(totalUsd)} className="nowrap" renderContent={renderTotalTooltipContent} />
+//       </td>
+//       <td data-label="Transaction">
+//         <ExternalLink href={`${explorerURL}tx/${transactionHash}`}>
+//           {shortenAddressOrEns(transactionHash, 13)}
+//         </ExternalLink>
+//       </td>
+//     </tr>
+//   );
+// }

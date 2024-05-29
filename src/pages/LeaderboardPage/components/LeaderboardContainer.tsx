@@ -25,7 +25,7 @@ import { useMedia } from "react-use";
 import { CompetitionCountdown } from "./CompetitionCountdown";
 import { CompetitionPrizes } from "./CompetitionPrizes";
 import { LeaderboardAccountsTable } from "./LeaderboardAccountsTable";
-import { LeaderboardNavigation } from "./LeaderboardNavigation";
+// import { LeaderboardNavigation } from "./LeaderboardNavigation";
 import { LeaderboardPositionsTable } from "./LeaderboardPositionsTable";
 import { useSelector } from "context/SyntheticsStateContext/utils";
 import { selectLeaderboardIsLoading } from "context/SyntheticsStateContext/selectors/leaderboardSelectors";
@@ -144,7 +144,7 @@ export function LeaderboardContainer() {
   const description = useMemo(() => {
     switch (leaderboardPageKey) {
       case "leaderboard":
-        return t`Leaderboard for traders on GMX V2.`;
+        return t`Leaderboard for traders on OPX V2.`;
 
       case "march_13-20_2024":
       case "march_20-27_2024":
@@ -170,60 +170,62 @@ export function LeaderboardContainer() {
 
   return (
     <div className="GlobalLeaderboards">
-      <LeaderboardNavigation />
-      <div className="Leaderboard-Title default-container">
-        <div>
-          <h1>
-            {title} <img alt={t`Chain Icon`} src={getIcon(page.isCompetition ? page.chainId : chainId, "network")} />
-          </h1>
-          <div className="Leaderboard-Title__description">{description}</div>
+      {/* <LeaderboardNavigation /> */}
+      <div>
+        <div className="Leaderboard-Title">
+          <div>
+            <h1>
+              {title} <img alt={t`Chain Icon`} src={getIcon(page.isCompetition ? page.chainId : chainId, "network")} />
+            </h1>
+            <div className="Leaderboard-Title__description">{description}</div>
+          </div>
         </div>
+        {!isCompetition && (
+          <>
+            <div className="LeaderboardContainer__competition-tabs">
+              <Tab
+                option={activeLeaderboardDataTypeIndex}
+                onChange={handleLeaderboardDataTypeTabChange}
+                options={leaderboardDataTypeTabs}
+                optionLabels={leaderboardDataTypeLabels}
+              />
+            </div>
+          </>
+        )}
+        {!isCompetition && (
+          <Tab
+            option={activeLeaderboardTimeframeIndex}
+            onChange={handleLeaderboardTimeframeTabChange}
+            options={leaderboardTimeframeTabs}
+            optionLabels={leaderboardTimeframeLabels}
+            type="inline"
+            className={cx("LeaderboardContainer__leaderboard-tabs", {
+              "LeaderboardContainer__leaderboard-tabs_positions": leaderboardDataType === "positions",
+            })}
+          />
+        )}
+
+        {isCompetition && (
+          <>
+            <div className="LeaderboardContainer__competition-tabs">
+              <Tab
+                option={activeCompetitionIndex}
+                onChange={handleCompetitionTabChange}
+                options={competitionsTabs}
+                optionLabels={competitionLabels}
+              />
+              {!isMobile && <CompetitionCountdown className="default-container" size="desktop" />}
+            </div>
+            <br />
+            <br />
+          </>
+        )}
+        {isCompetition && activeCompetition && (
+          <CompetitionPrizes leaderboardPageKey={leaderboardPageKey} competitionType={activeCompetition} />
+        )}
+
+        <Table activeCompetition={activeCompetition} />
       </div>
-      {!isCompetition && (
-        <>
-          <div className="LeaderboardContainer__competition-tabs default-container">
-            <Tab
-              option={activeLeaderboardDataTypeIndex}
-              onChange={handleLeaderboardDataTypeTabChange}
-              options={leaderboardDataTypeTabs}
-              optionLabels={leaderboardDataTypeLabels}
-            />
-          </div>
-        </>
-      )}
-      {!isCompetition && (
-        <Tab
-          option={activeLeaderboardTimeframeIndex}
-          onChange={handleLeaderboardTimeframeTabChange}
-          options={leaderboardTimeframeTabs}
-          optionLabels={leaderboardTimeframeLabels}
-          type="inline"
-          className={cx("LeaderboardContainer__leaderboard-tabs default-container", {
-            "LeaderboardContainer__leaderboard-tabs_positions": leaderboardDataType === "positions",
-          })}
-        />
-      )}
-
-      {isCompetition && (
-        <>
-          <div className="LeaderboardContainer__competition-tabs default-container">
-            <Tab
-              option={activeCompetitionIndex}
-              onChange={handleCompetitionTabChange}
-              options={competitionsTabs}
-              optionLabels={competitionLabels}
-            />
-            {!isMobile && <CompetitionCountdown className="default-container" size="desktop" />}
-          </div>
-          <br />
-          <br />
-        </>
-      )}
-      {isCompetition && activeCompetition && (
-        <CompetitionPrizes leaderboardPageKey={leaderboardPageKey} competitionType={activeCompetition} />
-      )}
-
-      <Table activeCompetition={activeCompetition} />
     </div>
   );
 }

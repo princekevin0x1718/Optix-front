@@ -28,14 +28,14 @@ export default function BuyGlp() {
   return (
     <div className="default-container page-layout">
       <PageTitle
-        title={t`Buy / Sell GLP`}
+        title={t`Buy / Sell OPX`}
         isTop
         subtitle={
           <div>
             {incentiveState?.migration?.isActive && (
               <div>
                 <Trans>
-                  GLP to GM migration has reduced Fees due to STIP incentives.{" "}
+                OPX to OPTIX migration has reduced Fees due to STIP incentives.{" "}
                   <ExternalLink href="https://gmxio.notion.site/GMX-S-T-I-P-Incentives-Distribution-1a5ab9ca432b4f1798ff8810ce51fec3#a2d1ea61dd1147b195b7e3bd769348d3">
                     Read more
                   </ExternalLink>
@@ -44,7 +44,7 @@ export default function BuyGlp() {
               </div>
             )}
             <Trans>
-              Purchase <ExternalLink href="https://docs.gmx.io/docs/providing-liquidity/v1">GLP tokens</ExternalLink> to
+              Purchase <ExternalLink href="https://docs.gmx.io/docs/providing-liquidity/v1">OPX tokens</ExternalLink> to
               earn {nativeTokenSymbol} fees from swaps and leverage trading.
             </Trans>
           </div>

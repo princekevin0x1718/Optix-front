@@ -198,7 +198,7 @@ export function GmConfirmationBox({
 
     if (isSubmitting) {
       return {
-        text: isDeposit ? t`Buying GM...` : t`Selling GM...`,
+        text: isDeposit ? t`Buying OPTIX...` : t`Selling OPTIX...`,
         disabled: true,
       };
     }

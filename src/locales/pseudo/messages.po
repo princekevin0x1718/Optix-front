@@ -155,7 +155,7 @@ msgid "<0>This will withdraw and unreserve all tokens as well as pause vesting.<
 msgstr ""
 
 #: src/pages/Dashboard/DashboardV2.tsx
-msgid "<0>Total value of tokens in GLP pool ({chainName}).</0><1>This value may be higher on other websites due to the collateral of positions being included in the calculation.</1>"
+msgid "<0>Total value of tokens in OPX pool ({chainName}).</0><1>This value may be higher on other websites due to the collateral of positions being included in the calculation.</1>"
 msgstr ""
 
 #: src/lib/contracts/transactionErrors.tsx
@@ -193,10 +193,6 @@ msgstr ""
 
 #: src/components/Exchange/SwapBox.js
 msgid "A snapshot of the USD value of your {0} collateral is taken when the position is opened."
-msgstr ""
-
-#: src/components/Exchange/TradeHistory.js
-msgid "ACTION"
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
@@ -566,7 +562,7 @@ msgid "As there is not enough liquidity in GLP to swap {0} to {swapTokenSymbol},
 msgstr ""
 
 #: src/pages/Dashboard/DashboardV2.tsx
-msgid "Assets Under Management: GMX staked (All chains) + GLP pool ({chainName}) +  GM Pools ({chainName})."
+msgid "Assets Under Management: GMX staked (All chains) + OPX pool ({chainName}) +  GM Pools ({chainName})."
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
@@ -923,6 +919,8 @@ msgid "Chain Icon"
 msgstr ""
 
 #: src/components/SettingsModal/SettingsModal.tsx
+#: src/pages/Exchange/Exchange.tsx
+#: src/pages/SyntheticsPage/SyntheticsPage.tsx
 msgid "Chart positions"
 msgstr ""
 
@@ -941,8 +939,8 @@ msgid "Choose to buy from decentralized or centralized exchanges."
 msgstr ""
 
 #: src/components/Referrals/ClaimAffiliatesModal/ClaimAffiliatesModal.tsx
-#: src/components/Synthetics/ClaimablePositionPriceImpactRebateModal/ClaimablePositionPriceImpactRebateModal.tsx
 #: src/components/Synthetics/ClaimModal/ClaimModal.tsx
+#: src/components/Synthetics/ClaimablePositionPriceImpactRebateModal/ClaimablePositionPriceImpactRebateModal.tsx
 #: src/components/Synthetics/Claims/ClaimableCard.tsx
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
 #: src/pages/Stake/StakeV1.js
@@ -1060,8 +1058,8 @@ msgid "Claiming failed"
 msgstr ""
 
 #: src/components/Referrals/ClaimAffiliatesModal/ClaimAffiliatesModal.tsx
-#: src/components/Synthetics/ClaimablePositionPriceImpactRebateModal/ClaimablePositionPriceImpactRebateModal.tsx
 #: src/components/Synthetics/ClaimModal/ClaimModal.tsx
+#: src/components/Synthetics/ClaimablePositionPriceImpactRebateModal/ClaimablePositionPriceImpactRebateModal.tsx
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
 #: src/pages/Stake/StakeV2.tsx
 #: src/pages/Stake/StakeV2.tsx
@@ -1240,8 +1238,8 @@ msgid "Compounding..."
 msgstr ""
 
 #: src/components/Referrals/ClaimAffiliatesModal/ClaimAffiliatesModal.tsx
-#: src/components/Synthetics/ClaimablePositionPriceImpactRebateModal/ClaimablePositionPriceImpactRebateModal.tsx
 #: src/components/Synthetics/ClaimModal/ClaimModal.tsx
+#: src/components/Synthetics/ClaimablePositionPriceImpactRebateModal/ClaimablePositionPriceImpactRebateModal.tsx
 msgid "Confirm Claim"
 msgstr ""
 
@@ -1772,8 +1770,8 @@ msgid "Earn prizes by participating in GMX Trading Competitions."
 msgstr ""
 
 #: src/components/Header/AppHeaderLinks.tsx
-#~ msgid "Ecosystem"
-#~ msgstr ""
+msgid "Ecosystem"
+msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Ecosystem Projects"
@@ -2327,7 +2325,7 @@ msgstr ""
 
 #: src/pages/Dashboard/DashboardV2.tsx
 #: src/pages/Dashboard/DashboardV2.tsx
-msgid "GLP Index Composition"
+msgid "OPX Index Composition"
 msgstr ""
 
 #: src/pages/Dashboard/DashboardV2.tsx
@@ -2354,7 +2352,7 @@ msgstr ""
 
 #: src/components/TokenCard/TokenCard.tsx
 #: src/pages/Dashboard/DashboardV2.tsx
-msgid "GLP is the liquidity provider token for GMX V1 markets. Accrues 70% of the V1 markets generated fees."
+msgid "OPTIX is the liquidity provider token for OPX V2 markets. Accrues 63% of the V2 markets generated fees"
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
@@ -2510,7 +2508,7 @@ msgstr ""
 #: src/components/TokenCard/TokenCard.tsx
 #: src/pages/Dashboard/DashboardV2.tsx
 #: src/pages/Dashboard/DashboardV2.tsx
-msgid "GMX is the utility and governance token. Accrues 30% and 27% of V1 and V2 markets generated fees, respectively."
+msgid "OPX is the utility and governance token. Accrues 30% and 27% of V1 and V2 markets generated fees, respectively."
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
@@ -2876,8 +2874,8 @@ msgid "LONG LIQ."
 msgstr ""
 
 #: src/components/NetworkDropdown/NetworkDropdown.tsx
-#~ msgid "Language"
-#~ msgstr ""
+msgid "Language"
+msgstr ""
 
 #: src/pages/LeaderboardPage/components/LeaderboardContainer.tsx
 msgid "Last 30 days"
@@ -2899,6 +2897,7 @@ msgid "Launch App"
 msgstr ""
 
 #: src/components/Exchange/UsefulLinks.tsx
+#: src/components/Header/AppHeaderLinks.tsx
 msgid "Leaderboard"
 msgstr ""
 
@@ -3161,11 +3160,11 @@ msgstr ""
 #: src/components/Synthetics/SettleAccruedFundingFeeModal/SettleAccruedFundingFeeRow.tsx
 #: src/components/Synthetics/StatusNotification/FeesSettlementStatusNotification.tsx
 #: src/components/Synthetics/StatusNotification/OrderStatusNotification.tsx
+#: src/components/Synthetics/TVChart/TVChart.tsx
+#: src/components/Synthetics/TVChart/TVChart.tsx
 #: src/components/Synthetics/TableMarketFilter/MarketFilterLongShort.tsx
 #: src/components/Synthetics/TradeBox/TradeBox.tsx
 #: src/components/Synthetics/TradeHistory/TradeHistoryRow/utils/position.ts
-#: src/components/Synthetics/TVChart/TVChart.tsx
-#: src/components/Synthetics/TVChart/TVChart.tsx
 #: src/context/SyntheticsEvents/SyntheticsEventsProvider.tsx
 #: src/context/SyntheticsEvents/SyntheticsEventsProvider.tsx
 #: src/domain/synthetics/orders/utils.tsx
@@ -3191,8 +3190,8 @@ msgid "Long Liq."
 msgstr ""
 
 #: src/components/Exchange/ChartTokenSelector.tsx
-#~ msgid "Long Liquidity"
-#~ msgstr ""
+msgid "Long Liquidity"
+msgstr ""
 
 #: src/components/Synthetics/MarketCard/MarketCard.tsx
 msgid "Long Open Interest"
@@ -3223,10 +3222,9 @@ msgstr ""
 msgid "Loss"
 msgstr ""
 
-#: src/components/Exchange/TradeHistory.js
 #: src/components/Synthetics/AccruedPositionPriceImpactRebateModal/AccruedPositionPriceImpactRebateModal.tsx
-#: src/components/Synthetics/ClaimablePositionPriceImpactRebateModal/ClaimablePositionPriceImpactRebateModal.tsx
 #: src/components/Synthetics/ClaimModal/ClaimModal.tsx
+#: src/components/Synthetics/ClaimablePositionPriceImpactRebateModal/ClaimablePositionPriceImpactRebateModal.tsx
 #: src/components/Synthetics/GmList/GmList.tsx
 msgid "MARKET"
 msgstr ""
@@ -3383,16 +3381,16 @@ msgid "Max Execution Fee buffer below {0}% may result in failed orders."
 msgstr ""
 
 #: src/components/Exchange/ChartTokenSelector.tsx
-#~ msgid "Max In"
-#~ msgstr ""
+msgid "Max In"
+msgstr ""
 
 #: src/components/Exchange/PositionSeller.js
 msgid "Max Leverage without PnL: 100x"
 msgstr ""
 
 #: src/components/Exchange/ChartTokenSelector.tsx
-#~ msgid "Max Out"
-#~ msgstr ""
+msgid "Max Out"
+msgstr ""
 
 #: src/components/Glp/GlpSwap.js
 msgid "Max Pool Capacity"
@@ -4077,7 +4075,6 @@ msgstr ""
 msgid "POSITION"
 msgstr ""
 
-#: src/components/Exchange/TradeHistory.js
 #: src/components/Glp/GlpSwap.js
 #: src/components/Synthetics/GmList/GmList.tsx
 #: src/components/Synthetics/MarketsList/MarketsList.tsx
@@ -4125,6 +4122,8 @@ msgstr ""
 #: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
 #: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
 #: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
+#: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
+#: src/components/Synthetics/TradeBox/TradeBox.tsx
 #: src/components/Synthetics/TradeBox/TradeBox.tsx
 msgid "Pay"
 msgstr ""
@@ -4277,8 +4276,8 @@ msgstr ""
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
 #: src/components/Synthetics/GmList/GmList.tsx
-#: src/components/Synthetics/MarketsList/MarketsList.tsx
 #: src/components/Synthetics/MarketStats/MarketStats.tsx
+#: src/components/Synthetics/MarketsList/MarketsList.tsx
 #: src/components/Synthetics/OrderEditor/OrderEditor.tsx
 #: src/components/Synthetics/OrderEditor/OrderEditor.tsx
 #: src/components/Synthetics/PositionSeller/PositionSeller.tsx
@@ -4556,9 +4555,12 @@ msgstr ""
 #: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
 #: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
 #: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
+#: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
 #: src/components/Synthetics/PositionEditor/PositionEditor.tsx
 #: src/components/Synthetics/PositionSeller/PositionSeller.tsx
 #: src/components/Synthetics/PositionSeller/PositionSeller.tsx
+#: src/components/Synthetics/PositionSeller/PositionSeller.tsx
+#: src/components/Synthetics/TradeBox/TradeBox.tsx
 #: src/components/Synthetics/TradeBox/TradeBox.tsx
 #: src/components/Synthetics/TradeBox/TradeBox.tsx
 msgid "Receive"
@@ -4638,6 +4640,7 @@ msgstr ""
 msgid "Referral code updated!"
 msgstr ""
 
+#: src/components/Header/AppHeaderLinks.tsx
 #: src/pages/Referrals/Referrals.tsx
 #: src/pages/Referrals/Referrals.tsx
 msgid "Referrals"
@@ -4736,10 +4739,6 @@ msgstr ""
 msgid "SHORT LIQ."
 msgstr ""
 
-#: src/components/Exchange/TradeHistory.js
-msgid "SIZE"
-msgstr ""
-
 #: src/domain/synthetics/positions/utils.ts
 msgid "SL"
 msgstr ""
@@ -4768,10 +4767,6 @@ msgstr ""
 msgid "Scan the QR code"
 msgstr ""
 
-#: src/components/SearchInput/SearchInput.tsx
-msgid "Search"
-msgstr ""
-
 #: src/pages/LeaderboardPage/components/LeaderboardAccountsTable.tsx
 #: src/pages/LeaderboardPage/components/LeaderboardPositionsTable.tsx
 msgid "Search Address"
@@ -4786,8 +4781,8 @@ msgid "Search Pool"
 msgstr ""
 
 #: src/components/SearchInput/SearchInput.tsx
-#~ msgid "Search Token"
-#~ msgstr ""
+msgid "Search Token"
+msgstr ""
 
 #: src/components/Synthetics/Claims/filters/ActionFilter.tsx
 #: src/components/Synthetics/TradeHistory/filters/ActionFilter.tsx
@@ -5038,11 +5033,11 @@ msgstr ""
 #: src/components/Synthetics/SettleAccruedFundingFeeModal/SettleAccruedFundingFeeRow.tsx
 #: src/components/Synthetics/StatusNotification/FeesSettlementStatusNotification.tsx
 #: src/components/Synthetics/StatusNotification/OrderStatusNotification.tsx
+#: src/components/Synthetics/TVChart/TVChart.tsx
+#: src/components/Synthetics/TVChart/TVChart.tsx
 #: src/components/Synthetics/TableMarketFilter/MarketFilterLongShort.tsx
 #: src/components/Synthetics/TradeBox/TradeBox.tsx
 #: src/components/Synthetics/TradeHistory/TradeHistoryRow/utils/position.ts
-#: src/components/Synthetics/TVChart/TVChart.tsx
-#: src/components/Synthetics/TVChart/TVChart.tsx
 #: src/context/SyntheticsEvents/SyntheticsEventsProvider.tsx
 #: src/context/SyntheticsEvents/SyntheticsEventsProvider.tsx
 #: src/domain/synthetics/orders/utils.tsx
@@ -5068,8 +5063,8 @@ msgid "Short Liq."
 msgstr ""
 
 #: src/components/Exchange/ChartTokenSelector.tsx
-#~ msgid "Short Liquidity"
-#~ msgstr ""
+msgid "Short Liquidity"
+msgstr ""
 
 #: src/components/Synthetics/MarketCard/MarketCard.tsx
 msgid "Short Open Interest"
@@ -5987,7 +5982,6 @@ msgstr ""
 msgid "Total:"
 msgstr ""
 
-#: src/components/Header/AppHeaderLinks.tsx
 #: src/components/Header/AppHeaderUser.tsx
 #: src/components/Header/AppHeaderUser.tsx
 msgid "Trade"

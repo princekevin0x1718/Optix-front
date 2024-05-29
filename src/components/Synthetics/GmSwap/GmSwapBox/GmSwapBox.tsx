@@ -100,8 +100,8 @@ type Props = {
 };
 
 const OPERATION_LABELS = {
-  [Operation.Deposit]: /*i18n*/ "Buy GM",
-  [Operation.Withdrawal]: /*i18n*/ "Sell GM",
+  [Operation.Deposit]: /*i18n*/ "Buy OPTIX",
+  [Operation.Withdrawal]: /*i18n*/ "Sell OPTIX",
 };
 
 const MODE_LABELS = {
@@ -467,7 +467,7 @@ export function GmSwapBox(p: Props) {
     }
 
     return {
-      text: isDeposit ? t`Buy GM` : t`Sell GM`,
+      text: isDeposit ? t`Buy OPTIX` : t`Sell OPTIX`,
       onSubmit,
     };
   }, [
@@ -740,7 +740,7 @@ export function GmSwapBox(p: Props) {
             helperToast.success(
               <Trans>
                 <div className="inline-flex">
-                  GM:&nbsp;<span>{indexName}</span>
+                OPTIX:&nbsp;<span>{indexName}</span>
                   <span className="subtext gm-toast lh-1">[{poolName}]</span>
                 </div>{" "}
                 <span>selected in order form</span>
@@ -1138,7 +1138,7 @@ function showMarketToast(market) {
   helperToast.success(
     <Trans>
       <div className="inline-flex">
-        GM:&nbsp;<span>{indexName}</span>
+      OPTIX:&nbsp;<span>{indexName}</span>
         <span className="subtext gm-toast">[{poolName}]</span>
       </div>{" "}
       <span>selected in order form</span>

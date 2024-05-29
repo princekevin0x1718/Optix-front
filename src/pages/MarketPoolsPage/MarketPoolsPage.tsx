@@ -69,7 +69,7 @@ export function MarketPoolsPage() {
           isTop
           subtitle={
             <Trans>
-              Purchase <ExternalLink href="https://docs.gmx.io/docs/providing-liquidity/v2">GM Tokens</ExternalLink> to
+              Purchase <ExternalLink href="https://docs.gmx.io/docs/providing-liquidity/v2">OPTIX Tokens</ExternalLink> to
               earn fees from swaps and leverage trading.
             </Trans>
           }

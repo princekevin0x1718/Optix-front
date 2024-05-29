@@ -54,45 +54,45 @@ function getLabel(pageKey: LeaderboardPageKey) {
   }
 }
 
-export function LeaderboardNavigation() {
-  const pageKey = useLeaderboardPageKey();
-  const navigationItems = useMemo(() => {
-    const items: LeaderboardNavigationItem[] = LEADERBOARD_PAGES_ORDER.map((key) => LEADERBOARD_PAGES[key])
-      .filter((page) => !page.isCompetition || page.enabled)
-      .map((page) => {
-        return {
-          key: page.key,
-          label: getLabel(page.key),
-          chip: getChip(page.key),
-          isSelected: page.key === pageKey,
-          isCompetition: page.key !== "leaderboard",
-          href: page.href,
-          chainId: page.isCompetition ? page.chainId : undefined,
-          timeframe: page.timeframe,
-        };
-      })
-      .sort((a, b) => {
-        const sortingPointA = sortingPoints[a.chip];
-        const sortingPointB = sortingPoints[b.chip];
+// export function LeaderboardNavigation() {
+//   const pageKey = useLeaderboardPageKey();
+//   const navigationItems = useMemo(() => {
+//     const items: LeaderboardNavigationItem[] = LEADERBOARD_PAGES_ORDER.map((key) => LEADERBOARD_PAGES[key])
+//       .filter((page) => !page.isCompetition || page.enabled)
+//       .map((page) => {
+//         return {
+//           key: page.key,
+//           label: getLabel(page.key),
+//           chip: getChip(page.key),
+//           isSelected: page.key === pageKey,
+//           isCompetition: page.key !== "leaderboard",
+//           href: page.href,
+//           chainId: page.isCompetition ? page.chainId : undefined,
+//           timeframe: page.timeframe,
+//         };
+//       })
+//       .sort((a, b) => {
+//         const sortingPointA = sortingPoints[a.chip];
+//         const sortingPointB = sortingPoints[b.chip];
 
-        if (sortingPointA === sortingPointB) {
-          return b.timeframe.from - a.timeframe.from;
-        }
+//         if (sortingPointA === sortingPointB) {
+//           return b.timeframe.from - a.timeframe.from;
+//         }
 
-        return sortingPointA - sortingPointB;
-      });
+//         return sortingPointA - sortingPointB;
+//       });
 
-    return items;
-  }, [pageKey]);
+//     return items;
+//   }, [pageKey]);
 
-  return (
-    <div className="LeaderboardNavigation default-container-mobile-one-sided">
-      {navigationItems.map((item) => (
-        <NavigationItem item={item} key={item.key} />
-      ))}
-    </div>
-  );
-}
+//   return (
+//     <div className="LeaderboardNavigation default-container-mobile-one-sided">
+//       {navigationItems.map((item) => (
+//         <NavigationItem item={item} key={item.key} />
+//       ))}
+//     </div>
+//   );
+// }
 
 function NavigationItem({ item }: { item: LeaderboardNavigationItem }) {
   const chip = useMemo(() => {

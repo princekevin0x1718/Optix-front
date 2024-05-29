@@ -27,7 +27,8 @@ export default function Footer({ showRedirectModal, redirectPopupTimestamp }: Pr
             );
           })}
         </div>
-        <div style={{maxWidth: "130rem", margin: "auto"}}>
+        <div style={{maxWidth: "60%", margin: "auto"}}>
+        {/* <div style={{maxWidth: "130rem", margin: "auto"}}> */}
           <div style={{borderTop: "solid 1px #434359", paddingBottom: "2rem"}}></div>
           <span className="Footer-links-optix">
             Optix 2024 All Rights Reserved

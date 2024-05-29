@@ -39,7 +39,7 @@ function MarketsListDesktop({ chainId, indexTokensStats }: { chainId: number; in
   return (
     <div className="token-table-wrapper App-card">
       <div className="App-card-title">
-        <Trans>GM Pools</Trans> <img src={getIcon(chainId, "network")} width="16" alt="Network Icon" />
+        <Trans>OPTIX Pools</Trans> <img src={getIcon(chainId, "network")} width="16" alt="Network Icon" />
       </div>
       <div className="App-card-divider"></div>
       <table className="token-table">
@@ -80,7 +80,7 @@ function MarketsListDesktop({ chainId, indexTokensStats }: { chainId: number; in
 function MarketsListMobile({ indexTokensStats }: { indexTokensStats: IndexTokenStat[] }) {
   return (
     <>
-      <PageTitle title={t`GM Pools`} />
+      <PageTitle title={t`OPTIX Pools`} />
       <div className="token-grid">
         {indexTokensStats.map((stats, index) => {
           const tooltipPositionNetFee = index < indexTokensStats.length / 2 ? "bottom-end" : "top-end";

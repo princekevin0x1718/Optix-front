@@ -32,7 +32,7 @@ function renderMarketName(market?: MarketInfo) {
 
   return (
     <>
-      GM: {marketName}
+      OPTIX: {marketName}
       <span className="items-top">
         <span className="subtext">[{poolName}]</span>
       </span>

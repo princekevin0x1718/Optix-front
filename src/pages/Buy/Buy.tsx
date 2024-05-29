@@ -11,10 +11,10 @@ import "./Buy.css";
 
 export default function BuyGMXGLP() {
   return (
-    <SEO title={getPageTitle(t`Buy GLP or GMX`)}>
+    <SEO title={getPageTitle(t`Buy OPTIX or OPX`)}>
       <div className="BuyGMXGLP page-layout">
         <div className="BuyGMXGLP-container default-container">
-          <PageTitle showNetworkIcon={false} isTop title={t`Protocol Tokens`} />
+          <PageTitle showNetworkIcon={false} isTop title={t`Optix Protocol Tokens`} subtitle={t`Buy OPX and OPTIX and earn rewards!`} />
           <TokenCard />
         </div>
         <Footer />
