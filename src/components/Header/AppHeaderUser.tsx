@@ -17,6 +17,9 @@ import useWallet from "lib/wallets/useWallet";
 import { useConnectModal } from "@rainbow-me/rainbowkit";
 import { useTradePageVersion } from "lib/useTradePageVersion";
 import LanguageModalButton from "components/NetworkDropdown/LanguageModalButton";
+import { RiMenuLine } from "react-icons/ri";
+import { FaTimes } from "react-icons/fa";
+import { getInclusionDirectives } from "@apollo/client/utilities";
 
 type Props = {
   openSettings: () => void;

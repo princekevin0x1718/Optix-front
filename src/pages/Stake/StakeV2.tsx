@@ -1873,7 +1873,7 @@ export default function StakeV2() {
       />
       <div className="StakeV2-content">
         <div className="StakeV2-cards">
-          <div className="App-card StakeV2-gmx-card">
+          <div className="App-card StakeV2-gmx-card" style={{width: '100%', maxWidth: '100%', overflow: 'auto'}}>
             <div className="App-card-title">
               <div className="inline-items-center" style={{display: 'flex'}}>
                 <div className="App-card-title-mark-icon">

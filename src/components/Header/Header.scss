@@ -350,3 +350,48 @@
     background: #0e0f1f;
   }
 }
+
+.connect-wallet-btn-drawer {
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+  padding: 1rem 1.6rem !important;
+}
+
+.drawer-mobile {
+  height: 100%;
+  position: relative;
+}
+
+.footer-logo {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 9rem;
+}
+
+.footer-logo>img {
+  width: 37%;
+  margin: auto;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 4rem;
+  margin: auto;
+  /* left: 15%; */
+  width: 100%;
+}
+
+.footer-social-link a {
+
+}
+
+.mobile-exchange {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 15rem;
+}

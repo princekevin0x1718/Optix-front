@@ -1380,6 +1380,10 @@ button.App-button {
   .App-card-long-content {
     grid-template-columns: 1fr 1fr;
   }
+
+  .App-header-trade-link {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {

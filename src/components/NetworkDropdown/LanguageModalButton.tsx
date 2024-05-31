@@ -34,7 +34,7 @@ export default function LanguageModalButton () {
     }, [currentLanguage.current])
 
     return (
-        <div className="network-dropdown" style={{marginRight: "2.4rem"}} onClick={() => setActiveModal("LANGUAGE")}>
+        <div id="language" className="network-dropdown" style={{marginRight: "2.4rem"}} onClick={() => setActiveModal("LANGUAGE")}>
             <button className="transparent" style={{paddingRight: "0.4rem"}}>
                 <img className="network-dropdown-icon" style={{borderRadius: 0}} src={image} alt={"selectorLabel"} />
             </button>

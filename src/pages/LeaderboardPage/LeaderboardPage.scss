@@ -477,7 +477,7 @@ $tabs-threshold: 990px;
   width: 100%;
   overflow: visible;
   background-color: #16182e;
-  padding-bottom: 10px;
+  // padding-bottom: 10px;
 
   .text-right {
     text-align: right;
@@ -494,14 +494,24 @@ $tabs-threshold: 990px;
 }
 
 .TableBox__head {
-  background-color: #16182e;
+  background-color: #292B3B;
   padding: 1rem 1.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   border-bottom: 1px solid rgb(255 255 255 / 8%);
 }
 
+.TableBox__head>.Search-input {
+  width: 30rem;
+}
+
+@media (max-width: 530px) {
+  .TableBox__head>.Search-input {
+    width: 100% !important;
+  }
+}
+
 .TableBox__footer {
-  background-color: #16182e;
+  background-color: #292B3B;
   padding: 1rem 1.6rem;
   border-radius: 0 0 0.4rem 0.4rem;
   border-top: 1px solid rgb(255 255 255 / 8%);

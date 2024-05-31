@@ -205,6 +205,14 @@
     margin-left: 0;
   }
 }
+
+@media (max-width: 500px) {
+  .network-dropdown > button:nth-child(2) {
+    padding: 0 0.5rem;
+    display: none;
+  }
+}
+
 @media (max-width: 450px) {
   .App-header-network {
     margin-left: 0.6rem;
@@ -212,10 +220,14 @@
   .App-header-language {
     margin-left: 0;
   }
-  .network-dropdown > button {
-    padding: 0 0.5rem;
-  }
+
   .network-dropdown.homepage-header > button {
     padding: 0 0.8rem;
   }
+  #language {
+    display: none;
+  }
+  /* .network-dropdown {
+    display: none;
+  } */
 }
