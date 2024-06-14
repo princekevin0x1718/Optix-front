@@ -16,6 +16,8 @@ import { useLocalStorageSerializeKey } from "lib/localStorage";
 import { formatAmount, numberWithCommas } from "lib/numbers";
 import getLiquidationPrice from "lib/positions/getLiquidationPrice";
 import ChartTokenSelector from "./ChartTokenSelector";
+import { useTradeType } from "lib/useTradeType";
+import OptionsContainer from "components/OptionsContainer/OptionsContainer";
 
 const PRICE_LINE_TEXT_WIDTH = 15;
 
@@ -318,6 +320,8 @@ export default function ExchangeTVChart(props) {
 
   const priceDecimal = getPriceDecimals(chainId, chartToken?.symbol);
 
+  const [tradeType] = useTradeType();
+
   return (
     <div className="ExchangeChart tv" ref={ref}>
       <div className="ExchangeChart-header">
@@ -367,7 +371,7 @@ export default function ExchangeTVChart(props) {
           <VersionSwitch />
         </div>
       </div>
-      <div className="ExchangeChart-bottom App-box App-box-border">
+      {tradeType === 'Perp' && <div className="ExchangeChart-bottom App-box App-box-border">
         {availableNetworksForChart.includes(chainId) && chartToken.symbol && chainId ? (
           <TVChartContainer
             chartLines={chartLines}
@@ -384,7 +388,12 @@ export default function ExchangeTVChart(props) {
         ) : (
           <p className="ExchangeChart-error">Sorry, chart is not supported on this network yet.</p>
         )}
-      </div>
+      </div>}
+      {
+        tradeType === 'Options' && <div className="ExchangeChart-bottom App-box App-box-border">
+          <OptionsContainer />
+        </div>
+      }
     </div>
   );
 }

@@ -395,3 +395,57 @@
   width: 100%;
   bottom: 15rem;
 }
+
+.header-trade-btn {
+  background: linear-gradient(to right, #451EC1, #6030F8);
+  color: #ffffff;
+  padding: 1.2rem;
+  border-radius: 3px;
+  font-size: small;
+  cursor: pointer;
+}
+
+.header-trade-panel {
+  padding: 2rem;
+  background: #292B3B !important;
+  border: 1px solid #32344c;
+  border-radius: 0.4rem;
+  top: 5.5rem;
+  display: flex;
+}
+
+.dropdown-menu {
+  text-align: left;
+  display: none;
+  position: absolute;
+  background: #252734;
+  padding: 10px;
+  top: 85%;
+  left: 0;
+  border: solid 1px #32344c;
+  border-radius: 3px;
+  z-index: 100;
+}
+
+.dropdown-menu div {
+  padding: 0.5rem 0rem;
+  cursor: pointer;
+}
+
+#trade:hover .dropdown-menu 
+// .dropdown-menu:hover
+{
+  display: block;
+}
+
+.dropdown-menu:hover {
+  display: block;
+}
+
+.dropdown-menu div:hover {
+  display: block;
+}
+
+#trade {
+  position: relative;
+}

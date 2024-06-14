@@ -20,6 +20,8 @@ import LanguageModalButton from "components/NetworkDropdown/LanguageModalButton"
 import { RiMenuLine } from "react-icons/ri";
 import { FaTimes } from "react-icons/fa";
 import { getInclusionDirectives } from "@apollo/client/utilities";
+import { Popover } from "@headlessui/react";
+import { useTradeType } from "lib/useTradeType";
 
 type Props = {
   openSettings: () => void;
@@ -64,6 +66,7 @@ export function AppHeaderUser({ openSettings, small, disconnectAccountAndCloseSe
   const { openConnectModal } = useConnectModal();
   const showConnectionOptions = !isHomeSite();
   const [tradePageVersion] = useTradePageVersion();
+  const [tradeType, setTradeType] = useTradeType();
 
   const tradeLink = tradePageVersion === 2 ? "/trade" : "/v1";
 
@@ -73,9 +76,36 @@ export function AppHeaderUser({ openSettings, small, disconnectAccountAndCloseSe
     return (
       <div className="App-header-user">
         <div className={cx("App-header-trade-link", { "homepage-header": isHomeSite() })}>
-          <HeaderLink className="default-btn" to={tradeLink!} showRedirectModal={showRedirectModal}>
+          {/* <Popover>
+            {({open, close}) => {
+              return (<>
+                <Popover.Button as="div">
+                  <div className="header-trade-btn">Trade</div>
+                </Popover.Button>
+                <Popover.Panel as="div" className={'header-trade-panel'} style={{ position: 'absolute' }}>
+                  <div className={"VersionSwitch"}>
+                      <div
+                        className={cx("VersionSwitch-option v1", {active: tradeType === 'Perp'})}
+                        // { active: currentVersion === 1 })}
+                        onClick={() => {setTradeType('Perp'); close()}}
+                      >
+                        Perp
+                      </div>
+                      <div
+                        className={cx("VersionSwitch-option v2", {active: tradeType === 'Options'})}
+                        onClick={() => {setTradeType('Options'); close()}}
+                      >
+                        Options
+                      </div>
+                  </div>
+                </Popover.Panel>
+              </>)
+            }}
+          </Popover> */}
+
+          {/* <HeaderLink className="default-btn" to={tradeLink!} showRedirectModal={showRedirectModal}>
             {isHomeSite() ? <Trans>Launch App</Trans> : <Trans>Trade</Trans>}
-          </HeaderLink>
+          </HeaderLink> */}
         </div>
 
         {showConnectionOptions && openConnectModal ? (
@@ -103,9 +133,21 @@ export function AppHeaderUser({ openSettings, small, disconnectAccountAndCloseSe
   return (
     <div className="App-header-user">
       <div className={cx("App-header-trade-link")}>
-        <HeaderLink className="default-btn" to={tradeLink!} showRedirectModal={showRedirectModal}>
+        <Popover>
+          <Popover.Button as="div">
+            <button className={cx("chart-token-selector", { "chart-token-label--active": open })}>
+              <span className="chart-token-selector--current inline-items-center">
+                Trade
+              </span>
+            </button>
+          </Popover.Button>
+          <Popover.Panel as="div">
+            <p>fdsa</p>
+          </Popover.Panel>
+        </Popover>
+        {/* <HeaderLink className="default-btn" to={tradeLink!} showRedirectModal={showRedirectModal}>
           {isHomeSite() ? <Trans>Launch App</Trans> : <Trans>Trade</Trans>}
-        </HeaderLink>
+        </HeaderLink> */}
       </div>
 
       {showConnectionOptions ? (

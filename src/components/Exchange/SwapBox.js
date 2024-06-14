@@ -88,6 +88,7 @@ import TokenWithIcon from "components/TokenIcon/TokenWithIcon";
 import useIsMetamaskMobile from "lib/wallets/useIsMetamaskMobile";
 import { MAX_METAMASK_MOBILE_DECIMALS } from "config/ui";
 import { useHistory } from "react-router-dom";
+import Dropdown from "./Dropdown";
 
 const SWAP_ICONS = {
   [LONG]: longImg,
@@ -1971,11 +1972,17 @@ export default function SwapBox(props) {
               className="Exchange-swap-option-tabs"
             />
             {flagOrdersEnabled && (
-              <Tab
+              // <Tab
+              //   options={orderOptions}
+              //   optionLabels={ORDER_OPTION_LABELS}
+              //   className="Exchange-swap-order-type-tabs"
+              //   type="inline"
+              //   option={orderOption}
+              //   onChange={onOrderOptionChange}
+              // />
+              <Dropdown
                 options={orderOptions}
                 optionLabels={ORDER_OPTION_LABELS}
-                className="Exchange-swap-order-type-tabs"
-                type="inline"
                 option={orderOption}
                 onChange={onOrderOptionChange}
               />

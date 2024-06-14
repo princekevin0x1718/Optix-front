@@ -8,9 +8,10 @@ import {
   useContext,
   useEffect,
   useMemo,
+  useState,
 } from "react";
 import { getIsSyntheticsSupported } from "config/features";
-import { REDIRECT_POPUP_TIMESTAMP_KEY, TRADE_LINK_KEY } from "config/localStorage";
+import { REDIRECT_POPUP_TIMESTAMP_KEY, TRADE_LINK_KEY, TRADE_TYPE_KEY } from "config/localStorage";
 import { useChainId } from "lib/chains";
 import { useLocalStorageSerializeKey } from "lib/localStorage";
 import { PendingTransaction, SetPendingTransactions } from "domain/legacy";
@@ -26,7 +27,25 @@ type GlobalContextType = null | {
 
   redirectPopupTimestamp: number | undefined;
   setRedirectPopupTimestamp: Dispatch<SetStateAction<number | undefined>>;
+
+  tradeType: string | undefined;
+  setTradeType: (value: string) => void;
+
+  cptype: string | undefined;
+  setCpType: (value: string) => void;
 };
+
+function isEmpty<T>(value: T | null | undefined): boolean {
+  if (value === null || value === undefined) return true; 
+
+  if (typeof value === "string" && value.trim().length === 0) return true; 
+  
+  if (Array.isArray(value) && value.length === 0) return true; 
+  
+  if (typeof value === "object" && Object.keys(value as object).length === 0) return true;
+
+  return false;
+}
 
 const context = createContext<GlobalContextType>(null);
 
@@ -64,6 +83,16 @@ export const GlobalStateProvider = memo(
       }
     );
 
+    const { chainId } = useChainId();
+
+    const [tradeType, setTradeType] = useLocalStorageSerializeKey(
+      [chainId, TRADE_TYPE_KEY],
+      isEmpty(localStorage.getItem(JSON.stringify([chainId, TRADE_TYPE_KEY]))) 
+        ? 'Perp' 
+        : (localStorage.getItem(JSON.stringify([chainId, TRADE_TYPE_KEY])) ?? 'Perp')
+    );
+    const [cptype, setCpType] = useState('none');
+
     const value = useMemo(
       () => ({
         tradePageVersion,
@@ -72,6 +101,10 @@ export const GlobalStateProvider = memo(
         setPendingTxns,
         redirectPopupTimestamp,
         setRedirectPopupTimestamp,
+        tradeType,
+        setTradeType,
+        cptype,
+        setCpType
       }),
       [
         tradePageVersion,
@@ -80,6 +113,10 @@ export const GlobalStateProvider = memo(
         setPendingTxns,
         redirectPopupTimestamp,
         setRedirectPopupTimestamp,
+        tradeType,
+        setTradeType,
+        cptype,
+        setCpType
       ]
     );
 

@@ -114,6 +114,9 @@ import { helperToast } from "lib/helperToast";
 import { useCursorInside } from "lib/useCursorInside";
 import { useHistory } from "react-router-dom";
 import "./TradeBox.scss";
+import Dropdown from "components/Exchange/Dropdown";
+import CPpanel from "components/CPpanel/CPpanel";
+import { useCpType } from "lib/useCpType";
 
 export type Props = {
   allowedSlippage: number;
@@ -1295,10 +1298,12 @@ export function TradeBox(p: Props) {
     buttonContent
   );
 
+  const [cptype, setCpType] = useCpType();
+
   return (
     <>
       <div>
-        <div className={`App-box SwapBox`}>
+        {cptype === 'none' && <div className={`App-box SwapBox`}>
           <Tab
             icons={tradeTypeIcons}
             options={Object.values(TradeType)}
@@ -1308,11 +1313,17 @@ export function TradeBox(p: Props) {
             className="SwapBox-option-tabs"
           />
 
-          <Tab
+          {/* <Tab
             options={availalbleTradeModes}
             optionLabels={tradeModeLabels}
             className="SwapBox-asset-options-tabs"
             type="inline"
+            option={tradeMode}
+            onChange={onSelectTradeMode}
+          /> */}
+          <Dropdown
+            options={availalbleTradeModes}
+            optionLabels={tradeModeLabels}
             option={tradeMode}
             onChange={onSelectTradeMode}
           />
@@ -1370,7 +1381,10 @@ export function TradeBox(p: Props) {
             </ExchangeInfo>
             <div className="Exchange-swap-button-container">{button}</div>
           </form>
-        </div>
+        </div>}
+        {
+          cptype !== 'none' && <CPpanel />
+        }
       </div>
 
       {isSwap && <SwapCard maxLiquidityUsd={swapOutLiquidity} fromToken={fromToken} toToken={toToken} />}

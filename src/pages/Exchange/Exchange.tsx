@@ -57,6 +57,8 @@ import useWallet from "lib/wallets/useWallet";
 import useV1TradeParamsProcessor from "domain/trade/useV1TradeParamsProcessor";
 import { useSettings } from "context/SettingsContext/SettingsContextProvider";
 import { usePendingTxns } from "lib/usePendingTxns";
+import { useCpType } from "lib/useCpType";
+import CPpanel from "components/CPpanel/CPpanel";
 const { AddressZero } = ethers.constants;
 
 const PENDING_POSITION_VALID_DURATION = 600 * 1000;
@@ -1026,6 +1028,8 @@ export const Exchange = forwardRef(
       );
     };
 
+    const [cptype, setCpType] = useCpType();
+
     return (
       <div className="Exchange page-layout">
         {showBanner && <ExchangeBanner hideBanner={hideBanner} />}
@@ -1035,7 +1039,7 @@ export const Exchange = forwardRef(
             <div className="Exchange-lists large">{getListSection()}</div>
           </div>
           <div className="Exchange-right">
-            {getIsV1Supported(chainId) && (
+            {getIsV1Supported(chainId) && cptype === 'none' && (
               <SwapBox
                 pendingPositions={pendingPositions}
                 setPendingPositions={setPendingPositions}
@@ -1085,7 +1089,9 @@ export const Exchange = forwardRef(
                 shortCollateralAddress={shortCollateralAddress}
               />
             )}
-
+            {
+              cptype !== 'none' && <CPpanel />
+            }
             <div className="Exchange-wallet-tokens">
               <div className="Exchange-wallet-tokens-content">
                 <ExchangeWalletTokens tokens={tokens} infoTokens={infoTokens} onSelectToken={onSelectWalletToken} />

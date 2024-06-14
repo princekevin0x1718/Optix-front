@@ -21,6 +21,7 @@ export const LEVERAGE_OPTION_KEY = "leverage-option";
 export const LEVERAGE_ENABLED_KEY = "leverage-enabled";
 export const KEEP_LEVERAGE_FOR_DECREASE_KEY = "Exchange-keep-leverage";
 export const TRADE_LINK_KEY = "trade-link";
+export const TRADE_TYPE_KEY = "trade-type";
 export const SHOW_DEBUG_VALUES_KEY = "show-debug-values";
 export const ORACLE_KEEPER_INSTANCES_CONFIG_KEY = "oracle-keeper-instances-config";
 

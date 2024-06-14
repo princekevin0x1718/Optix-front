@@ -26,10 +26,13 @@ import { formatAmount, formatUsd, numberWithCommas } from "lib/numbers";
 import { useEffect, useMemo, useState } from "react";
 import ChartTokenSelector from "../ChartTokenSelector/ChartTokenSelector";
 import "./TVChart.scss";
+import { useTradeType } from "lib/useTradeType";
+import OptionsContainer from "components/OptionsContainer/OptionsContainer";
 
 const DEFAULT_PERIOD = "5m";
 
 export function TVChart() {
+  const [tradeType, setTradeType] = useTradeType();
   const chartToken = useSelector(selectChartToken);
   const ordersInfo = useOrdersInfoData();
   const tokensData = useTokensData();
@@ -72,7 +75,7 @@ export function TVChart() {
           positionOrder.marketInfo &&
           positionOrder.triggerPrice &&
           convertTokenAddress(chainId, positionOrder.marketInfo.indexTokenAddress, "wrapped") ===
-            convertTokenAddress(chainId, chartTokenAddress, "wrapped")
+          convertTokenAddress(chainId, chartTokenAddress, "wrapped")
         );
       })
       .map((order) => {
@@ -94,7 +97,7 @@ export function TVChart() {
       if (
         position.marketInfo &&
         convertTokenAddress(chainId, position.marketInfo.indexTokenAddress, "wrapped") ===
-          convertTokenAddress(chainId, chartTokenAddress, "wrapped")
+        convertTokenAddress(chainId, chartTokenAddress, "wrapped")
       ) {
         const longOrShortText = position.isLong ? t`Long` : t`Short`;
         const tokenSymbol = getTokenData(tokensData, position.marketInfo?.indexTokenAddress, "native")?.symbol;
@@ -141,14 +144,14 @@ export function TVChart() {
     () =>
       chartToken
         ? {
-            symbol: chartToken.symbol,
-            ...chartToken.prices,
-          }
+          symbol: chartToken.symbol,
+          ...chartToken.prices,
+        }
         : {
-            symbol: "",
-            minPrice: BigNumber.from(0),
-            maxPrice: BigNumber.from(0),
-          },
+          symbol: "",
+          minPrice: BigNumber.from(0),
+          maxPrice: BigNumber.from(0),
+        },
     [chartToken]
   );
 
@@ -204,9 +207,9 @@ export function TVChart() {
           <VersionSwitch />
         </div>
       </div>
-      <div className="ExchangeChart-bottom App-box App-box-border">
-        {chartToken && (
-          <TVChartContainer
+      {tradeType === 'Perp' &&
+        <div className="ExchangeChart-bottom App-box App-box-border">
+          {chartToken && (<TVChartContainer
             chartLines={chartLines}
             symbol={chartToken.symbol}
             chainId={chainId}
@@ -216,9 +219,13 @@ export function TVChart() {
             setPeriod={setPeriod}
             chartToken={chartTokenProp}
             supportedResolutions={SUPPORTED_RESOLUTIONS_V2}
-          />
-        )}
-      </div>
+          />)}
+        </div>}
+      {tradeType === 'Options' && <div className="">
+        <div className="ExchangeChart-bottom App-box App-box-border">
+          <OptionsContainer />
+        </div>
+      </div>}
     </div>
   );
 }

@@ -12,6 +12,9 @@ import Button from "components/Button/Button";
 import { useConnectModal } from "@rainbow-me/rainbowkit";
 import logoImg from "img/ic_optix_footer_logo.svg";
 import { SOCIAL_LINKS } from "components/Footer/constants";
+import { Popover } from "@headlessui/react";
+import { useTradeType } from "lib/useTradeType";
+import cx from 'classnames';
 
 type Props = {
   small?: boolean;
@@ -21,6 +24,7 @@ type Props = {
 };
 
 export function AppHeaderLinks({ small, openSettings, clickCloseIcon, showRedirectModal }: Props) {
+  const [tradeType, setTradeType] = useTradeType();
   const { openConnectModal } = useConnectModal();
   const isLeaderboardActive = useCallback(
     (match, location) => Boolean(match) || location.pathname.startsWith("/competitions"),
@@ -61,10 +65,16 @@ export function AppHeaderLinks({ small, openSettings, clickCloseIcon, showRedire
           </div>
         </div>
       )}
-      <div className="App-header-link-container" style={{textAlign: 'end'}}>
+      <div className="App-header-link-container" id="trade" style={{textAlign: 'end'}}>
         <HeaderLink to="/trade" showRedirectModal={showRedirectModal}>
           <Trans>Trade</Trans>
         </HeaderLink>
+        <div className="dropdown-menu">
+          <div onClick={() => setTradeType('Perp')}>Perp</div>
+          <div onClick={() => setTradeType('Options')}>
+            Options
+          </div>
+        </div>
       </div>
       <div className="App-header-link-container" style={{textAlign: 'end'}}>
         <HeaderLink to="/dashboard" showRedirectModal={showRedirectModal}>
