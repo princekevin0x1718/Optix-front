@@ -59,6 +59,8 @@ import { useSettings } from "context/SettingsContext/SettingsContextProvider";
 import { usePendingTxns } from "lib/usePendingTxns";
 import { useCpType } from "lib/useCpType";
 import CPpanel from "components/CPpanel/CPpanel";
+import { useTradeType } from "lib/useTradeType";
+import CPBlankpanel from "components/CPpanel/CPBlankpanel";
 const { AddressZero } = ethers.constants;
 
 const PENDING_POSITION_VALID_DURATION = 600 * 1000;
@@ -1029,6 +1031,7 @@ export const Exchange = forwardRef(
     };
 
     const [cptype, setCpType] = useCpType();
+    const [tradeType, setTradeType] = useTradeType();
 
     return (
       <div className="Exchange page-layout">
@@ -1039,7 +1042,7 @@ export const Exchange = forwardRef(
             <div className="Exchange-lists large">{getListSection()}</div>
           </div>
           <div className="Exchange-right">
-            {getIsV1Supported(chainId) && cptype === 'none' && (
+            {getIsV1Supported(chainId) && tradeType === 'Perp' && (
               <SwapBox
                 pendingPositions={pendingPositions}
                 setPendingPositions={setPendingPositions}
@@ -1091,6 +1094,9 @@ export const Exchange = forwardRef(
             )}
             {
               cptype !== 'none' && <CPpanel />
+            }
+            {
+              tradeType === 'Options' && cptype === 'none' && <CPBlankpanel />
             }
             <div className="Exchange-wallet-tokens">
               <div className="Exchange-wallet-tokens-content">

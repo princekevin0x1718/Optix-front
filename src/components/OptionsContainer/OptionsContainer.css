@@ -118,7 +118,8 @@
     /* padding-top: 0.5rem;
     padding-bottom: 0.5rem; */
     width: 45%;
-    min-width: 65rem;
+    /* min-width: 65rem; */
+    min-width: 464px;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -136,6 +137,7 @@
 
 .options-panel-container-calls div {
     width: 14%;
+    background-color: #292b3b;
 }
 
 .options-panel-container-header {
@@ -152,7 +154,8 @@
 
 .options-panel-container-header-type div:first-child {
     width: 45%;
-    min-width: 65rem;
+    /* min-width: 65rem; */
+    min-width: 464px;
     padding: 0.5rem 0.2rem;
     justify-content: center;
     display: flex;
@@ -164,7 +167,8 @@
 
 .options-panel-container-header-type div:last-child {
     width: 45%;
-    min-width: 65rem;
+    /* min-width: 65rem; */
+    min-width: 464px;
     padding: 0.5rem 0.2rem;
     justify-content: center;
     display: flex;
@@ -176,7 +180,8 @@
 
 .options-panel-container-header-type div:nth-child(2) {
     width: 10%;
-    min-width: 15rem;
+    /* min-width: 15rem; */
+    min-width: 103px;
     display: flex;
     justify-content: center;
     border-top: solid 0.1px #434359;
@@ -193,7 +198,8 @@
     padding: 0.5rem 2.2rem;
     border: solid 0.1px #434359;
     width: 10%;
-    min-width: 15rem;
+    /* min-width: 15rem; */
+    min-width: 103px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,8 +212,9 @@
     border-bottom: solid 0.1px #434359;
     align-items: center;
     width: 45%;
-    min-width: 65rem;
+    /* min-width: 65rem; */
     /* align-items: stretch; */
+    min-width: 464px;
     display: flex;
     justify-content: space-between;
     padding-left: 0.4rem;
@@ -236,7 +243,7 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     width: 45%;
-    min-width: 65rem;
+    min-width: 464px;
     align-items: stretch;
     display: flex;
     justify-content: space-between;
@@ -261,7 +268,8 @@
     border-left: solid 0.1px #434359;
     border-right: solid 0.1px #434359;
     width: 10%;
-    min-width: 15rem;
+    /* min-width: 15rem; */
+    min-width: 103px;
     display: flex;
     justify-content: center;
     color: #ffffff;
@@ -271,7 +279,8 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     width: 45%;
-    min-width: 65rem;
+    /* min-width: 65rem; */
+    min-width: 464px;
     align-items: stretch;
     display: flex;
     justify-content: space-between;
@@ -332,9 +341,10 @@
 
 .options-panel-container-strike-center {
     position: absolute;
-    left: 62rem;
+    /* left: 62rem; */
     display: flex;
     width: 20rem;
+    left: calc(50% - 10rem);
     /* text-align: center; */
     justify-content: center;
     height: 5rem;
@@ -349,7 +359,8 @@
 }
 
 .options-panel-container-divider-line {
-    min-width: 145rem;
+    /* min-width: 145rem; */
+    min-width: 1031px;
     width: 100%;
     margin: auto 0;
     border-top: solid 0.1px #434359;

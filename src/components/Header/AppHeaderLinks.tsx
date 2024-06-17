@@ -30,6 +30,25 @@ export function AppHeaderLinks({ small, openSettings, clickCloseIcon, showRedire
     (match, location) => Boolean(match) || location.pathname.startsWith("/competitions"),
     []
   );
+
+  const handleTradeClick = () => {
+    console.log('element')
+    const element = document.getElementById('dropdown-menu') as HTMLElement | null;
+    const index = element?.className.indexOf('active');
+
+    if (index !== -1) {
+        // Removing 'active' from className if it exists
+        if (element) {
+            element.className = element.className.replace('active', '');
+        }
+    } else {
+        // Adding 'active' to className if it doesn't exist
+        if (element) {
+            element.className += ' active';
+        }
+    }
+  }
+
   return (
     <div className="App-header-links drawer-mobile">
       {small && (
@@ -65,17 +84,27 @@ export function AppHeaderLinks({ small, openSettings, clickCloseIcon, showRedire
           </div>
         </div>
       )}
-      <div className="App-header-link-container" id="trade" style={{textAlign: 'end'}}>
+      <div className="App-header-link-container" id="trade" style={{textAlign: 'end'}} onClick={handleTradeClick}>
         <HeaderLink to="/trade" showRedirectModal={showRedirectModal}>
           <Trans>Trade</Trans>
         </HeaderLink>
-        <div className="dropdown-menu">
+        <div className="dropdown-menu" id="dropdown-menu">
           <div onClick={() => setTradeType('Perp')}>Perp</div>
           <div onClick={() => setTradeType('Options')}>
             Options
           </div>
         </div>
       </div>
+      {small && <div className="App-header-link-container" style={{textAlign: 'end'}} onClick={() => setTradeType('Perp')}>
+        <HeaderLink to="/trade" showRedirectModal={showRedirectModal}>
+          <Trans>Perp</Trans>
+        </HeaderLink>
+      </div>}
+      {small && <div className="App-header-link-container" style={{textAlign: 'end'}} onClick={() => setTradeType('Options')}>
+        <HeaderLink to="/trade" showRedirectModal={showRedirectModal}>
+          <Trans>Options</Trans>
+        </HeaderLink>
+      </div>}
       <div className="App-header-link-container" style={{textAlign: 'end'}}>
         <HeaderLink to="/dashboard" showRedirectModal={showRedirectModal}>
           <Trans>Dashboard</Trans>

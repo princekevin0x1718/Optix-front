@@ -117,6 +117,8 @@ import "./TradeBox.scss";
 import Dropdown from "components/Exchange/Dropdown";
 import CPpanel from "components/CPpanel/CPpanel";
 import { useCpType } from "lib/useCpType";
+import { useTradeType } from "lib/useTradeType";
+import CPBlankpanel from "components/CPpanel/CPBlankpanel";
 
 export type Props = {
   allowedSlippage: number;
@@ -1299,11 +1301,12 @@ export function TradeBox(p: Props) {
   );
 
   const [cptype, setCpType] = useCpType();
+  const [tradeType1, setTradeType] = useTradeType();
 
   return (
     <>
       <div>
-        {cptype === 'none' && <div className={`App-box SwapBox`}>
+        {tradeType1 === 'Perp' && <div className={`App-box SwapBox`}>
           <Tab
             icons={tradeTypeIcons}
             options={Object.values(TradeType)}
@@ -1384,6 +1387,9 @@ export function TradeBox(p: Props) {
         </div>}
         {
           cptype !== 'none' && <CPpanel />
+        }
+        {
+          tradeType1 === 'Options' && cptype === 'none' && <CPBlankpanel />
         }
       </div>
 

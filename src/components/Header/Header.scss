@@ -11,7 +11,7 @@
   padding-left: 3.2rem;
   padding-right: 3.2rem;
   // max-width: 192rem;
-  max-width: 80%;
+  max-width: 97%;
   margin: auto;
 }
 
@@ -432,20 +432,24 @@
   cursor: pointer;
 }
 
-#trade:hover .dropdown-menu 
-// .dropdown-menu:hover
-{
+.dropdown-menu.active {
   display: block;
 }
 
-.dropdown-menu:hover {
-  display: block;
-}
+// #trade:focus .dropdown-menu 
+// // .dropdown-menu:hover
+// {
+//   display: block;
+// }
 
-.dropdown-menu div:hover {
-  display: block;
-}
+// .dropdown-menu:focus {
+//   display: block;
+// }
 
-#trade {
-  position: relative;
-}
+// .dropdown-menu div:focus {
+//   display: block;
+// }
+
+// #trade {
+//   position: relative;
+// }

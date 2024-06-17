@@ -1,6 +1,6 @@
 .Exchange {
   /* max-width: 185rem; */
-  max-width: 77%;
+  max-width: 97%;
   margin: auto;
   justify-content: space-between;
 }
@@ -1189,9 +1189,9 @@ table.Exchange-list-small td {
 }
 
 @media (max-width: 800px) {
-  .Exchange-left {
+  /* .Exchange-left {
     max-width: max-content;
-  }
+  } */
   
   .ExchangeChart-top-inner {
     grid-template-columns: auto auto auto;
