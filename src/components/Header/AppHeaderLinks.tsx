@@ -32,7 +32,6 @@ export function AppHeaderLinks({ small, openSettings, clickCloseIcon, showRedire
   );
 
   const handleTradeClick = () => {
-    console.log('element')
     const element = document.getElementById('dropdown-menu') as HTMLElement | null;
     const index = element?.className.indexOf('active');
 
@@ -45,6 +44,18 @@ export function AppHeaderLinks({ small, openSettings, clickCloseIcon, showRedire
         // Adding 'active' to className if it doesn't exist
         if (element) {
             element.className += ' active';
+        }
+    }
+  }
+
+  const handleOtherClick = () => {
+    const element = document.getElementById('dropdown-menu') as HTMLElement | null;
+    const index = element?.className.indexOf('active');
+
+    if (index !== -1) {
+        // Removing 'active' from className if it exists
+        if (element) {
+            element.className = element.className.replace('active', '');
         }
     }
   }
@@ -95,37 +106,37 @@ export function AppHeaderLinks({ small, openSettings, clickCloseIcon, showRedire
           </div>
         </div>
       </div>
-      {small && <div className="App-header-link-container" style={{textAlign: 'end'}} onClick={() => setTradeType('Perp')}>
+      {small && tradeType === 'Options' && <div className="App-header-link-container" style={{textAlign: 'end'}} onClick={() => setTradeType('Perp')}>
         <HeaderLink to="/trade" showRedirectModal={showRedirectModal}>
           <Trans>Perp</Trans>
         </HeaderLink>
       </div>}
-      {small && <div className="App-header-link-container" style={{textAlign: 'end'}} onClick={() => setTradeType('Options')}>
+      {small && tradeType === 'Perp' && <div className="App-header-link-container" style={{textAlign: 'end'}} onClick={() => setTradeType('Options')}>
         <HeaderLink to="/trade" showRedirectModal={showRedirectModal}>
           <Trans>Options</Trans>
         </HeaderLink>
       </div>}
-      <div className="App-header-link-container" style={{textAlign: 'end'}}>
+      <div className="App-header-link-container" style={{textAlign: 'end'}} onClick={handleOtherClick}>
         <HeaderLink to="/dashboard" showRedirectModal={showRedirectModal}>
           <Trans>Dashboard</Trans>
         </HeaderLink>
       </div>
-      <div className="App-header-link-container" style={{textAlign: 'end'}}>
+      <div className="App-header-link-container" style={{textAlign: 'end'}} onClick={handleOtherClick}>
         <HeaderLink to="/earn" showRedirectModal={showRedirectModal}>
           <Trans>Earn</Trans>
         </HeaderLink>
       </div>
-      <div className="App-header-link-container" style={{textAlign: 'end'}}>
+      <div className="App-header-link-container" style={{textAlign: 'end'}} onClick={handleOtherClick}>
         <HeaderLink to="/buy" showRedirectModal={showRedirectModal}>
           <Trans>Buy</Trans>
         </HeaderLink>
       </div>
-      <div className="App-header-link-container" style={{textAlign: 'end'}}>
+      <div className="App-header-link-container" style={{textAlign: 'end'}} onClick={handleOtherClick}>
         <HeaderLink to="/leaderboard" showRedirectModal={showRedirectModal} isActive={isLeaderboardActive}>
           <Trans>Leaderboard</Trans>
         </HeaderLink>
       </div>
-      <div className="App-header-link-container" style={{textAlign: 'end'}}>
+      <div className="App-header-link-container" style={{textAlign: 'end'}} onClick={handleOtherClick}>
         <ExternalLink href="https://docs.gmx.io/">
           <Trans>Docs</Trans>
         </ExternalLink>
