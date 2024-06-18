@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useState } from "react";
 import { FiX } from "react-icons/fi";
 import { Trans } from "@lingui/macro";
 import { Link } from "react-router-dom";
@@ -25,6 +25,8 @@ type Props = {
 
 export function AppHeaderLinks({ small, openSettings, clickCloseIcon, showRedirectModal }: Props) {
   const [tradeType, setTradeType] = useTradeType();
+  const [active, setActive] = useState(location.href.indexOf('/trade') >= 0 ? true : false);
+  const [isShow, setIsShow] = useState(false);
   const { openConnectModal } = useConnectModal();
   const isLeaderboardActive = useCallback(
     (match, location) => Boolean(match) || location.pathname.startsWith("/competitions"),
@@ -32,39 +34,22 @@ export function AppHeaderLinks({ small, openSettings, clickCloseIcon, showRedire
   );
 
   const handleTradeClick = () => {
-    const element = document.getElementById('dropdown-menu') as HTMLElement | null;
-    const index = element?.className.indexOf('active');
-
-    if (index !== -1) {
-        // Removing 'active' from className if it exists
-        if (element) {
-            element.className = element.className.replace('active', '');
-        }
-    } else {
-        // Adding 'active' to className if it doesn't exist
-        if (element) {
-            element.className += ' active';
-        }
-    }
+    setActive(true);
+    setIsShow(false)
+    clickCloseIcon && clickCloseIcon();
   }
 
   const handleOtherClick = () => {
-    const element = document.getElementById('dropdown-menu') as HTMLElement | null;
-    const index = element?.className.indexOf('active');
-
-    if (index !== -1) {
-        // Removing 'active' from className if it exists
-        if (element) {
-            element.className = element.className.replace('active', '');
-        }
-    }
+    setActive(false);
+    setIsShow(false)
+    clickCloseIcon && clickCloseIcon();
   }
 
   return (
     <div className="App-header-links drawer-mobile">
       {small && (
         <div className="App-header-links-header">
-          <Link className="App-header-link-main" to="/">
+          <Link className="App-header-link-main" to="/" onClick={handleOtherClick}>
             {/* <img src={logoImg} alt="OPX Logo" /> */}
             <svg width="85" height="25" viewBox="0 0 118 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M50.1002 26.4772C48.1619 26.4772 46.3817 26.0274 44.7597 25.1274C43.1377 24.2277 41.8522 22.9856 40.9026 21.4011C39.9532 19.7971 39.4785 17.9875 39.4785 15.9728C39.4785 13.9776 39.9532 12.1877 40.9026 10.6032C41.8522 8.99917 43.1377 7.74724 44.7597 6.84744C46.3817 5.94761 48.1619 5.49771 50.1002 5.49771C52.0584 5.49771 53.8386 5.94761 55.441 6.84744C57.0627 7.74724 58.3386 8.99917 59.2683 10.6032C60.2177 12.1877 60.6925 13.9776 60.6925 15.9728C60.6925 17.9875 60.2177 19.7971 59.2683 21.4011C58.3386 22.9856 57.0627 24.2277 55.441 25.1274C53.819 26.0274 52.0388 26.4772 50.1002 26.4772ZM50.1002 22.8095C51.3463 22.8095 52.4442 22.5355 53.3935 21.9879C54.3431 21.4207 55.0849 20.6185 55.619 19.5818C56.153 18.545 56.4201 17.342 56.4201 15.9728C56.4201 14.6035 56.153 13.4102 55.619 12.3931C55.0849 11.3563 54.3431 10.5641 53.3935 10.0164C52.4442 9.46864 51.3463 9.1948 50.1002 9.1948C48.8541 9.1948 47.7466 9.46864 46.7774 10.0164C45.8278 10.5641 45.086 11.3563 44.5519 12.3931C44.0179 13.4102 43.7509 14.6035 43.7509 15.9728C43.7509 17.342 44.0179 18.545 44.5519 19.5818C45.086 20.6185 45.8278 21.4207 46.7774 21.9879C47.7466 22.5355 48.8541 22.8095 50.1002 22.8095Z" fill="white"/>
@@ -95,26 +80,46 @@ export function AppHeaderLinks({ small, openSettings, clickCloseIcon, showRedire
           </div>
         </div>
       )}
-      <div className="App-header-link-container" id="trade" style={{textAlign: 'end'}} onClick={handleTradeClick}>
-        <HeaderLink to="/trade" showRedirectModal={showRedirectModal}>
-          <Trans>Trade</Trans>
-        </HeaderLink>
-        <div className="dropdown-menu" id="dropdown-menu">
-          <div onClick={() => setTradeType('Perp')}>Perp</div>
-          <div onClick={() => setTradeType('Options')}>
-            Options
-          </div>
-        </div>
+      <div className="App-header-link-container" id="trade" style={{textAlign: 'end'}}>
+        {!small && <Popover className={cx('App-header-trader-container', {"active": active})}>
+          {({open, close}) => {
+            return <>
+              <Popover.Button as="div">
+                <button className={cx("trader-btn", { "active": open })}>
+                  <Trans>Trade</Trans>
+                  {/* Trade */}
+                </button>
+              </Popover.Button>
+              <Popover.Panel>
+                <div className="dropdown-menu" id="dropdown-menu">
+                  <Link to="/trade" onClick={() => {setTradeType('Perp'); close(); setActive(true)}}>
+                    <Trans>Perp</Trans>
+                  </Link>
+                  <Link to="/trade" onClick={() => {setTradeType('Options'); close(); setActive(true)}}>
+                    <Trans>Options</Trans>
+                  </Link>
+                  {/* <div onClick={() => setTradeType('Perp')}>Perp</div>
+                  <div onClick={() => setTradeType('Options')}>
+                    Options
+                  </div> */}
+                </div>
+              </Popover.Panel>
+            </>
+          }}
+        </Popover>}
+        {small && <div className={cx("trader-small-btn", {active: active})} onClick={() => setIsShow(!isShow)}>
+            Trade
+          </div>}
       </div>
-      {small && tradeType === 'Options' && <div className="App-header-link-container" style={{textAlign: 'end'}} onClick={() => setTradeType('Perp')}>
-        <HeaderLink to="/trade" showRedirectModal={showRedirectModal}>
+      {small && isShow && <div className={cx("App-header-link-container", {active: tradeType === 'Perp'})} style={{textAlign: 'end'}} onClick={() => setTradeType('Perp')}>
+        <Link className={cx({active: tradeType === 'Perp' && active === true})} to="/trade" onClick={handleTradeClick}>
           <Trans>Perp</Trans>
-        </HeaderLink>
+        </Link>
       </div>}
-      {small && tradeType === 'Perp' && <div className="App-header-link-container" style={{textAlign: 'end'}} onClick={() => setTradeType('Options')}>
-        <HeaderLink to="/trade" showRedirectModal={showRedirectModal}>
+      {small && isShow && <div className={cx("App-header-link-container", {active: tradeType === 'Options'})} style={{textAlign: 'end'}} onClick={() => setTradeType('Options')}>
+        <Link className={cx({active: tradeType === 'Options' && active === true})} to="/trade" onClick={handleTradeClick}>
           <Trans>Options</Trans>
-        </HeaderLink>
+        </Link>
       </div>}
       <div className="App-header-link-container" style={{textAlign: 'end'}} onClick={handleOtherClick}>
         <HeaderLink to="/dashboard" showRedirectModal={showRedirectModal}>
@@ -162,7 +167,7 @@ export function AppHeaderLinks({ small, openSettings, clickCloseIcon, showRedire
         {SOCIAL_LINKS.map((platform) => {
           return (
             <ExternalLink key={platform.name} className="App-social-link" href={platform.link}>
-              <img src={platform.icon} alt={platform.name} />
+              <img src={platform.icon} alt={platform.name} onClick={handleOtherClick}/>
             </ExternalLink>
           );
         })}

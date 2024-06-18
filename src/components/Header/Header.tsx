@@ -208,7 +208,7 @@ export function Header({ disconnectAccountAndCloseSettings, openSettings, showRe
       <AnimatePresence>
         {isDrawerVisible && (
           <motion.div
-            onClick={() => setIsDrawerVisible(false)}
+            // onClick={() => setIsDrawerVisible(false)}
             className="App-header-links-container App-header-drawer"
             initial="hidden"
             animate="visible"
