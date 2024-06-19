@@ -46,7 +46,7 @@ export default function CPpanel() {
     const ORDER_OPTION_LABELS = { [STOP]: t`Trigger`, [MARKET]: t`Market`, [LIMIT]: t`Limit` };
 
     return (
-        <div className="Exchange-swap-box">
+        <div className="Exchange-swap-box" style={{display: 'flex'}}>
             <div className='cppanel-container'>
                 <div className='cppanel-logo'>
                     <div className='cppanel-logo-txt'>

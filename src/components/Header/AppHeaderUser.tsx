@@ -133,7 +133,7 @@ export function AppHeaderUser({ openSettings, small, disconnectAccountAndCloseSe
   return (
     <div className="App-header-user">
       <div className={cx("App-header-trade-link")}>
-        <Popover>
+        {/* <Popover>
           <Popover.Button as="div">
             <button className={cx("chart-token-selector", { "chart-token-label--active": open })}>
               <span className="chart-token-selector--current inline-items-center">
@@ -144,7 +144,7 @@ export function AppHeaderUser({ openSettings, small, disconnectAccountAndCloseSe
           <Popover.Panel as="div">
             <p>fdsa</p>
           </Popover.Panel>
-        </Popover>
+        </Popover> */}
         {/* <HeaderLink className="default-btn" to={tradeLink!} showRedirectModal={showRedirectModal}>
           {isHomeSite() ? <Trans>Launch App</Trans> : <Trans>Trade</Trans>}
         </HeaderLink> */}
