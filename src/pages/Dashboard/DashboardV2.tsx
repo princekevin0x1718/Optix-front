@@ -67,6 +67,11 @@ import { groupBy } from "lodash";
 import AssetDropdown from "./AssetDropdown";
 import Optix from '../../img/optix.svg';
 import Arbitrum from '../../img/arbitrum-arb-logo.svg';
+import searchIcon from "img/Vector.svg";
+import auction_live from "img/auction_live.svg";
+import { GoTriangleDown } from "react-icons/go";
+import bitcoinimg from 'img/ic_btc_24.svg';
+import completed_auctions from 'img/completed-auctions.svg';
 
 const ACTIVE_CHAIN_IDS = [ARBITRUM, AVALANCHE];
 
@@ -1194,6 +1199,209 @@ export default function DashboardV2() {
                 <MarketsList />
               </SyntheticsStateContextProvider>
             )}
+          </div>
+          <div className="Page-title-wrapper gapTop">
+            <div className="Page-title-group">
+              <h2 className="Page-title__text">Auctions</h2>
+            </div>
+          </div>
+        </div>
+        <div className="App-card">
+          <div className="auctions-header">
+            <div>
+              <img src={auction_live} alt="" />
+              &nbsp;
+              Live and Upcoming Auctions
+            </div>
+            <div className="auctions-input">
+              <input type="text" placeholder="Search Auction" />
+              <img src={searchIcon} alt="" />
+            </div>
+            <div className="auctions-options">
+              <div className="auctions-button">
+                  By Start Date
+                  <GoTriangleDown />
+              </div>
+            </div>
+          </div>
+          <div className="App-card-divider"></div>
+          <div className="auctions-container">
+            <div className="auctions-item">
+              <div className="auctions-item-table">
+                <div className="autions-item-row">
+                  <div>Instrument</div>
+                  <div>Size</div>
+                  <div>Start Date</div>
+                  <div>End Date</div>
+                  <div>Current Price</div>
+                </div>
+                <div className="autions-item-row">
+                  <div>
+                    <img className="Token-icon" src={bitcoinimg} alt="BTC" width="20" height="20" />
+                    &nbsp;
+                    BTC-5 Jun 24-4050-C
+                  </div>
+                  <div>50</div>
+                  <div>30 May 2024 15:00 UTC</div>
+                  <div>07 Jun 2024 15:00 UTC</div>
+                  <div>$180</div>
+                </div>
+              </div>
+            </div>
+            <div className="auctions-item">
+              <div className="auctions-item-table">
+                <div className="autions-item-row">
+                  <div>Instrument</div>
+                  <div>Size</div>
+                  <div>Start Date</div>
+                  <div>End Date</div>
+                  <div>Current Price</div>
+                </div>
+                <div className="autions-item-row">
+                  <div>
+                    <img className="Token-icon" src={bitcoinimg} alt="BTC" width="20" height="20" />
+                    &nbsp;
+                    BTC-5 Jun 24-4050-C
+                  </div>
+                  <div>50</div>
+                  <div>30 May 2024 15:00 UTC</div>
+                  <div>07 Jun 2024 15:00 UTC</div>
+                  <div>$180</div>
+                </div>
+              </div>
+            </div>
+            <div className="auctions-item">
+              <div className="auctions-item-table">
+                <div className="autions-item-row">
+                  <div>Instrument</div>
+                  <div>Size</div>
+                  <div>Start Date</div>
+                  <div>End Date</div>
+                  <div>Current Price</div>
+                </div>
+                <div className="autions-item-row">
+                  <div>
+                    <img className="Token-icon" src={bitcoinimg} alt="BTC" width="20" height="20" />
+                    &nbsp;
+                    BTC-5 Jun 24-4050-C
+                  </div>
+                  <div>50</div>
+                  <div>30 May 2024 15:00 UTC</div>
+                  <div>07 Jun 2024 15:00 UTC</div>
+                  <div>$180</div>
+                </div>
+              </div>
+            </div>
+            <div className="auctions-item">
+              <div className="auctions-item-table">
+                <div className="autions-item-row">
+                  <div>Instrument</div>
+                  <div>Size</div>
+                  <div>Start Date</div>
+                  <div>End Date</div>
+                  <div>Current Price</div>
+                </div>
+                <div className="autions-item-row">
+                  <div>
+                    <img className="Token-icon" src={bitcoinimg} alt="BTC" width="20" height="20" />
+                    &nbsp;
+                    BTC-5 Jun 24-4050-C
+                  </div>
+                  <div>50</div>
+                  <div>30 May 2024 15:00 UTC</div>
+                  <div>07 Jun 2024 15:00 UTC</div>
+                  <div>$180</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="completed-auctions App-card">
+          <div className="auctions-header">
+            <div>
+              <img src={completed_auctions} alt="" />
+              &nbsp;
+              Completed Auctions
+            </div>
+            <div className="auctions-input">
+              <input type="text" placeholder="Search Auction" />
+              <img src={searchIcon} alt="" />
+            </div>
+            <div className="auctions-options">
+              <div className="auctions-button">
+                  By Start Date
+                  <GoTriangleDown />
+              </div>
+            </div>
+          </div>
+          <div className="App-card-divider"></div>
+          <div className="auctions-container">
+            <div className="auctions-item">
+              <div className="auctions-item-table">
+                <div className="autions-item-row">
+                  <div>Instrument</div>
+                  <div>Size</div>
+                  <div>Start Date</div>
+                  <div>End Date</div>
+                  <div>Current Price</div>
+                </div>
+                <div className="autions-item-row">
+                  <div>
+                    <img className="Token-icon" src={bitcoinimg} alt="BTC" width="20" height="20" />
+                    &nbsp;
+                    BTC-5 Jun 24-4050-C
+                  </div>
+                  <div>50</div>
+                  <div>30 May 2024 15:00 UTC</div>
+                  <div>07 Jun 2024 15:00 UTC</div>
+                  <div>$180</div>
+                </div>
+              </div>
+            </div>
+            <div className="auctions-item">
+              <div className="auctions-item-table">
+                <div className="autions-item-row">
+                  <div>Instrument</div>
+                  <div>Size</div>
+                  <div>Start Date</div>
+                  <div>End Date</div>
+                  <div>Current Price</div>
+                </div>
+                <div className="autions-item-row">
+                  <div>
+                    <img className="Token-icon" src={bitcoinimg} alt="BTC" width="20" height="20" />
+                    &nbsp;
+                    BTC-5 Jun 24-4050-C
+                  </div>
+                  <div>50</div>
+                  <div>30 May 2024 15:00 UTC</div>
+                  <div>07 Jun 2024 15:00 UTC</div>
+                  <div>$180</div>
+                </div>
+              </div>
+            </div>
+            <div className="auctions-item">
+              <div className="auctions-item-table">
+                <div className="autions-item-row">
+                  <div>Instrument</div>
+                  <div>Size</div>
+                  <div>Start Date</div>
+                  <div>End Date</div>
+                  <div>Current Price</div>
+                </div>
+                <div className="autions-item-row">
+                  <div>
+                    <img className="Token-icon" src={bitcoinimg} alt="BTC" width="20" height="20" />
+                    &nbsp;
+                    BTC-5 Jun 24-4050-C
+                  </div>
+                  <div>50</div>
+                  <div>30 May 2024 15:00 UTC</div>
+                  <div>07 Jun 2024 15:00 UTC</div>
+                  <div>$180</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <Footer />

@@ -292,6 +292,8 @@ a.plain {
   padding-top: 2.65rem;
 
   @media (max-width: 600px) {
+    max-width: 100%;
+    margin: 0;
     padding-left: var(--default-container-padding-mobile);
     padding-right: var(--default-container-padding-mobile);
   }
