@@ -244,6 +244,13 @@
   background: #1E1E2D;
   border: solid 1px #434359;
   border-radius: 8px;
+  height: max-content;
+}
+
+.autions-item-row.sticky {
+  position: sticky;
+  top: 0px;
+  background: #1e1e2d;
 }
 
 .autions-item-row {

@@ -1228,7 +1228,7 @@ export default function DashboardV2() {
           <div className="auctions-container">
             <div className="auctions-item">
               <div className="auctions-item-table">
-                <div className="autions-item-row">
+                <div className="autions-item-row sticky">
                   <div>Instrument</div>
                   <div>Size</div>
                   <div>Start Date</div>
@@ -1246,16 +1246,16 @@ export default function DashboardV2() {
                   <div>07 Jun 2024 15:00 UTC</div>
                   <div>$180</div>
                 </div>
-              </div>
-            </div>
-            <div className="auctions-item">
-              <div className="auctions-item-table">
                 <div className="autions-item-row">
-                  <div>Instrument</div>
-                  <div>Size</div>
-                  <div>Start Date</div>
-                  <div>End Date</div>
-                  <div>Current Price</div>
+                  <div>
+                    <img className="Token-icon" src={bitcoinimg} alt="BTC" width="20" height="20" />
+                    &nbsp;
+                    BTC-5 Jun 24-4050-C
+                  </div>
+                  <div>50</div>
+                  <div>30 May 2024 15:00 UTC</div>
+                  <div>07 Jun 2024 15:00 UTC</div>
+                  <div>$180</div>
                 </div>
                 <div className="autions-item-row">
                   <div>
@@ -1268,16 +1268,16 @@ export default function DashboardV2() {
                   <div>07 Jun 2024 15:00 UTC</div>
                   <div>$180</div>
                 </div>
-              </div>
-            </div>
-            <div className="auctions-item">
-              <div className="auctions-item-table">
                 <div className="autions-item-row">
-                  <div>Instrument</div>
-                  <div>Size</div>
-                  <div>Start Date</div>
-                  <div>End Date</div>
-                  <div>Current Price</div>
+                  <div>
+                    <img className="Token-icon" src={bitcoinimg} alt="BTC" width="20" height="20" />
+                    &nbsp;
+                    BTC-5 Jun 24-4050-C
+                  </div>
+                  <div>50</div>
+                  <div>30 May 2024 15:00 UTC</div>
+                  <div>07 Jun 2024 15:00 UTC</div>
+                  <div>$180</div>
                 </div>
                 <div className="autions-item-row">
                   <div>
@@ -1290,16 +1290,16 @@ export default function DashboardV2() {
                   <div>07 Jun 2024 15:00 UTC</div>
                   <div>$180</div>
                 </div>
-              </div>
-            </div>
-            <div className="auctions-item">
-              <div className="auctions-item-table">
                 <div className="autions-item-row">
-                  <div>Instrument</div>
-                  <div>Size</div>
-                  <div>Start Date</div>
-                  <div>End Date</div>
-                  <div>Current Price</div>
+                  <div>
+                    <img className="Token-icon" src={bitcoinimg} alt="BTC" width="20" height="20" />
+                    &nbsp;
+                    BTC-5 Jun 24-4050-C
+                  </div>
+                  <div>50</div>
+                  <div>30 May 2024 15:00 UTC</div>
+                  <div>07 Jun 2024 15:00 UTC</div>
+                  <div>$180</div>
                 </div>
                 <div className="autions-item-row">
                   <div>
@@ -1336,9 +1336,9 @@ export default function DashboardV2() {
           </div>
           <div className="App-card-divider"></div>
           <div className="auctions-container">
-            <div className="auctions-item">
+          <div className="auctions-item">
               <div className="auctions-item-table">
-                <div className="autions-item-row">
+                <div className="autions-item-row sticky">
                   <div>Instrument</div>
                   <div>Size</div>
                   <div>Start Date</div>
@@ -1356,16 +1356,16 @@ export default function DashboardV2() {
                   <div>07 Jun 2024 15:00 UTC</div>
                   <div>$180</div>
                 </div>
-              </div>
-            </div>
-            <div className="auctions-item">
-              <div className="auctions-item-table">
                 <div className="autions-item-row">
-                  <div>Instrument</div>
-                  <div>Size</div>
-                  <div>Start Date</div>
-                  <div>End Date</div>
-                  <div>Current Price</div>
+                  <div>
+                    <img className="Token-icon" src={bitcoinimg} alt="BTC" width="20" height="20" />
+                    &nbsp;
+                    BTC-5 Jun 24-4050-C
+                  </div>
+                  <div>50</div>
+                  <div>30 May 2024 15:00 UTC</div>
+                  <div>07 Jun 2024 15:00 UTC</div>
+                  <div>$180</div>
                 </div>
                 <div className="autions-item-row">
                   <div>
@@ -1378,16 +1378,38 @@ export default function DashboardV2() {
                   <div>07 Jun 2024 15:00 UTC</div>
                   <div>$180</div>
                 </div>
-              </div>
-            </div>
-            <div className="auctions-item">
-              <div className="auctions-item-table">
                 <div className="autions-item-row">
-                  <div>Instrument</div>
-                  <div>Size</div>
-                  <div>Start Date</div>
-                  <div>End Date</div>
-                  <div>Current Price</div>
+                  <div>
+                    <img className="Token-icon" src={bitcoinimg} alt="BTC" width="20" height="20" />
+                    &nbsp;
+                    BTC-5 Jun 24-4050-C
+                  </div>
+                  <div>50</div>
+                  <div>30 May 2024 15:00 UTC</div>
+                  <div>07 Jun 2024 15:00 UTC</div>
+                  <div>$180</div>
+                </div>
+                <div className="autions-item-row">
+                  <div>
+                    <img className="Token-icon" src={bitcoinimg} alt="BTC" width="20" height="20" />
+                    &nbsp;
+                    BTC-5 Jun 24-4050-C
+                  </div>
+                  <div>50</div>
+                  <div>30 May 2024 15:00 UTC</div>
+                  <div>07 Jun 2024 15:00 UTC</div>
+                  <div>$180</div>
+                </div>
+                <div className="autions-item-row">
+                  <div>
+                    <img className="Token-icon" src={bitcoinimg} alt="BTC" width="20" height="20" />
+                    &nbsp;
+                    BTC-5 Jun 24-4050-C
+                  </div>
+                  <div>50</div>
+                  <div>30 May 2024 15:00 UTC</div>
+                  <div>07 Jun 2024 15:00 UTC</div>
+                  <div>$180</div>
                 </div>
                 <div className="autions-item-row">
                   <div>
