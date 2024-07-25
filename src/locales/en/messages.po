@@ -531,15 +531,6 @@ msgid "Approving..."
 msgstr "Approving..."
 
 #: src/components/TokenCard/TokenCard.tsx
-#: src/components/TokenCard/TokenCard.tsx
-msgid "Arbitrum APR:"
-msgstr "Arbitrum APR:"
-
-#: src/components/TokenCard/TokenCard.tsx
-msgid "Arbitrum Avg. APR:"
-msgstr "Arbitrum Avg. APR:"
-
-#: src/components/TokenCard/TokenCard.tsx
 msgid "Arbitrum Max. APR:"
 msgstr "Arbitrum Max. APR:"
 
@@ -589,15 +580,6 @@ msgstr "Available amount to withdraw from OPX. Funds not utilized by current ope
 #: src/pages/Home/Home.js
 msgid "Available on your preferred network"
 msgstr "Available on your preferred network"
-
-#: src/components/TokenCard/TokenCard.tsx
-#: src/components/TokenCard/TokenCard.tsx
-msgid "Avalanche APR:"
-msgstr "Avalanche APR:"
-
-#: src/components/TokenCard/TokenCard.tsx
-msgid "Avalanche Avg. APR:"
-msgstr "Avalanche Avg. APR:"
 
 #: src/components/TokenCard/TokenCard.tsx
 msgid "Avalanche Max. APR: {0}"
@@ -726,6 +708,10 @@ msgid "Buy OPTIX"
 msgstr "Buy OPTIX"
 
 #: src/pages/Buy/Buy.tsx
+msgid "Buy OPTIX and earn rewards!"
+msgstr "Buy OPTIX and earn rewards!"
+
+#: src/pages/Buy/Buy.tsx
 msgid "Buy OPTIX or OPX"
 msgstr "Buy OPTIX or OPX"
 
@@ -740,10 +726,6 @@ msgstr "Buy OPTIX tokens before the epoch resets in {0} to be eligible for the B
 #: src/pages/Stake/StakeV2.tsx
 msgid "Buy OPX"
 msgstr "Buy OPX"
-
-#: src/pages/Buy/Buy.tsx
-msgid "Buy OPX and OPTIX and earn rewards!"
-msgstr "Buy OPX and OPTIX and earn rewards!"
 
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy OPX from Traderjoe:"
@@ -3562,8 +3544,6 @@ msgstr "OPTIX can be sold for {0} and {1} for this market up to the specified se
 msgid "OPTIX can be sold for {0} for this market up to the specified selling caps. The remaining tokens in the pool are reserved for currently open positions."
 msgstr "OPTIX can be sold for {0} for this market up to the specified selling caps. The remaining tokens in the pool are reserved for currently open positions."
 
-#: src/components/TokenCard/TokenCard.tsx
-#: src/components/TokenCard/TokenCard.tsx
 #: src/pages/Dashboard/DashboardV2.tsx
 #: src/pages/Dashboard/DashboardV2.tsx
 msgid "OPTIX is the liquidity provider token for OPX V2 markets. Accrues 63% of the V2 markets generated fees"
@@ -3700,7 +3680,6 @@ msgstr "OPX is currently live on Arbitrum and Avalanche."
 msgid "OPX is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@gmx.io</0>."
 msgstr "OPX is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@gmx.io</0>."
 
-#: src/components/TokenCard/TokenCard.tsx
 #: src/pages/Dashboard/DashboardV2.tsx
 #: src/pages/Dashboard/DashboardV2.tsx
 msgid "OPX is the utility and governance token. Accrues 30% and 27% of V1 and V2 markets generated fees, respectively."
@@ -4404,9 +4383,6 @@ msgstr "Rank"
 #: src/components/Synthetics/MarketStats/MarketStats.tsx
 #: src/components/Synthetics/MarketStats/MarketStats.tsx
 #: src/components/Synthetics/NetworkFeeRow/NetworkFeeRow.tsx
-#: src/components/TokenCard/TokenCard.tsx
-#: src/components/TokenCard/TokenCard.tsx
-#: src/components/TokenCard/TokenCard.tsx
 #: src/components/TokenCard/TokenCard.tsx
 #: src/pages/Dashboard/DashboardV2.tsx
 msgid "Read more"
@@ -6363,15 +6339,9 @@ msgid "View in Explorer"
 msgstr "View in Explorer"
 
 #: src/components/TokenCard/TokenCard.tsx
-#: src/components/TokenCard/TokenCard.tsx
-#: src/components/TokenCard/TokenCard.tsx
-#: src/components/TokenCard/TokenCard.tsx
 msgid "View on Arbitrum"
 msgstr "View on Arbitrum"
 
-#: src/components/TokenCard/TokenCard.tsx
-#: src/components/TokenCard/TokenCard.tsx
-#: src/components/TokenCard/TokenCard.tsx
 #: src/components/TokenCard/TokenCard.tsx
 msgid "View on Avalanche"
 msgstr "View on Avalanche"

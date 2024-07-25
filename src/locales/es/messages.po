@@ -531,15 +531,6 @@ msgid "Approving..."
 msgstr "Aprobando..."
 
 #: src/components/TokenCard/TokenCard.tsx
-#: src/components/TokenCard/TokenCard.tsx
-msgid "Arbitrum APR:"
-msgstr "Arbitrum APR:"
-
-#: src/components/TokenCard/TokenCard.tsx
-msgid "Arbitrum Avg. APR:"
-msgstr ""
-
-#: src/components/TokenCard/TokenCard.tsx
 msgid "Arbitrum Max. APR:"
 msgstr ""
 
@@ -589,15 +580,6 @@ msgstr ""
 #: src/pages/Home/Home.js
 msgid "Available on your preferred network"
 msgstr "Disponible en su red preferida"
-
-#: src/components/TokenCard/TokenCard.tsx
-#: src/components/TokenCard/TokenCard.tsx
-msgid "Avalanche APR:"
-msgstr "Avalanche APR:"
-
-#: src/components/TokenCard/TokenCard.tsx
-msgid "Avalanche Avg. APR:"
-msgstr ""
 
 #: src/components/TokenCard/TokenCard.tsx
 msgid "Avalanche Max. APR: {0}"
@@ -726,6 +708,10 @@ msgid "Buy OPTIX"
 msgstr ""
 
 #: src/pages/Buy/Buy.tsx
+msgid "Buy OPTIX and earn rewards!"
+msgstr ""
+
+#: src/pages/Buy/Buy.tsx
 msgid "Buy OPTIX or OPX"
 msgstr ""
 
@@ -739,10 +725,6 @@ msgstr ""
 #: src/pages/Stake/StakeV2.tsx
 #: src/pages/Stake/StakeV2.tsx
 msgid "Buy OPX"
-msgstr ""
-
-#: src/pages/Buy/Buy.tsx
-msgid "Buy OPX and OPTIX and earn rewards!"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
@@ -3559,8 +3541,6 @@ msgstr ""
 msgid "OPTIX can be sold for {0} for this market up to the specified selling caps. The remaining tokens in the pool are reserved for currently open positions."
 msgstr ""
 
-#: src/components/TokenCard/TokenCard.tsx
-#: src/components/TokenCard/TokenCard.tsx
 #: src/pages/Dashboard/DashboardV2.tsx
 #: src/pages/Dashboard/DashboardV2.tsx
 msgid "OPTIX is the liquidity provider token for OPX V2 markets. Accrues 63% of the V2 markets generated fees"
@@ -3697,7 +3677,6 @@ msgstr ""
 msgid "OPX is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@gmx.io</0>."
 msgstr ""
 
-#: src/components/TokenCard/TokenCard.tsx
 #: src/pages/Dashboard/DashboardV2.tsx
 #: src/pages/Dashboard/DashboardV2.tsx
 msgid "OPX is the utility and governance token. Accrues 30% and 27% of V1 and V2 markets generated fees, respectively."
@@ -4401,9 +4380,6 @@ msgstr ""
 #: src/components/Synthetics/MarketStats/MarketStats.tsx
 #: src/components/Synthetics/MarketStats/MarketStats.tsx
 #: src/components/Synthetics/NetworkFeeRow/NetworkFeeRow.tsx
-#: src/components/TokenCard/TokenCard.tsx
-#: src/components/TokenCard/TokenCard.tsx
-#: src/components/TokenCard/TokenCard.tsx
 #: src/components/TokenCard/TokenCard.tsx
 #: src/pages/Dashboard/DashboardV2.tsx
 msgid "Read more"
@@ -6360,15 +6336,9 @@ msgid "View in Explorer"
 msgstr "Ver en el Explorador"
 
 #: src/components/TokenCard/TokenCard.tsx
-#: src/components/TokenCard/TokenCard.tsx
-#: src/components/TokenCard/TokenCard.tsx
-#: src/components/TokenCard/TokenCard.tsx
 msgid "View on Arbitrum"
 msgstr ""
 
-#: src/components/TokenCard/TokenCard.tsx
-#: src/components/TokenCard/TokenCard.tsx
-#: src/components/TokenCard/TokenCard.tsx
 #: src/components/TokenCard/TokenCard.tsx
 msgid "View on Avalanche"
 msgstr ""

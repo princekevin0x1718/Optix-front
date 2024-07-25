@@ -17,6 +17,7 @@ import PageTitle from "components/PageTitle/PageTitle";
 import { GmList } from "components/Synthetics/GmList/GmList";
 import { getGmSwapBoxAvailableModes } from "components/Synthetics/GmSwap/GmSwapBox/getGmSwapBoxAvailableModes";
 import { GmSwapBox, Mode, Operation } from "components/Synthetics/GmSwap/GmSwapBox/GmSwapBox";
+import { GmCreatePool} from "components/Synthetics/GmCreatePool/GmCreatePool";
 import { MarketStats } from "components/Synthetics/MarketStats/MarketStats";
 
 import "./MarketPoolsPage.scss";
@@ -62,10 +63,10 @@ export function MarketPoolsPage() {
   );
 
   return (
-    <SEO title={getPageTitle("V2 Pools")}>
+    <SEO title={getPageTitle("Optix Pools")}>
       <div className="default-container page-layout">
         <PageTitle
-          title="V2 Pools"
+          title="Optix Pools"
           isTop
           subtitle={
             <Trans>
@@ -86,7 +87,7 @@ export function MarketPoolsPage() {
           />
 
           <div className="MarketPoolsPage-swap-box" ref={gmSwapBoxRef}>
-            <GmSwapBox
+            <GmCreatePool
               selectedMarketAddress={selectedMarketKey}
               markets={markets}
               marketsInfoData={marketsInfoData}
