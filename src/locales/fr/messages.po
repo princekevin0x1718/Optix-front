@@ -51,20 +51,20 @@ msgstr ""
 
 #: src/pages/SyntheticsActions/SyntheticsActions.tsx
 #: src/pages/SyntheticsActions/SyntheticsActions.tsx
-msgid "<0><1>Check on GMX V1 {networkName}</1> or <2>switch network to {0}</2>.</0>"
+msgid "<0><1>Check on OPX V1 {networkName}</1> or <2>switch network to {0}</2>.</0>"
 msgstr ""
 
 #: src/pages/Actions/Actions.js
 #: src/pages/Actions/Actions.js
-msgid "<0><1>Check on GMX V2 {networkName}</1> or <2>switch network to {0}</2>.</0>"
+msgid "<0><1>Check on OPX V2 {networkName}</1> or <2>switch network to {0}</2>.</0>"
 msgstr ""
 
 #: src/components/Synthetics/GmList/GmList.tsx
-msgid "<0>APR is based on the fees collected for the past {daysConsidered} days while extrapolating the current borrowing fee. <1>Read more about GM token pricing</1>.</0><2>The APR is an estimate as actual fees are auto-compounded into the pool in real time.</2><3>Check GM pools' performance against other LP Positions in the <4>GMX Dune Dashboard</4>.</3>"
+msgid "<0>APR is based on the fees collected for the past {daysConsidered} days while extrapolating the current borrowing fee. <1>Read more about OPTIX token pricing</1>.</0><2>The APR is an estimate as actual fees are auto-compounded into the pool in real time.</2><3>Check OPTIX pools' performance against other LP Positions in the <4>OPX Dune Dashboard</4>.</3>"
 msgstr ""
 
 #: src/components/Synthetics/StatusNotification/GmStatusNotification.tsx
-msgid "<0>Buying GM: <1>{indexName}</1><2>[{poolName}]</2></0> <3>with {tokensText}</3>"
+msgid "<0>Buying OPTIX: <1>{indexName}</1><2>[{poolName}]</2></0> <3>with {tokensText}</3>"
 msgstr ""
 
 #: src/components/Synthetics/ClaimModal/ClaimModal.tsx
@@ -73,42 +73,29 @@ msgstr ""
 
 #: src/pages/Stake/StakeV2.tsx
 #: src/pages/Stake/StakeV2.tsx
-msgid "<0>Delegate your undelegated {0} GMX DAO</0><1> voting power before compounding.</1>"
+msgid "<0>Delegate your undelegated {0} OPX DAO</0><1> voting power before compounding.</1>"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.tsx
-msgid "<0>Delegate your undelegated {0} GMX DAO</0><1> voting power before staking.</1>"
+msgid "<0>Delegate your undelegated {0} OPX DAO</0><1> voting power before staking.</1>"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.tsx
-msgid "<0>Delegate your undelegated {0} GMX DAO</0><1> voting power.</1>"
-msgstr ""
-
-#: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
-#~ msgid "<0>Delegate your {0} GMX DAO undelegated</0><1> voting power before compounding.</1>"
-#~ msgstr ""
-
-#: src/pages/Stake/StakeV2.tsx
-#~ msgid "<0>Delegate your {0} GMX DAO undelegated</0><1> voting power before staking.</1>"
-#~ msgstr ""
-
-#: src/pages/Stake/StakeV2.tsx
-#~ msgid "<0>Delegate your {0} GMX DAO undelegated</0><1> voting power.</1>"
-#~ msgstr ""
-
-#: src/pages/Dashboard/DashboardV2.tsx
-msgid "<0>GM Pools total value ({chainName}).</0>"
-msgstr ""
-
-#: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
-#: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
-msgid "<0>GM: <1>{indexName}</1><2>[{poolName}]</2></0> <3>selected in order form</3>"
+msgid "<0>Delegate your undelegated {0} OPX DAO</0><1> voting power.</1>"
 msgstr ""
 
 #: src/components/Exchange/OrdersToa.js
 msgid "<0>Insufficient liquidity to execute the order</0><1>The mark price which is an aggregate of exchange prices did not reach the specified price</1><2>The specified price was reached but not long enough for it to be executed</2><3>No keeper picked up the order for execution</3>"
 msgstr "<0>Liquidité insuffisante pour exécuter l'ordre</0><1>Le prix de référence, qui est un agrégat de prix d'échanges, n'a pas atteint le prix spécifié</1><2>Le prix spécifié a été atteint mais pas assez longtemps pour qu'il soit exécuté.</2><3>Aucun gardien n'a pris l'ordre d'exécution</3>"
+
+#: src/pages/Dashboard/DashboardV2.tsx
+msgid "<0>OPTIX Pools total value ({chainName}).</0>"
+msgstr ""
+
+#: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
+#: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
+msgid "<0>OPTIX: <1>{indexName}</1><2>[{poolName}]</2></0> <3>selected in order form</3>"
+msgstr ""
 
 #: src/components/Exchange/FeesTooltip.tsx
 msgid "<0>Read more</0> about fees."
@@ -119,7 +106,7 @@ msgid "<0>Return to </0><1>Homepage</1> <2>or </2> <3>Trade</3>"
 msgstr "<0>Retourner à </0><1>la page d'accueil</1> <2>ou </2> <3>échanger</3>"
 
 #: src/components/Synthetics/StatusNotification/GmStatusNotification.tsx
-msgid "<0>Selling GM: <1>{indexName}</1><2>[{poolName}]</2></0>"
+msgid "<0>Selling OPTIX: <1>{indexName}</1><2>[{poolName}]</2></0>"
 msgstr ""
 
 #: src/components/Synthetics/AcceptablePriceImpactInputRow/AcceptablePriceImpactInputRow.tsx
@@ -135,23 +122,23 @@ msgid "<0>The order will be executed when the oracle price is {0} {1}.</0><1>Not
 msgstr ""
 
 #: src/components/Glp/SwapErrorModal.tsx
-msgid "<0>The pool's capacity has been reached for {0}. Please use another token to buy GLP.</0><1>Check the \"Save on Fees\" section for tokens with the lowest fees.</1>"
-msgstr "<0>La capacité du pool a été atteinte pour {0}. Veuillez utiliser un autre token pour acheter GLP.</0><1>Vérifier la section \"économiser sur les frais\" pour les tokens ayant les meilleur frais.</1>"
+msgid "<0>The pool's capacity has been reached for {0}. Please use another token to buy OPX.</0><1>Check the \"Save on Fees\" section for tokens with the lowest fees.</1>"
+msgstr ""
 
 #: src/components/Exchange/OrdersList.js
 msgid "<0>The price that orders can be executed at may differ slightly from the chart price, as market orders update oracle prices, while limit/trigger orders do not.</0><1>This can also cause limit/triggers to not be executed if the price is not reached for long enough. <2>Read more</2>.</1>"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.tsx
-msgid "<0>This will claim {0} GMX.<1/><2/>After claiming, you can stake these GMX tokens by using the \"Stake\" button in the GMX section of this Earn page.<3/><4/></0>"
+msgid "<0>This will claim {0} OPX.<1/><2/>After claiming, you can stake these OPX tokens by using the \"Stake\" button in the OPX section of this Earn page.<3/><4/></0>"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.tsx
-msgid "<0>This will withdraw all esGMX tokens as well as pause vesting.<1/><2/>esGMX tokens that have been converted to GMX will be claimed and remain as GMX tokens.<3/><4/>To claim GMX tokens without withdrawing, use the \"Claim\" button.<5/><6/></0>"
+msgid "<0>This will withdraw all esGMX tokens as well as pause vesting.<1/><2/>esGMX tokens that have been converted to OPX will be claimed and remain as OPX tokens.<3/><4/>To claim OPX tokens without withdrawing, use the \"Claim\" button.<5/><6/></0>"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.tsx
-msgid "<0>This will withdraw and unreserve all tokens as well as pause vesting.<1/><2/>esGMX tokens that have been converted to GMX will be claimed and remain as GMX tokens.<3/><4/>To claim GMX tokens without withdrawing, use the \"Claim\" button under the Total Rewards section.<5/><6/></0>"
+msgid "<0>This will withdraw and unreserve all tokens as well as pause vesting.<1/><2/>esGMX tokens that have been converted to OPX will be claimed and remain as OPX tokens.<3/><4/>To claim OPX tokens without withdrawing, use the \"Claim\" button under the Total Rewards section.<5/><6/></0>"
 msgstr ""
 
 #: src/pages/Dashboard/DashboardV2.tsx
@@ -195,6 +182,10 @@ msgstr ""
 msgid "A snapshot of the USD value of your {0} collateral is taken when the position is opened."
 msgstr "Une image instantanée de la valeur en USD de votre {0} collatéral initial est prise à l'ouverture de la position."
 
+#: src/components/Exchange/TradeHistory.js
+msgid "ACTION"
+msgstr ""
+
 #: src/components/Glp/GlpSwap.js
 #: src/components/Synthetics/GmList/GmList.tsx
 #: src/components/Synthetics/GmList/GmList.tsx
@@ -212,7 +203,7 @@ msgid "APRs are updated weekly on Wednesday and will depend on the fees collecte
 msgstr "Les taux de rendement annuels sont mis à jour chaque semaine le mercredi et dépendront des frais perçus pour la semaine."
 
 #: src/pages/Stake/StakeV2.tsx
-msgid "APRs are updated weekly on Wednesday and will depend on the fees collected for the week. <0/><1/>Historical GLP APRs can be checked in this <2>community dashboard</2>."
+msgid "APRs are updated weekly on Wednesday and will depend on the fees collected for the week. <0/><1/>Historical OPX APRs can be checked in this <2>community dashboard</2>."
 msgstr ""
 
 #: src/pages/Dashboard/DashboardV2.tsx
@@ -399,7 +390,6 @@ msgid "Affiliate Rewards Claimed"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
 msgid "Affiliate Vault"
 msgstr ""
 
@@ -463,7 +453,6 @@ msgstr "Vous pouvez également sélectionner un autre.\"Collatéral En\" token."
 
 #: src/components/Referrals/AffiliatesStats.tsx
 #: src/components/Referrals/TradersStats.tsx
-#: src/components/Synthetics/UserIncentiveDistributionList/UserIncentiveDistributionList.tsx
 msgid "Amount"
 msgstr "Somme"
 
@@ -506,8 +495,8 @@ msgstr "L'approbation a été annulée"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
 #: src/pages/Stake/StakeV2.tsx
-msgid "Approve GMX"
-msgstr "Approuver GMX"
+msgid "Approve OPX"
+msgstr ""
 
 #: src/components/Exchange/PositionEditor.js
 #: src/components/Exchange/SwapBox.js
@@ -522,7 +511,7 @@ msgid "Approve {stakingTokenSymbol}"
 msgstr "Approuver {stakingTokenSymbol}"
 
 #: src/pages/Stake/StakeV2.tsx
-msgid "Approving GMX..."
+msgid "Approving OPX..."
 msgstr ""
 
 #: src/components/Exchange/PositionEditor.js
@@ -542,6 +531,7 @@ msgid "Approving..."
 msgstr "Approbation..."
 
 #: src/components/TokenCard/TokenCard.tsx
+#: src/components/TokenCard/TokenCard.tsx
 msgid "Arbitrum APR:"
 msgstr "Taux de rendement annuels Arbitrum:"
 
@@ -558,11 +548,11 @@ msgid "As network fees have increased, an additional execution fee is needed."
 msgstr ""
 
 #: src/components/Exchange/NoLiquidityErrorModal.tsx
-msgid "As there is not enough liquidity in GLP to swap {0} to {swapTokenSymbol}, you can use the option below to do so:"
-msgstr "Comme il n'y a pas assez de liquidité dans GLP pour échanger {0} vers {swapTokenSymbol}, vous pouvez utiliser l'option ci-dessous pour le faire :"
+msgid "As there is not enough liquidity in OPX to swap {0} to {swapTokenSymbol}, you can use the option below to do so:"
+msgstr ""
 
 #: src/pages/Dashboard/DashboardV2.tsx
-msgid "Assets Under Management: GMX staked (All chains) + OPX pool ({chainName}) +  GM Pools ({chainName})."
+msgid "Assets Under Management: OPX staked (All chains) + OPX pool ({chainName}) +  OPTIX Pools ({chainName})."
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
@@ -583,23 +573,24 @@ msgstr "Liquidité Disponible"
 
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
-msgid "Available amount to deposit into GLP."
-msgstr "Somme disponible à déposer dans GLP."
+msgid "Available amount to deposit into OPX."
+msgstr ""
 
 #: src/components/Synthetics/GmList/GmList.tsx
 #: src/components/Synthetics/GmList/GmList.tsx
-msgid "Available amount to deposit into the specific GM pool."
+msgid "Available amount to deposit into the specific OPTIX pool."
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
-msgid "Available amount to withdraw from GLP. Funds not utilized by current open positions."
-msgstr "Somme disponible pour retirer de GLP. Montant non utilisé par les postes actuellement ouverts."
+msgid "Available amount to withdraw from OPX. Funds not utilized by current open positions."
+msgstr ""
 
 #: src/pages/Home/Home.js
 msgid "Available on your preferred network"
 msgstr "Disponible sur le réseau de votre choix"
 
+#: src/components/TokenCard/TokenCard.tsx
 #: src/components/TokenCard/TokenCard.tsx
 msgid "Avalanche APR:"
 msgstr "Taux de Rendement Annuels Avalanche:"
@@ -714,8 +705,8 @@ msgid "Buy"
 msgstr "Acheter"
 
 #: src/pages/BuyGlp/BuyGlp.js
-msgid "Buy / Sell GLP"
-msgstr "Acheter / Vendre GLP"
+msgid "Buy / Sell OPX"
+msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy AVAX directly to Avalanche or transfer it there."
@@ -729,64 +720,65 @@ msgstr ""
 msgid "Buy Fee"
 msgstr ""
 
-#: src/components/Glp/GlpSwap.js
-#: src/components/Glp/GlpSwap.js
-#: src/components/Glp/GlpSwap.js
-#: src/pages/Stake/StakeV2.tsx
-msgid "Buy GLP"
-msgstr "Acheter GLP"
+#: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
+#: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
+msgid "Buy OPTIX"
+msgstr ""
 
 #: src/pages/Buy/Buy.tsx
-msgid "Buy GLP or GMX"
-msgstr ""
-
-#: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
-#: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
-msgid "Buy GM"
+msgid "Buy OPTIX or OPX"
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
-msgid "Buy GM tokens before the epoch resets in {0} to be eligible for the Bonus Rebate. Alternatively, wait for the epoch to reset to redeem GLP and buy GM within the same epoch."
+msgid "Buy OPTIX tokens before the epoch resets in {0} to be eligible for the Bonus Rebate. Alternatively, wait for the epoch to reset to redeem OPX and buy OPTIX within the same epoch."
 msgstr ""
 
+#: src/components/Glp/GlpSwap.js
+#: src/components/Glp/GlpSwap.js
+#: src/components/Glp/GlpSwap.js
 #: src/pages/Stake/StakeV2.tsx
-msgid "Buy GMX"
+#: src/pages/Stake/StakeV2.tsx
+msgid "Buy OPX"
+msgstr ""
+
+#: src/pages/Buy/Buy.tsx
+msgid "Buy OPX and OPTIX and earn rewards!"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX from Traderjoe:"
+msgid "Buy OPX from Traderjoe:"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX from Uniswap (make sure to select Arbitrum):"
+msgid "Buy OPX from Uniswap (make sure to select Arbitrum):"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX from centralized exchanges:"
+msgid "Buy OPX from centralized exchanges:"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX from centralized services"
+msgid "Buy OPX from centralized services"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX from decentralized exchanges"
+msgid "Buy OPX from decentralized exchanges"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX on {chainName}"
+msgid "Buy OPX on {chainName}"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX using Decentralized Exchange Aggregators:"
+msgid "Buy OPX using Decentralized Exchange Aggregators:"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX using FIAT gateways:"
+msgid "Buy OPX using FIAT gateways:"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "Buy GMX using any token from any network:"
+msgid "Buy OPX using any token from any network:"
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
@@ -840,16 +832,12 @@ msgid "Buyable"
 msgstr ""
 
 #: src/components/Synthetics/GmSwap/GmConfirmationBox/GmConfirmationBox.tsx
-msgid "Buying GM..."
+msgid "Buying OPTIX..."
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
 msgid "Buying..."
 msgstr "Achat..."
-
-#: src/components/Synthetics/UserIncentiveDistributionList/UserIncentiveDistributionList.tsx
-msgid "COMPETITION Airdrop"
-msgstr ""
 
 #: src/pages/LeaderboardPage/components/LeaderboardNavigation.tsx
 msgid "CONCLUDED"
@@ -919,8 +907,6 @@ msgid "Chain Icon"
 msgstr ""
 
 #: src/components/SettingsModal/SettingsModal.tsx
-#: src/pages/Exchange/Exchange.tsx
-#: src/pages/SyntheticsPage/SyntheticsPage.tsx
 msgid "Chart positions"
 msgstr "Positions sur les graphiques"
 
@@ -939,8 +925,8 @@ msgid "Choose to buy from decentralized or centralized exchanges."
 msgstr ""
 
 #: src/components/Referrals/ClaimAffiliatesModal/ClaimAffiliatesModal.tsx
-#: src/components/Synthetics/ClaimModal/ClaimModal.tsx
 #: src/components/Synthetics/ClaimablePositionPriceImpactRebateModal/ClaimablePositionPriceImpactRebateModal.tsx
+#: src/components/Synthetics/ClaimModal/ClaimModal.tsx
 #: src/components/Synthetics/Claims/ClaimableCard.tsx
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
 #: src/pages/Stake/StakeV1.js
@@ -948,7 +934,6 @@ msgstr ""
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
-#: src/pages/Stake/StakeV2.tsx
 #: src/pages/Stake/StakeV2.tsx
 #: src/pages/Stake/StakeV2.tsx
 #: src/pages/Stake/StakeV2.tsx
@@ -970,7 +955,7 @@ msgstr ""
 
 #: src/pages/Stake/StakeV2.tsx
 #: src/pages/Stake/StakeV2.tsx
-msgid "Claim GMX Rewards"
+msgid "Claim OPX Rewards"
 msgstr ""
 
 #: src/components/Synthetics/Claims/ClaimHistoryRow/ClaimCollateralHistoryRow.tsx
@@ -997,8 +982,11 @@ msgid "Claim esGMX"
 msgstr "Réclamer esGMX"
 
 #: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
 msgid "Claim esGMX Rewards"
+msgstr ""
+
+#: src/pages/Stake/StakeV2.tsx
+msgid "Claim esOPX Rewards"
 msgstr ""
 
 #: src/pages/Stake/StakeV1.js
@@ -1034,9 +1022,6 @@ msgid "Claim {wrappedTokenSymbol} Rewards"
 msgstr ""
 
 #: src/components/Synthetics/Claims/ClaimableCard.tsx
-#: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
 msgid "Claimable"
 msgstr "Réclamable"
 
@@ -1058,8 +1043,8 @@ msgid "Claiming failed"
 msgstr ""
 
 #: src/components/Referrals/ClaimAffiliatesModal/ClaimAffiliatesModal.tsx
-#: src/components/Synthetics/ClaimModal/ClaimModal.tsx
 #: src/components/Synthetics/ClaimablePositionPriceImpactRebateModal/ClaimablePositionPriceImpactRebateModal.tsx
+#: src/components/Synthetics/ClaimModal/ClaimModal.tsx
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
 #: src/pages/Stake/StakeV2.tsx
 #: src/pages/Stake/StakeV2.tsx
@@ -1238,8 +1223,8 @@ msgid "Compounding..."
 msgstr ""
 
 #: src/components/Referrals/ClaimAffiliatesModal/ClaimAffiliatesModal.tsx
-#: src/components/Synthetics/ClaimModal/ClaimModal.tsx
 #: src/components/Synthetics/ClaimablePositionPriceImpactRebateModal/ClaimablePositionPriceImpactRebateModal.tsx
+#: src/components/Synthetics/ClaimModal/ClaimModal.tsx
 msgid "Confirm Claim"
 msgstr ""
 
@@ -1289,16 +1274,12 @@ msgstr "Connecter"
 #: src/components/Referrals/AddAffiliateCode.js
 #: src/components/Referrals/JoinReferralCode.js
 #: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
-#: src/components/Synthetics/UserIncentiveDistributionList/UserIncentiveDistributionList.tsx
 #: src/domain/synthetics/trade/utils/validation.ts
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
-#: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
 #: src/pages/Stake/StakeV2.tsx
 #: src/pages/Stake/StakeV2.tsx
 msgid "Connect Wallet"
@@ -1316,10 +1297,6 @@ msgstr ""
 #: src/pages/CompleteAccountTransfer/CompleteAccountTransfer.js
 msgid "Continue"
 msgstr "Continuer"
-
-#: src/pages/Stake/StakeV2.tsx
-msgid "Convert esGMX tokens to GMX tokens.<0/>Please read the <1>vesting details</1> before using the vaults."
-msgstr ""
 
 #: src/components/Synthetics/SubaccountModal/SubaccountModal.tsx
 msgid "Convert this amount of {0} to {1} in your Main Account to allow for auto top-ups, as only {2} can be automatically transferred to your Subaccount. The {3} balance of your main account is shown above."
@@ -1493,8 +1470,8 @@ msgid "Dashboard"
 msgstr "Tableau de bord"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Dashboard for GMX referral stats"
-msgstr "Tableau de bord pour les statistiques de parrainage GMX"
+msgid "Dashboard for OPX referral stats"
+msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Dashboards"
@@ -1504,7 +1481,6 @@ msgstr "Tableaux de bords"
 #: src/components/Referrals/TradersStats.tsx
 #: src/components/Synthetics/Claims/ClaimsHistory.tsx
 #: src/components/Synthetics/TradeHistory/useDownloadAsCsv.tsx
-#: src/components/Synthetics/UserIncentiveDistributionList/UserIncentiveDistributionList.tsx
 msgid "Date"
 msgstr "Date"
 
@@ -1552,7 +1528,7 @@ msgid "Decentralized Options Strategies"
 msgstr "Stratégies d'options décentralisées"
 
 #: src/lib/legacy.ts
-msgid "Decentralized Perpetual Exchange | GMX"
+msgid "Decentralized Perpetual Exchange | OPX"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
@@ -1621,18 +1597,11 @@ msgstr ""
 msgid "Delegated to"
 msgstr ""
 
-#: src/pages/Stake/StakeV2.tsx
-#~ msgid "Delegated to:"
-#~ msgstr ""
-
 #: src/components/Exchange/PositionEditor.js
 #: src/components/Exchange/PositionEditor.js
 #: src/components/Exchange/PositionEditor.js
 #: src/components/Synthetics/PositionEditor/PositionEditor.tsx
 #: src/components/Synthetics/TradeHistory/keys.ts
-#: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
 #: src/pages/Stake/StakeV2.tsx
 #: src/pages/Stake/StakeV2.tsx
 msgid "Deposit"
@@ -1757,21 +1726,9 @@ msgstr ""
 msgid "Earn"
 msgstr "Gagner"
 
-#: src/pages/Stake/StakeV2.tsx
-msgid "Earn ARB tokens by purchasing GM tokens, trading, or migrating liquidity from GLP to GM. Only for GMX V2.<0/>Earn prizes by participating in GMX Trading Competitions."
-msgstr ""
-
 #: src/components/Stake/GMXAprTooltip.tsx
 msgid "Earn an extra {0}% {nativeTokenSymbol} Boosted APR by increasing your staked <0>Multiplier Points</0>."
 msgstr ""
-
-#: src/pages/Stake/StakeV2.tsx
-msgid "Earn prizes by participating in GMX Trading Competitions."
-msgstr "Gagnez des prix en participant aux compétitions de trading GMX."
-
-#: src/components/Header/AppHeaderLinks.tsx
-msgid "Ecosystem"
-msgstr "Écosystème"
 
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Ecosystem Projects"
@@ -2012,13 +1969,13 @@ msgstr ""
 
 #: src/pages/Stake/StakeV2.tsx
 #: src/pages/Stake/StakeV2.tsx
-msgid "Escrowed GMX"
+msgid "Escrowed OPX"
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
 #: src/components/Stake/GMXAprTooltip.tsx
-msgid "Escrowed GMX APR"
-msgstr "Taux de rendement annuels GMX sous séquestre"
+msgid "Escrowed OPX APR"
+msgstr ""
 
 #: src/components/Synthetics/NetworkFeeRow/NetworkFeeRow.tsx
 msgid "Estimated Fee Refund"
@@ -2224,16 +2181,16 @@ msgid "Fees exceed amount"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Fees generated by GMX"
-msgstr "Commissions générées par GMX"
+msgid "Fees generated by OPX"
+msgstr ""
 
 #: src/components/Glp/GlpSwap.js
-msgid "Fees may vary depending on which asset you sell GLP for. <0/>Enter the amount of GLP you want to redeem in the order form, then check here to compare fees."
-msgstr "Les frais peuvent varier selon quel actif vous vendez pour du GLP. <0/>Indiquer la somme que vous souhaitez rembourser, puis vérifiez ici pour comparer les frais."
+msgid "Fees may vary depending on which asset you sell OPX for. <0/>Enter the amount of OPX you want to redeem in the order form, then check here to compare fees."
+msgstr ""
 
 #: src/components/Glp/GlpSwap.js
-msgid "Fees may vary depending on which asset you use to buy GLP. <0/>Enter the amount of GLP you want to purchase in the order form, then check here to compare fees."
-msgstr "Les frais peuvent varier selon quel actif vous vendez pour du GLP. <0/>Indiquer la somme que vous souhaitez acheter, puis vérifiez ici pour comparer les frais."
+msgid "Fees may vary depending on which asset you use to buy OPX. <0/>Enter the amount of OPX you want to purchase in the order form, then check here to compare fees."
+msgstr ""
 
 #: src/pages/Dashboard/DashboardV2.tsx
 msgid "Fees since"
@@ -2323,215 +2280,6 @@ msgstr ""
 msgid "GBC NFTs APR tracker and rewards"
 msgstr "Tracker de taux de rendement annuels des NFTs GBC et récompenses"
 
-#: src/pages/Dashboard/DashboardV2.tsx
-#: src/pages/Dashboard/DashboardV2.tsx
-msgid "OPX Index Composition"
-msgstr "Composition de l'indice GLP"
-
-#: src/pages/Dashboard/DashboardV2.tsx
-#: src/pages/Dashboard/DashboardV2.tsx
-msgid "GLP Pool"
-msgstr "Pool de GLP"
-
-#: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
-msgid "GLP Vault"
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "GLP and GMX autocompounding vaults"
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "GLP autocompounding vaults"
-msgstr ""
-
-#: src/components/Glp/GlpSwap.js
-msgid "GLP buy disabled, pending {0} upgrade"
-msgstr "Achat GLP désactivé, en attente de {0} actualisations"
-
-#: src/components/TokenCard/TokenCard.tsx
-#: src/pages/Dashboard/DashboardV2.tsx
-msgid "OPTIX is the liquidity provider token for OPX V2 markets. Accrues 63% of the V2 markets generated fees"
-msgstr ""
-
-#: src/components/Glp/GlpSwap.js
-msgid "GLP sell disabled, pending {0} upgrade"
-msgstr "Vente GLP désactivé, en attente de {0} actualisations"
-
-#: src/components/Synthetics/UserIncentiveDistributionList/UserIncentiveDistributionList.tsx
-msgid "GLP to GM Airdrop"
-msgstr ""
-
-#: src/pages/BuyGlp/BuyGlp.js
-msgid "GLP to GM migration has reduced Fees due to STIP incentives. <0>Read more</0>."
-msgstr ""
-
-#: src/components/Synthetics/UserIncentiveDistributionList/UserIncentiveDistributionList.tsx
-msgid "GM Airdrop"
-msgstr ""
-
-#: src/pages/Dashboard/DashboardV2.tsx
-msgid "GM Markets"
-msgstr ""
-
-#: src/components/Synthetics/GmList/GmList.tsx
-#: src/components/Synthetics/GmList/GmList.tsx
-#: src/components/Synthetics/MarketsList/MarketsList.tsx
-#: src/components/Synthetics/MarketsList/MarketsList.tsx
-#: src/pages/Dashboard/DashboardV2.tsx
-msgid "GM Pools"
-msgstr ""
-
-#: src/components/Synthetics/MarketStats/MarketStats.tsx
-msgid "GM Token pricing includes positions' Pending PnL, Impact Pool Amount and Borrow Fees."
-msgstr ""
-
-#: src/components/Synthetics/MarketStats/MarketStats.tsx
-msgid "GM can be sold for {0} and {1} for this market up to the specified selling caps. The remaining tokens in the pool are reserved for currently open positions."
-msgstr ""
-
-#: src/components/Synthetics/MarketStats/MarketStats.tsx
-msgid "GM can be sold for {0} for this market up to the specified selling caps. The remaining tokens in the pool are reserved for currently open positions."
-msgstr ""
-
-#: src/components/TokenCard/TokenCard.tsx
-#: src/pages/Dashboard/DashboardV2.tsx
-msgid "GM is the liquidity provider token for GMX V2 markets. Accrues 63% of the V2 markets generated fees."
-msgstr ""
-
-#: src/pages/Stake/StakeV2.tsx
-msgid "GMX & Voting Power"
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Announcements and Updates"
-msgstr "Annonces et mises à jour concernant GMX"
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Blueberry NFTs"
-msgstr "NFT Bleuets GMX"
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Governance Page"
-msgstr "Page de gouvernance GMX"
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Pages"
-msgstr "Pages GMX"
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Perpetuals Data"
-msgstr "Données sur les Perpetuals de GMX"
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Proposals Voting page"
-msgstr "Page de vote pour les propositions sur GMX"
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Stats Page"
-msgstr "Page des statistiques GMX"
-
-#: src/pages/Actions/Actions.js
-msgid "GMX V1 Account"
-msgstr ""
-
-#: src/pages/Actions/Actions.js
-msgid "GMX V1 Actions"
-msgstr ""
-
-#: src/pages/Actions/Actions.js
-msgid "GMX V1 Arbitrum information for account: {checkSummedAccount}"
-msgstr ""
-
-#: src/pages/Actions/Actions.js
-msgid "GMX V1 {networkName} actions for all accounts."
-msgstr ""
-
-#: src/pages/SyntheticsActions/SyntheticsActions.tsx
-msgid "GMX V2 Account"
-msgstr ""
-
-#: src/pages/SyntheticsActions/SyntheticsActions.tsx
-msgid "GMX V2 Actions"
-msgstr ""
-
-#: src/pages/SyntheticsActions/SyntheticsActions.tsx
-msgid "GMX V2 {networkName} actions for all accounts."
-msgstr ""
-
-#: src/pages/SyntheticsActions/SyntheticsActions.tsx
-msgid "GMX V2 {networkName} information for account: {checkSummedAccount}"
-msgstr ""
-
-#: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
-msgid "GMX Vault"
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX Weekly Updates"
-msgstr "Mises à jour hebdomadaires GMX"
-
-#: src/pages/BuyGMX/BuyGMX.tsx
-msgid "GMX bonds can be bought on Bond Protocol with a discount and a small vesting period:"
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX community discussion"
-msgstr "Discussion de la communauté GMX"
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX dashboards and analytics."
-msgstr "Tableaux de bord et analyses GMX."
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX ecosystem pages."
-msgstr "Pages de l'écosystème GMX."
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX explorer for stats and traders"
-msgstr "Explorateur GMX pour les statistiques et les traders"
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX fundamentals"
-msgstr "Principes fondamentaux de GMX"
-
-#: src/pages/Home/Home.js
-msgid "GMX is currently live on Arbitrum and Avalanche."
-msgstr "GMX est en émission direct sur Arbitrum et Avalanche."
-
-#: src/pages/Jobs/Jobs.js
-msgid "GMX is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@gmx.io</0>."
-msgstr "GMX ne recherche pas activement de nouveaux recrutements pour le moment. Toutefois, si vous pensez pouvoir contribuer au projet, veuillez envoyer un courriel à l'adresse suivante <0>jobs@gmx.io</0>."
-
-#: src/components/TokenCard/TokenCard.tsx
-#: src/pages/Dashboard/DashboardV2.tsx
-#: src/pages/Dashboard/DashboardV2.tsx
-msgid "OPX is the utility and governance token. Accrues 30% and 27% of V1 and V2 markets generated fees, respectively."
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX staking calculator"
-msgstr "Calculateur de staking GMX"
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX staking calculator and guide"
-msgstr ""
-
-#: src/pages/Ecosystem/Ecosystem.js
-msgid "GMX staking rewards updates and insights"
-msgstr "Mises à jour et aperçu des récompenses du staking de GMX"
-
-#: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
-msgid "GMX transfers not yet enabled"
-msgstr ""
-
-#: src/components/Common/SEO.js
-msgid "GMX | Decentralized Perpetual Exchange"
-msgstr ""
-
 #: src/components/Synthetics/SubaccountModal/utils.ts
 msgid "Generate & Activate Subaccount"
 msgstr ""
@@ -2553,7 +2301,7 @@ msgid "Generating shareable image..."
 msgstr "Création d'une image partageable..."
 
 #: src/pages/Referrals/Referrals.tsx
-msgid "Get fee discounts and earn rebates through the GMX referral program.<0/>For more information, please read the <1>referral program details</1>."
+msgid "Get fee discounts and earn rebates through the OPX referral program.<0/>For more information, please read the <1>referral program details</1>."
 msgstr ""
 
 #: src/pages/LeaderboardPage/components/LeaderboardContainer.tsx
@@ -2586,7 +2334,7 @@ msgid "I am aware of the trigger orders"
 msgstr "Je suis conscient des ordres de déclenchement"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "I do not want to transfer the Affiliate esGMX tokens"
+msgid "I do not want to transfer the Affiliate esOPX tokens"
 msgstr ""
 
 #: src/components/Synthetics/MarketCard/MarketCard.tsx
@@ -2605,19 +2353,6 @@ msgstr "Erreur de génération d'image, veuillez rafraîchir et réessayer."
 #: src/components/Synthetics/TVChart/TVChart.tsx
 msgid "Inc."
 msgstr "Inc."
-
-#: src/pages/Stake/StakeV2.tsx
-msgid "Incentives & Prizes"
-msgstr ""
-
-#: src/components/Synthetics/UserIncentiveDistributionList/UserIncentiveDistributionList.tsx
-msgid "Incentives Distribution History"
-msgstr ""
-
-#: src/components/Synthetics/UserIncentiveDistributionList/UserIncentiveDistributionList.tsx
-#: src/components/Synthetics/UserIncentiveDistributionList/UserIncentiveDistributionList.tsx
-msgid "Incentives are airdropped weekly."
-msgstr ""
 
 #: src/components/SettingsModal/SettingsModal.tsx
 msgid "Include PnL in leverage display"
@@ -2709,10 +2444,6 @@ msgstr ""
 msgid "Insufficient Available Liquidity to swap to {0}:"
 msgstr ""
 
-#: src/components/Glp/GlpSwap.js
-msgid "Insufficient GLP balance"
-msgstr "Équilibre insuffisant de GLP"
-
 #: src/components/Exchange/PositionSeller.js
 #: src/components/Exchange/PositionSeller.js
 #: src/components/Exchange/SwapBox.js
@@ -2726,6 +2457,10 @@ msgstr "Équilibre insuffisant de GLP"
 #: src/components/Exchange/SwapBox.js
 #: src/components/Exchange/SwapBox.js
 msgid "Insufficient Liquidity"
+msgstr ""
+
+#: src/components/Glp/GlpSwap.js
+msgid "Insufficient OPX balance"
 msgstr ""
 
 #: src/components/Exchange/SwapBox.js
@@ -2833,8 +2568,8 @@ msgid "Job Openings"
 msgstr ""
 
 #: src/pages/Jobs/Jobs.js
-msgid "Job openings at GMX."
-msgstr "Offres d'emploi chez GMX."
+msgid "Job openings at OPX."
+msgstr ""
 
 #: src/pages/Jobs/Jobs.js
 msgid "Jobs"
@@ -2873,10 +2608,6 @@ msgstr ""
 msgid "LONG LIQ."
 msgstr ""
 
-#: src/components/NetworkDropdown/NetworkDropdown.tsx
-msgid "Language"
-msgstr "Langue"
-
 #: src/pages/LeaderboardPage/components/LeaderboardContainer.tsx
 msgid "Last 30 days"
 msgstr ""
@@ -2889,8 +2620,6 @@ msgstr ""
 msgid "Last month"
 msgstr "Le mois dernier"
 
-#: src/components/Header/AppHeaderUser.tsx
-#: src/components/Header/AppHeaderUser.tsx
 #: src/components/ModalViews/RedirectModal.js
 #: src/pages/Home/Home.js
 msgid "Launch App"
@@ -2902,11 +2631,11 @@ msgid "Leaderboard"
 msgstr "Tableau des leaders"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Leaderboard for GMX traders"
-msgstr "Tableau d'affichage pour les traders GMX"
+msgid "Leaderboard for OPX traders"
+msgstr ""
 
 #: src/pages/LeaderboardPage/components/LeaderboardContainer.tsx
-msgid "Leaderboard for traders on GMX V2."
+msgid "Leaderboard for traders on OPX V2."
 msgstr ""
 
 #: src/components/Exchange/PositionEditor.js
@@ -2969,6 +2698,8 @@ msgstr "Levier désactivé, en attente de {0} actualisations"
 msgid "Leverage slider"
 msgstr ""
 
+#: src/components/CPpanel/CPBlankpanel.tsx
+#: src/components/CPpanel/CPpanel.tsx
 #: src/components/Exchange/OrdersList.js
 #: src/components/Exchange/OrdersList.js
 #: src/components/Exchange/SwapBox.js
@@ -3160,11 +2891,11 @@ msgstr "Connectez-vous à votre application Binance et appuyez sur [Portefeuille
 #: src/components/Synthetics/SettleAccruedFundingFeeModal/SettleAccruedFundingFeeRow.tsx
 #: src/components/Synthetics/StatusNotification/FeesSettlementStatusNotification.tsx
 #: src/components/Synthetics/StatusNotification/OrderStatusNotification.tsx
-#: src/components/Synthetics/TVChart/TVChart.tsx
-#: src/components/Synthetics/TVChart/TVChart.tsx
 #: src/components/Synthetics/TableMarketFilter/MarketFilterLongShort.tsx
 #: src/components/Synthetics/TradeBox/TradeBox.tsx
 #: src/components/Synthetics/TradeHistory/TradeHistoryRow/utils/position.ts
+#: src/components/Synthetics/TVChart/TVChart.tsx
+#: src/components/Synthetics/TVChart/TVChart.tsx
 #: src/context/SyntheticsEvents/SyntheticsEventsProvider.tsx
 #: src/context/SyntheticsEvents/SyntheticsEventsProvider.tsx
 #: src/domain/synthetics/orders/utils.tsx
@@ -3187,10 +2918,6 @@ msgstr ""
 #: src/components/Synthetics/PoolSelector2/PoolSelector2.tsx
 #: src/components/Synthetics/PoolSelector2/PoolSelector2.tsx
 msgid "Long Liq."
-msgstr ""
-
-#: src/components/Exchange/ChartTokenSelector.tsx
-msgid "Long Liquidity"
 msgstr ""
 
 #: src/components/Synthetics/MarketCard/MarketCard.tsx
@@ -3222,9 +2949,10 @@ msgstr "Il semble que vous n'ayez pas de code de parrainage à partager. <0/> Cr
 msgid "Loss"
 msgstr "Perte"
 
+#: src/components/Exchange/TradeHistory.js
 #: src/components/Synthetics/AccruedPositionPriceImpactRebateModal/AccruedPositionPriceImpactRebateModal.tsx
-#: src/components/Synthetics/ClaimModal/ClaimModal.tsx
 #: src/components/Synthetics/ClaimablePositionPriceImpactRebateModal/ClaimablePositionPriceImpactRebateModal.tsx
+#: src/components/Synthetics/ClaimModal/ClaimModal.tsx
 #: src/components/Synthetics/GmList/GmList.tsx
 msgid "MARKET"
 msgstr "MARCHÉ"
@@ -3298,6 +3026,8 @@ msgstr "Prix ​​de référence pour la liquidation."
 msgid "Mark price for the order."
 msgstr "Prix de référence pour l'ordre."
 
+#: src/components/CPpanel/CPBlankpanel.tsx
+#: src/components/CPpanel/CPpanel.tsx
 #: src/components/Exchange/PositionSeller.js
 #: src/components/Exchange/SwapBox.js
 #: src/components/Referrals/ClaimAffiliatesModal/ClaimAffiliatesModal.tsx
@@ -3380,16 +3110,8 @@ msgstr ""
 msgid "Max Execution Fee buffer below {0}% may result in failed orders."
 msgstr ""
 
-#: src/components/Exchange/ChartTokenSelector.tsx
-msgid "Max In"
-msgstr ""
-
 #: src/components/Exchange/PositionSeller.js
 msgid "Max Leverage without PnL: 100x"
-msgstr ""
-
-#: src/components/Exchange/ChartTokenSelector.tsx
-msgid "Max Out"
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
@@ -3441,12 +3163,12 @@ msgid "Max leverage: {0}x"
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
-msgid "Max pool capacity reached for {0}. Please mint GLP using another token"
-msgstr "Capacité maximale du pool atteinte pour {0}. Veuillez minter GLP avec un autre token"
+msgid "Max pool capacity reached for {0}. Please mint OPX using another token"
+msgstr ""
 
 #: src/components/Glp/GlpSwap.js
-msgid "Max pool capacity reached for {0}<0/><1/>Please mint GLP using another token"
-msgstr "Capacité maximale du pool atteinte pour {0}<0/><1/> Veuillez minter GLP avec un autre token"
+msgid "Max pool capacity reached for {0}<0/><1/>Please mint OPX using another token"
+msgstr ""
 
 #: src/components/SettingsModal/SettingsModal.tsx
 msgid "Max slippage precision is -0.01%"
@@ -3526,8 +3248,8 @@ msgid "Maximum auto top-up amount is required"
 msgstr ""
 
 #: src/components/Synthetics/NetworkFeeRow/NetworkFeeRow.tsx
-msgid "Maximum execution fee paid to the network. This fee is a blockchain cost not specific to GMX, and it does not impact your collateral."
-msgstr "Frais d'exécution maximum payés au réseau. Ces frais sont un coût de blockchain non spécifique à GMX, et ils n'ont pas d'impact sur votre collatéral."
+msgid "Maximum execution fee paid to the network. This fee is a blockchain cost not specific to OPX, and it does not impact your collateral."
+msgstr ""
 
 #: src/components/Footer/constants.ts
 #: src/components/Footer/constants.ts
@@ -3732,10 +3454,6 @@ msgstr ""
 msgid "No esGMX to claim"
 msgstr "Pas d'esGMX à réclamer"
 
-#: src/components/Synthetics/UserIncentiveDistributionList/UserIncentiveDistributionList.tsx
-msgid "No incentives distribution history yet."
-msgstr ""
-
 #: src/components/Exchange/OrdersList.js
 #: src/components/Exchange/OrdersList.js
 #: src/components/Synthetics/OrderList/OrderList.tsx
@@ -3755,8 +3473,8 @@ msgid "No open positions"
 msgstr "Pas de position ouverte"
 
 #: src/pages/Jobs/Jobs.js
-msgid "No open positions at GMX currently"
-msgstr "Aucune position ouverte actuellement chez GMX"
+msgid "No open positions at OPX currently"
+msgstr ""
 
 #: src/pages/OrdersOverview/OrdersOverview.js
 msgid "No position"
@@ -3812,6 +3530,211 @@ msgstr ""
 #: src/components/Exchange/OrdersToa.js
 msgid "Note that orders are not guaranteed to be executed.<0/><1/>This can occur in a few situations including but not exclusive to:"
 msgstr "Notez que l'exécution des ordres n'est pas garantie d'être exécutée.<0/><1/>Cela peut se produire dans plusieurs situations, notamment, mais pas exclusivement:"
+
+#: src/components/Synthetics/UserIncentiveDistributionList/UserIncentiveDistributionList.tsx
+msgid "OPTIX Airdrop"
+msgstr ""
+
+#: src/pages/Dashboard/DashboardV2.tsx
+msgid "OPTIX Markets"
+msgstr ""
+
+#: src/components/Synthetics/GmList/GmList.tsx
+#: src/components/Synthetics/GmList/GmList.tsx
+#: src/components/Synthetics/MarketsList/MarketsList.tsx
+#: src/components/Synthetics/MarketsList/MarketsList.tsx
+#: src/pages/Dashboard/DashboardV2.tsx
+msgid "OPTIX Pools"
+msgstr ""
+
+#: src/components/Synthetics/MarketStats/MarketStats.tsx
+msgid "OPTIX Token pricing includes positions' Pending PnL, Impact Pool Amount and Borrow Fees."
+msgstr ""
+
+#: src/components/Synthetics/MarketStats/MarketStats.tsx
+msgid "OPTIX can be sold for {0} and {1} for this market up to the specified selling caps. The remaining tokens in the pool are reserved for currently open positions."
+msgstr ""
+
+#: src/components/Synthetics/MarketStats/MarketStats.tsx
+msgid "OPTIX can be sold for {0} for this market up to the specified selling caps. The remaining tokens in the pool are reserved for currently open positions."
+msgstr ""
+
+#: src/components/TokenCard/TokenCard.tsx
+#: src/components/TokenCard/TokenCard.tsx
+#: src/pages/Dashboard/DashboardV2.tsx
+#: src/pages/Dashboard/DashboardV2.tsx
+msgid "OPTIX is the liquidity provider token for OPX V2 markets. Accrues 63% of the V2 markets generated fees"
+msgstr ""
+
+#: src/components/TokenCard/TokenCard.tsx
+msgid "OPTIX is the liquidity provider token for OPX V2 markets. Accrues 63% of the V2 markets generated fees."
+msgstr ""
+
+#: src/pages/Stake/StakeV2.tsx
+msgid "OPX & Voting Power"
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+msgid "OPX Announcements and Updates"
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+msgid "OPX Blueberry NFTs"
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+msgid "OPX Governance Page"
+msgstr ""
+
+#: src/pages/Dashboard/DashboardV2.tsx
+#: src/pages/Dashboard/DashboardV2.tsx
+msgid "OPX Index Composition"
+msgstr "Composition de l'indice GLP"
+
+#: src/pages/Ecosystem/Ecosystem.js
+msgid "OPX Pages"
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+msgid "OPX Perpetuals Data"
+msgstr ""
+
+#: src/pages/Dashboard/DashboardV2.tsx
+#: src/pages/Dashboard/DashboardV2.tsx
+msgid "OPX Pool"
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+msgid "OPX Proposals Voting page"
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+msgid "OPX Stats Page"
+msgstr ""
+
+#: src/pages/Actions/Actions.js
+msgid "OPX V1 Account"
+msgstr ""
+
+#: src/pages/Actions/Actions.js
+msgid "OPX V1 Actions"
+msgstr ""
+
+#: src/pages/Actions/Actions.js
+msgid "OPX V1 Arbitrum information for account: {checkSummedAccount}"
+msgstr ""
+
+#: src/pages/Actions/Actions.js
+msgid "OPX V1 {networkName} actions for all accounts."
+msgstr ""
+
+#: src/pages/SyntheticsActions/SyntheticsActions.tsx
+msgid "OPX V2 Account"
+msgstr ""
+
+#: src/pages/SyntheticsActions/SyntheticsActions.tsx
+msgid "OPX V2 Actions"
+msgstr ""
+
+#: src/pages/SyntheticsActions/SyntheticsActions.tsx
+msgid "OPX V2 {networkName} actions for all accounts."
+msgstr ""
+
+#: src/pages/SyntheticsActions/SyntheticsActions.tsx
+msgid "OPX V2 {networkName} information for account: {checkSummedAccount}"
+msgstr ""
+
+#: src/pages/Stake/StakeV2.tsx
+#: src/pages/Stake/StakeV2.tsx
+msgid "OPX Vault"
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+msgid "OPX Weekly Updates"
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+msgid "OPX and OPX autocompounding vaults"
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+msgid "OPX autocompounding vaults"
+msgstr ""
+
+#: src/pages/BuyGMX/BuyGMX.tsx
+msgid "OPX bonds can be bought on Bond Protocol with a discount and a small vesting period:"
+msgstr ""
+
+#: src/components/Glp/GlpSwap.js
+msgid "OPX buy disabled, pending {0} upgrade"
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+msgid "OPX community discussion"
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+msgid "OPX dashboards and analytics."
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+msgid "OPX ecosystem pages."
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+msgid "OPX explorer for stats and traders"
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+msgid "OPX fundamentals"
+msgstr ""
+
+#: src/pages/Home/Home.js
+msgid "OPX is currently live on Arbitrum and Avalanche."
+msgstr ""
+
+#: src/pages/Jobs/Jobs.js
+msgid "OPX is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@gmx.io</0>."
+msgstr ""
+
+#: src/components/TokenCard/TokenCard.tsx
+#: src/pages/Dashboard/DashboardV2.tsx
+#: src/pages/Dashboard/DashboardV2.tsx
+msgid "OPX is the utility and governance token. Accrues 30% and 27% of V1 and V2 markets generated fees, respectively."
+msgstr ""
+
+#: src/components/Glp/GlpSwap.js
+msgid "OPX sell disabled, pending {0} upgrade"
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+msgid "OPX staking calculator"
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+msgid "OPX staking calculator and guide"
+msgstr ""
+
+#: src/pages/Ecosystem/Ecosystem.js
+msgid "OPX staking rewards updates and insights"
+msgstr ""
+
+#: src/components/Synthetics/UserIncentiveDistributionList/UserIncentiveDistributionList.tsx
+msgid "OPX to OPTIX Airdrop"
+msgstr ""
+
+#: src/pages/BuyGlp/BuyGlp.js
+msgid "OPX to OPTIX migration has reduced Fees due to STIP incentives. <0>Read more</0>."
+msgstr ""
+
+#: src/pages/Stake/StakeV2.tsx
+#: src/pages/Stake/StakeV2.tsx
+msgid "OPX transfers not yet enabled"
+msgstr ""
+
+#: src/components/Common/SEO.js
+msgid "OPX | Decentralized Perpetual Exchange"
+msgstr ""
 
 #: src/components/Synthetics/ConfirmationBox/ConfirmationBox.tsx
 msgid "Old Collateral"
@@ -3907,6 +3830,15 @@ msgstr ""
 #: src/components/Synthetics/PositionItem/PositionItem.tsx
 msgid "Opening..."
 msgstr "Ouverture..."
+
+#: src/components/Header/AppHeaderLinks.tsx
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "Options"
+msgstr ""
+
+#: src/pages/Buy/Buy.tsx
+msgid "Optix Protocol Tokens"
+msgstr ""
 
 #: src/components/Exchange/OrdersList.js
 #: src/components/Synthetics/OrderList/OrderList.tsx
@@ -4075,6 +4007,7 @@ msgstr "POOL"
 msgid "POSITION"
 msgstr ""
 
+#: src/components/Exchange/TradeHistory.js
 #: src/components/Glp/GlpSwap.js
 #: src/components/Synthetics/GmList/GmList.tsx
 #: src/components/Synthetics/MarketsList/MarketsList.tsx
@@ -4122,8 +4055,6 @@ msgstr "Partenariats et intégrations"
 #: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
 #: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
 #: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
-#: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
-#: src/components/Synthetics/TradeBox/TradeBox.tsx
 #: src/components/Synthetics/TradeBox/TradeBox.tsx
 msgid "Pay"
 msgstr "Payer"
@@ -4147,20 +4078,17 @@ msgstr ""
 msgid "Pending {0} approval"
 msgstr ""
 
+#: src/components/Header/AppHeaderLinks.tsx
+#: src/components/Header/AppHeaderLinks.tsx
+msgid "Perp"
+msgstr ""
+
 #: src/components/Referrals/JoinReferralCode.js
 msgid "Please input a referral code to benefit from fee discounts."
 msgstr "Veuillez saisir un code de parrainage pour bénéficier des réductions de frais."
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-#~ msgid "Please only use this for full account transfers.<0/>This will transfer all your GMX, esGMX, GLP and Multiplier Points and voting power to your new account.<1/>Transfers are only supported if the receiving account has not staked GMX or GLP tokens before.<2/>Transfers are one-way, you will not be able to transfer staked tokens back to the sending account."
-#~ msgstr ""
-
-#: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-#~ msgid "Please only use this for full account transfers.<0/>This will transfer all your GMX, esGMX, GLP and Multiplier Points to your new account.<1/>Transfers are only supported if the receiving account has not staked GMX or GLP tokens before.<2/>Transfers are one-way, you will not be able to transfer staked tokens back to the sending account."
-#~ msgstr "Veuillez utiliser ceci uniquement pour les transferts de comptes complets.<0/>Cela permettra de transférer tous vos GMX, esGMX, GLP et points multiplicateurs vers votre nouveau compte.<1/>Les transferts ne sont pris en charge que si le compte destinataire n'a pas encore staké de tokens GMX ou GLP.<2/>Les transferts sont à sens unique, vous ne pourrez pas retransférer les tokens mis en jeu vers le compte émetteur."
-
-#: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Please only use this for full account transfers.<0/>This will transfer all your GMX, esGMX, GLP, Multiplier Points and voting power to your new account.<1/>Transfers are only supported if the receiving account has not staked GMX or GLP tokens before.<2/>Transfers are one-way, you will not be able to transfer staked tokens back to the sending account."
+msgid "Please only use this for full account transfers.<0/>This will transfer all your OPX, esGMX, OPX, Multiplier Points and voting power to your new account.<1/>Transfers are only supported if the receiving account has not staked OPX or OPX tokens before.<2/>Transfers are one-way, you will not be able to transfer staked tokens back to the sending account."
 msgstr ""
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
@@ -4276,8 +4204,8 @@ msgstr "Préc"
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
 #: src/components/Synthetics/GmList/GmList.tsx
-#: src/components/Synthetics/MarketStats/MarketStats.tsx
 #: src/components/Synthetics/MarketsList/MarketsList.tsx
+#: src/components/Synthetics/MarketStats/MarketStats.tsx
 #: src/components/Synthetics/OrderEditor/OrderEditor.tsx
 #: src/components/Synthetics/OrderEditor/OrderEditor.tsx
 #: src/components/Synthetics/PositionSeller/PositionSeller.tsx
@@ -4423,12 +4351,12 @@ msgid "Profit"
 msgstr "Profit"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Projects developed by the GMX community. <0/>Please exercise caution when interacting with any app, apps are fully maintained by community developers."
+msgid "Projects developed by the OPX community. <0/>Please exercise caution when interacting with any app, apps are fully maintained by community developers."
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Projects integrated with GMX."
-msgstr "Projets intégrés à GMX\"."
+msgid "Projects integrated with OPX."
+msgstr ""
 
 #: src/pages/Dashboard/AssetDropdown.tsx
 msgid "Proof of Reserves"
@@ -4436,10 +4364,6 @@ msgstr ""
 
 #: src/components/Header/HomeHeaderLinks.tsx
 msgid "Protocol"
-msgstr ""
-
-#: src/pages/Buy/Buy.tsx
-msgid "Protocol Tokens"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
@@ -4451,12 +4375,12 @@ msgstr "Analyses du protocole"
 msgid "Protocol risk explorer and stats"
 msgstr ""
 
-#: src/pages/BuyGlp/BuyGlp.js
-msgid "Purchase <0>GLP tokens</0> to earn {nativeTokenSymbol} fees from swaps and leverage trading."
+#: src/pages/MarketPoolsPage/MarketPoolsPage.tsx
+msgid "Purchase <0>OPTIX Tokens</0> to earn fees from swaps and leverage trading."
 msgstr ""
 
-#: src/pages/MarketPoolsPage/MarketPoolsPage.tsx
-msgid "Purchase <0>GM Tokens</0> to earn fees from swaps and leverage trading."
+#: src/pages/BuyGlp/BuyGlp.js
+msgid "Purchase <0>OPX tokens</0> to earn {nativeTokenSymbol} fees from swaps and leverage trading."
 msgstr ""
 
 #: src/pages/Stake/StakeV2.tsx
@@ -4477,6 +4401,7 @@ msgstr ""
 #: src/components/Synthetics/MarketStats/MarketStats.tsx
 #: src/components/Synthetics/MarketStats/MarketStats.tsx
 #: src/components/Synthetics/NetworkFeeRow/NetworkFeeRow.tsx
+#: src/components/TokenCard/TokenCard.tsx
 #: src/components/TokenCard/TokenCard.tsx
 #: src/components/TokenCard/TokenCard.tsx
 #: src/components/TokenCard/TokenCard.tsx
@@ -4555,12 +4480,9 @@ msgstr ""
 #: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
 #: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
 #: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
-#: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
 #: src/components/Synthetics/PositionEditor/PositionEditor.tsx
 #: src/components/Synthetics/PositionSeller/PositionSeller.tsx
 #: src/components/Synthetics/PositionSeller/PositionSeller.tsx
-#: src/components/Synthetics/PositionSeller/PositionSeller.tsx
-#: src/components/Synthetics/TradeBox/TradeBox.tsx
 #: src/components/Synthetics/TradeBox/TradeBox.tsx
 #: src/components/Synthetics/TradeBox/TradeBox.tsx
 msgid "Receive"
@@ -4572,15 +4494,12 @@ msgid "Receiver Address"
 msgstr "Adresse du destinataire"
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Receiver has not staked GLP tokens before"
-msgstr "Le destinataire n'a jamais staké de tokens GLP auparavant"
+#: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
+msgid "Receiver has not staked OPX tokens before"
+msgstr ""
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Receiver has not staked GMX tokens before"
-msgstr "Le destinataire n'a jamais staké de tokens GLP auparavant"
-
-#: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Receiver has staked GMX/GLP before"
+msgid "Receiver has staked OPX/OPTIX before"
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
@@ -4640,7 +4559,6 @@ msgstr ""
 msgid "Referral code updated!"
 msgstr "Code de parrainage actualisé !"
 
-#: src/components/Header/AppHeaderLinks.tsx
 #: src/pages/Referrals/Referrals.tsx
 #: src/pages/Referrals/Referrals.tsx
 msgid "Referrals"
@@ -4715,14 +4633,9 @@ msgstr ""
 msgid "Reserved"
 msgstr "Réservé"
 
-#: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
-msgid "Reserved for Vesting"
-msgstr ""
-
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Returns calculator for GMX and GLP"
-msgstr "Calculatrice de rendements pour GMX et GLP"
+msgid "Returns calculator for OPX and OPTIX"
+msgstr ""
 
 #: src/components/Referrals/ClaimAffiliatesModal/ClaimAffiliatesModal.tsx
 #: src/pages/Stake/StakeV1.js
@@ -4737,6 +4650,10 @@ msgstr "Récompenses"
 
 #: src/components/Synthetics/ChartTokenSelector/ChartTokenSelector.tsx
 msgid "SHORT LIQ."
+msgstr ""
+
+#: src/components/Exchange/TradeHistory.js
+msgid "SIZE"
 msgstr ""
 
 #: src/domain/synthetics/positions/utils.ts
@@ -4767,6 +4684,10 @@ msgstr "Économisez sur les frais"
 msgid "Scan the QR code"
 msgstr "Scannez le code QR"
 
+#: src/components/SearchInput/SearchInput.tsx
+msgid "Search"
+msgstr ""
+
 #: src/pages/LeaderboardPage/components/LeaderboardAccountsTable.tsx
 #: src/pages/LeaderboardPage/components/LeaderboardPositionsTable.tsx
 msgid "Search Address"
@@ -4779,10 +4700,6 @@ msgstr ""
 #: src/components/MarketSelector/PoolSelector.tsx
 msgid "Search Pool"
 msgstr ""
-
-#: src/components/SearchInput/SearchInput.tsx
-msgid "Search Token"
-msgstr "Rechercher le token"
 
 #: src/components/Synthetics/Claims/filters/ActionFilter.tsx
 #: src/components/Synthetics/TradeHistory/filters/ActionFilter.tsx
@@ -4866,17 +4783,17 @@ msgstr ""
 msgid "Sell Fee"
 msgstr ""
 
+#: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
+#: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
+msgid "Sell OPTIX"
+msgstr ""
+
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
 #: src/pages/Stake/StakeV2.tsx
-msgid "Sell GLP"
-msgstr "Vendre GLP"
-
-#: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
-#: src/components/Synthetics/GmSwap/GmSwapBox/GmSwapBox.tsx
-msgid "Sell GM"
+msgid "Sell OPX"
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
@@ -4909,7 +4826,7 @@ msgid "Sellable"
 msgstr ""
 
 #: src/components/Synthetics/GmSwap/GmConfirmationBox/GmConfirmationBox.tsx
-msgid "Selling GM..."
+msgid "Selling OPTIX..."
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
@@ -4921,12 +4838,9 @@ msgid "Sender has withdrawn all tokens from Affiliate Vesting Vault"
 msgstr ""
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Sender has withdrawn all tokens from GLP Vesting Vault"
-msgstr "L'expéditeur a retiré tous les tokens du coffre de Vesting GLP."
-
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Sender has withdrawn all tokens from GMX Vesting Vault"
-msgstr "L'expéditeur a retiré tous les tokens du coffre de Vesting GLP."
+msgid "Sender has withdrawn all tokens from OPX Vesting Vault"
+msgstr ""
 
 #: src/components/Synthetics/StatusNotification/GmStatusNotification.tsx
 msgid "Sending Buy request"
@@ -5033,11 +4947,11 @@ msgstr "Partager la Position"
 #: src/components/Synthetics/SettleAccruedFundingFeeModal/SettleAccruedFundingFeeRow.tsx
 #: src/components/Synthetics/StatusNotification/FeesSettlementStatusNotification.tsx
 #: src/components/Synthetics/StatusNotification/OrderStatusNotification.tsx
-#: src/components/Synthetics/TVChart/TVChart.tsx
-#: src/components/Synthetics/TVChart/TVChart.tsx
 #: src/components/Synthetics/TableMarketFilter/MarketFilterLongShort.tsx
 #: src/components/Synthetics/TradeBox/TradeBox.tsx
 #: src/components/Synthetics/TradeHistory/TradeHistoryRow/utils/position.ts
+#: src/components/Synthetics/TVChart/TVChart.tsx
+#: src/components/Synthetics/TVChart/TVChart.tsx
 #: src/context/SyntheticsEvents/SyntheticsEventsProvider.tsx
 #: src/context/SyntheticsEvents/SyntheticsEventsProvider.tsx
 #: src/domain/synthetics/orders/utils.tsx
@@ -5060,10 +4974,6 @@ msgstr ""
 #: src/components/Synthetics/PoolSelector2/PoolSelector2.tsx
 #: src/components/Synthetics/PoolSelector2/PoolSelector2.tsx
 msgid "Short Liq."
-msgstr ""
-
-#: src/components/Exchange/ChartTokenSelector.tsx
-msgid "Short Liquidity"
 msgstr ""
 
 #: src/components/Synthetics/MarketCard/MarketCard.tsx
@@ -5175,15 +5085,7 @@ msgid "Stake"
 msgstr "Staker"
 
 #: src/pages/Stake/StakeV2.tsx
-msgid "Stake <0>GMX</0> and buy <1>GM</1> or <2>GLP</2> to earn rewards."
-msgstr ""
-
-#: src/pages/Stake/StakeV2.tsx
-msgid "Stake GMX"
-msgstr ""
-
-#: src/pages/Stake/StakeV2.tsx
-msgid "Stake GMX Rewards"
+msgid "Stake <0>OPX</0> and buy <1>OP</1> or <2>OPX</2> to earn rewards."
 msgstr ""
 
 #: src/pages/Stake/StakeV2.tsx
@@ -5191,11 +5093,19 @@ msgid "Stake Multiplier Points"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.tsx
+msgid "Stake OPX"
+msgstr ""
+
+#: src/pages/Stake/StakeV2.tsx
+msgid "Stake OPX Rewards"
+msgstr ""
+
+#: src/pages/Stake/StakeV2.tsx
 msgid "Stake esGMX"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.tsx
-msgid "Stake esGMX Rewards"
+msgid "Stake esOPX Rewards"
 msgstr ""
 
 #: src/pages/Stake/StakeV1.js
@@ -5228,11 +5138,6 @@ msgstr "Staker"
 
 #: src/pages/Stake/StakeV2.tsx
 msgid "Staked Multiplier Points"
-msgstr ""
-
-#: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
-msgid "Staked Tokens"
 msgstr ""
 
 #: src/pages/Stake/StakeV1.js
@@ -5545,16 +5450,16 @@ msgid "Telegram Groups"
 msgstr "Groupes Telegram"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Telegram bot for GMX Swaps monitoring"
+msgid "Telegram bot for OPX Swaps monitoring"
 msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Telegram bot for GMX position updates"
-msgstr "Bot telegram pour les mises à jour des positions sur GMX"
+msgid "Telegram bot for OPX position updates"
+msgstr ""
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Telegram bot for Open Interest on GMX"
-msgstr "Bot Telegram pour l'intérêt ouvert sur GMX"
+msgid "Telegram bot for Open Interest on OPX"
+msgstr ""
 
 #: src/components/Footer/constants.ts
 #: src/pages/TermsAndConditions/TermsAndConditions.js
@@ -5574,7 +5479,7 @@ msgid "The Bonus APR will be airdropped as ARB tokens. <0>Read more</0>."
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
-msgid "The Bonus Rebate is an estimate and will be airdropped as ARB tokens when migrating this liquidity to GM pools within the same epoch. <0>Read more</0>."
+msgid "The Bonus Rebate is an estimate and will be airdropped as ARB tokens when migrating this liquidity to OPTIX pools within the same epoch. <0>Read more</0>."
 msgstr ""
 
 #: src/components/Synthetics/TradeFeesRow/TradeFeesRow.tsx
@@ -5598,12 +5503,8 @@ msgid "The Gambit protocol is in beta, please read the <0>staking details</0>be
 msgstr ""
 
 #: src/components/SettingsModal/SettingsModal.tsx
-msgid "The Max Execution Fee is set to a higher value to handle potential increases in gas price during order execution. Any excess execution fee will be refunded to your account when the order is executed. Only applicable to GMX V2."
+msgid "The Max Execution Fee is set to a higher value to handle potential increases in gas price during order execution. Any excess execution fee will be refunded to your account when the order is executed. Only applicable to OPX V2."
 msgstr ""
-
-#: src/domain/synthetics/orders/utils.tsx
-#~ msgid "The Order may not execute as the Max. Allowed Leverage is exceeded. Consider decreasing the Order's Leverage by editing and decreasing its Size. <0>Read more</0>."
-#~ msgstr ""
 
 #: src/pages/LeaderboardPage/components/LeaderboardAccountsTable.tsx
 msgid "The PnL ($) compared to the capital used.<0/><1/>The capital used is calculated as the highest value of [<2>sum of collateral of open positions - realized PnL + period start pending PnL</2>]."
@@ -5734,8 +5635,8 @@ msgid "The trigger price for this order is based on the swap fees and price impa
 msgstr "Le prix de déclenchement pour cet ordre est basé sur les frais d'échange et l'impact sur le prix pour garantir que vous recevrez au moins {formattedMinReceive} à l'exécution de l'ordre."
 
 #: src/components/ModalViews/RedirectModal.js
-msgid "The website is a community deployed and maintained instance of the open source <0>GMX front end</0>, hosted and served on the distributed, peer-to-peer <1>IPFS network</1>."
-msgstr "Le site web est une instance open source du <0>GMX front-end</0>, déployée et maintenue par la communauté, hébergé et servi sur le réseau distribué, pair-à-pair <1>Réseau IPFS</1>."
+msgid "The website is a community deployed and maintained instance of the open source <0>OPX front end</0>, hosted and served on the distributed, peer-to-peer <1>IPFS network</1>."
+msgstr ""
 
 #: src/context/SubaccountContext/SubaccountContext.tsx
 msgid "There are insufficient funds in your Subaccount for One-Click Trading. <0>Click here</0> to top-up."
@@ -5838,7 +5739,7 @@ msgid "This position was liquidated as the max. leverage of {formattedMaxLeverag
 msgstr "Cette position a été liquidée car le levier maximal de {formattedMaxLeverage} a été dépassé en tenant compte des frais."
 
 #: src/components/Synthetics/TradeFeesRow/TradeFeesRow.tsx
-msgid "This swap is routed through several GM pools for the lowest possible fees and price impact."
+msgid "This swap is routed through several OPTIX pools for the lowest possible fees and price impact."
 msgstr ""
 
 #: src/pages/Home/Home.js
@@ -5862,7 +5763,7 @@ msgid "To complete the transfer, you must switch your connected account to {rece
 msgstr "Pour effectuer le transfert, vous devez passer votre compte connecté à {receiver}."
 
 #: src/pages/BuyGMX/BuyGMX.tsx
-msgid "To purchase GMX on the {0} blockchain, please <0>change your network</0>."
+msgid "To purchase OPX on the {0} blockchain, please <0>change your network</0>."
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
@@ -5982,8 +5883,7 @@ msgstr "Actif total: {openTotal}, exécuté: {executedTotal}, annulé: {cancelle
 msgid "Total:"
 msgstr "Total:"
 
-#: src/components/Header/AppHeaderUser.tsx
-#: src/components/Header/AppHeaderUser.tsx
+#: src/components/Header/AppHeaderLinks.tsx
 msgid "Trade"
 msgstr "Echanger"
 
@@ -5996,8 +5896,8 @@ msgid "Trade History"
 msgstr "Historique des échanges"
 
 #: src/components/Exchange/ExchangeBanner.js
-msgid "Trade on GMX and win <0>$250.000</0> in prizes! Live until November 30th, <1>click here</1> to learn more."
-msgstr "Échanger sur GMX et gagner <0>$250.000</0> de prix ! Jusqu'au 30 novembre, <1> cliquer ici</1>, pour en savoir plus.\""
+msgid "Trade on OPX and win <0>$250.000</0> in prizes! Live until November 30th, <1>click here</1> to learn more."
+msgstr ""
 
 #: src/components/Common/SEO.js
 msgid "Trade spot or perpetual BTC, ETH, AVAX and other top cryptocurrencies with up to 50x leverage directly from your wallet on Arbitrum and Avalanche."
@@ -6030,7 +5930,7 @@ msgid "Trades"
 msgstr "Opérations"
 
 #: src/components/Header/Header.tsx
-msgid "Trade on GMX V2 in Arbitrum and win 280,000 ARB (> $500k) in prizes in <0>two weekly</0> competitions. Live from March 13th to 27th."
+msgid "Trade on OPX V2 in Arbitrum and win 280,000 ARB (> $500k) in prizes in <0>two weekly</0> competitions. Live from March 13th to 27th."
 msgstr ""
 
 #: src/components/Referrals/AffiliatesStats.tsx
@@ -6054,7 +5954,6 @@ msgstr ""
 
 #: src/components/Referrals/AffiliatesStats.tsx
 #: src/components/Referrals/TradersStats.tsx
-#: src/components/Synthetics/UserIncentiveDistributionList/UserIncentiveDistributionList.tsx
 msgid "Transaction"
 msgstr "Transaction"
 
@@ -6126,6 +6025,8 @@ msgstr "Transfert en cours"
 msgid "Treasury"
 msgstr ""
 
+#: src/components/CPpanel/CPBlankpanel.tsx
+#: src/components/CPpanel/CPpanel.tsx
 #: src/components/Exchange/OrdersList.js
 #: src/components/Exchange/PositionSeller.js
 #: src/components/Exchange/SwapBox.js
@@ -6178,7 +6079,6 @@ msgstr "Txn échouée. <0> Voir</0>"
 #: src/components/Referrals/AffiliatesStats.tsx
 #: src/components/Referrals/TradersStats.tsx
 #: src/components/Synthetics/OrderList/OrderList.tsx
-#: src/components/Synthetics/UserIncentiveDistributionList/UserIncentiveDistributionList.tsx
 #: src/pages/OrdersOverview/OrdersOverview.js
 msgid "Type"
 msgstr "Type"
@@ -6205,7 +6105,7 @@ msgid "Unknown"
 msgstr ""
 
 #: src/components/Synthetics/StatusNotification/GmStatusNotification.tsx
-msgid "Unknown buy GM order"
+msgid "Unknown buy OPTIX order"
 msgstr ""
 
 #: src/components/Synthetics/StatusNotification/OrderStatusNotification.tsx
@@ -6213,7 +6113,7 @@ msgid "Unknown order"
 msgstr ""
 
 #: src/components/Synthetics/StatusNotification/GmStatusNotification.tsx
-msgid "Unknown sell GM order"
+msgid "Unknown sell OPTIX order"
 msgstr ""
 
 #: src/pages/LeaderboardPage/components/LeaderboardAccountsTable.tsx
@@ -6239,7 +6139,7 @@ msgid "Unstake"
 msgstr "Arrêter le Staking"
 
 #: src/pages/Stake/StakeV2.tsx
-msgid "Unstake GMX"
+msgid "Unstake OPX"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.tsx
@@ -6265,18 +6165,6 @@ msgstr ""
 #: src/pages/Stake/StakeV1.js
 msgid "Unstake submitted! <0>View status.</0>"
 msgstr "Arrêt du staking soumis! <0>Voir le statut.</0>"
-
-#: src/pages/Stake/StakeV2.tsx
-#~ msgid "Unstaking will burn <0>{0} Multiplier Points</0>. <1>You will earn {1}% less {nativeTokenSymbol} rewards with this action.</1>"
-#~ msgstr ""
-
-#: src/pages/Stake/StakeV2.tsx
-#~ msgid "Unstaking will burn <0>{0} Multiplier Points</0><1> and {1} voting pover. </1><2>You will earn {2}% less {nativeTokenSymbol} rewards with this action.</2>"
-#~ msgstr ""
-
-#: src/pages/Stake/StakeV2.tsx
-#~ msgid "Unstaking will burn <0>{0} Multiplier Points</0><1> and {1} voting power. </1><2>You will earn {2}% less {nativeTokenSymbol} rewards with this action.</2>"
-#~ msgstr ""
 
 #: src/pages/Stake/StakeV2.tsx
 msgid "Unstaking will burn <0>{0} Multiplier Points</0>{1}<1>You will earn {2}% less {nativeTokenSymbol} rewards with this action.</1>"
@@ -6443,39 +6331,20 @@ msgstr ""
 msgid "Vault Capacity for your Account:"
 msgstr ""
 
-#: src/pages/Stake/StakeV2.tsx
-msgid "Vest"
+#: src/pages/ClaimEsGmx/ClaimEsGmx.js
+#: src/pages/ClaimEsGmx/ClaimEsGmx.js
+msgid "Vest with OPX on Arbitrum"
 msgstr ""
 
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "Vest with GLP on Arbitrum"
-msgstr "Vester avec GLP sur Arbitrum"
-
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "Vest with GLP on Avalanche"
-msgstr "Vester avec GLP sur Avalanche"
-
-#: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "Vest with GMX on Arbitrum"
-msgstr "Vester avec GMX sur Arbitrum"
-
-#: src/pages/ClaimEsGmx/ClaimEsGmx.js
-msgid "Vest with GMX on Avalanche"
-msgstr "Vester avec GMX sur Avalanche"
-
-#: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Vested GLP not withdrawn"
-msgstr "GLP vesté non retiré"
+msgid "Vest with OPX on Avalanche"
+msgstr ""
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
-msgid "Vested GMX not withdrawn"
-msgstr "GMX vesté non retiré"
-
-#: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
-msgid "Vesting Status"
+#: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
+msgid "Vested OPX not withdrawn"
 msgstr ""
 
 #: src/App/App.tsx
@@ -6493,9 +6362,11 @@ msgstr "Voir dans Explorer"
 #: src/components/TokenCard/TokenCard.tsx
 #: src/components/TokenCard/TokenCard.tsx
 #: src/components/TokenCard/TokenCard.tsx
+#: src/components/TokenCard/TokenCard.tsx
 msgid "View on Arbitrum"
 msgstr ""
 
+#: src/components/TokenCard/TokenCard.tsx
 #: src/components/TokenCard/TokenCard.tsx
 #: src/components/TokenCard/TokenCard.tsx
 #: src/components/TokenCard/TokenCard.tsx
@@ -6643,9 +6514,6 @@ msgstr ""
 #: src/components/Synthetics/PositionEditor/PositionEditor.tsx
 #: src/components/Synthetics/SubaccountModal/SubaccountModal.tsx
 #: src/components/Synthetics/TradeHistory/keys.ts
-#: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
 msgid "Withdraw"
 msgstr "Retirer"
 
@@ -6663,11 +6531,8 @@ msgid "Withdraw from Affiliate Vault"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.tsx
-msgid "Withdraw from GLP Vault"
-msgstr ""
-
 #: src/pages/Stake/StakeV2.tsx
-msgid "Withdraw from GMX Vault"
+msgid "Withdraw from OPX Vault"
 msgstr ""
 
 #: src/pages/Stake/StakeV2.tsx
@@ -6739,8 +6604,8 @@ msgid "Yield Vaults"
 msgstr "Coffres de Rendements"
 
 #: src/pages/Ecosystem/Ecosystem.js
-msgid "Yield simulator for GMX"
-msgstr "Simulateur de rendement GMX"
+msgid "Yield simulator for OPX"
+msgstr ""
 
 #: src/components/AddressView/AddressView.tsx
 msgid "You"
@@ -6755,8 +6620,8 @@ msgid "You are earning {0}% more {nativeTokenSymbol} rewards using {1} Staked Mu
 msgstr ""
 
 #: src/components/ModalViews/RedirectModal.js
-msgid "You are leaving GMX.io and will be redirected to a third party, independent website."
-msgstr "Vous quittez GMX.io et serez redirigé vers un site Web tiers et indépendant."
+msgid "You are leaving OPX.io and will be redirected to a third party, independent website."
+msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "You can buy AVAX directly on <0>Avalanche</0> using these options:"
@@ -6877,7 +6742,7 @@ msgid "You have multiple existing Increase {longOrShortText} {0} limit orders"
 msgstr "Vous avez plusieurs augmentations {longOrShortText} {0} ordres limités existantes"
 
 #: src/pages/Stake/StakeV2.tsx
-msgid "You have no GMX tokens to claim."
+msgid "You have no OPX tokens to claim."
 msgstr ""
 
 #: src/pages/Stake/StakeV2.tsx
@@ -6891,13 +6756,16 @@ msgstr ""
 msgid "You have not traded during the selected period."
 msgstr ""
 
-#: src/components/Stake/GMXAprTooltip.tsx
 #: src/pages/Stake/StakeV2.tsx
-msgid "You have reached the maximum Boost Percentage. Stake an additional {0} GMX or esGMX to be able to stake your unstaked {1} Multiplier Points using the \"Compound\" button."
+msgid "You have reached the maximum Boost Percentage. Stake an additional {0} OPX or esGMX to be able to stake your unstaked {1} Multiplier Points using the \"Compound\" button."
 msgstr ""
 
 #: src/pages/Stake/StakeV2.tsx
-msgid "You have reached the maximum Boost Percentage. Stake an additional {0} GMX or esGMX to be able to stake your unstaked {1} Multiplier Points."
+msgid "You have reached the maximum Boost Percentage. Stake an additional {0} OPX or esGMX to be able to stake your unstaked {1} Multiplier Points."
+msgstr ""
+
+#: src/components/Stake/GMXAprTooltip.tsx
+msgid "You have reached the maximum Boost Percentage. Stake an additional {0} OPX or esOPX to be able to stake your unstaked {1} Multiplier Points using the \"Compound\" button."
 msgstr ""
 
 #: src/components/Synthetics/ConfirmationBox/ConfirmationBox.tsx
@@ -7075,24 +6943,19 @@ msgid "{0} Capacity Reached"
 msgstr "{0} Capacité atteinte"
 
 #: src/components/Glp/GlpSwap.js
-msgid "{0} GLP (${1})"
-msgstr "{0} GLP (${1})"
+msgid "{0} OPX (${1})"
+msgstr ""
 
 #: src/components/Glp/GlpSwap.js
-msgid "{0} GLP bought with {1} {2}!"
-msgstr "{0} GLP acheté avec {1} {2} !"
+msgid "{0} OPX bought with {1} {2}!"
+msgstr ""
 
 #: src/components/Glp/GlpSwap.js
-msgid "{0} GLP have been reserved for vesting."
-msgstr "{0} GLP ont été réservés pour le vesting."
+msgid "{0} OPX have been reserved for vesting."
+msgstr ""
 
 #: src/components/Glp/GlpSwap.js
-msgid "{0} GLP sold for {1} {2}!"
-msgstr "{0} GLP a été vendu pour {1} {2}!"
-
-#: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
-msgid "{0} GMX tokens can be claimed, use the options under the Total Rewards section to claim them."
+msgid "{0} OPX sold for {1} {2}!"
 msgstr ""
 
 #: src/components/Exchange/NoLiquidityErrorModal.tsx
@@ -7115,15 +6978,15 @@ msgid "{0} Required"
 msgstr "{0} Requis"
 
 #: src/components/Synthetics/MarketStats/MarketStats.tsx
-msgid "{0} and {1} can be used to buy GM for this market up to the specified buying caps."
+msgid "{0} and {1} can be used to buy OPTIX for this market up to the specified buying caps."
 msgstr ""
 
 #: src/components/Synthetics/GmList/GmList.tsx
-msgid "{0} and {1} can be used to buy GM tokens for this market up to the specified buying caps."
+msgid "{0} and {1} can be used to buy OPTIX tokens for this market up to the specified buying caps."
 msgstr ""
 
 #: src/components/Synthetics/MarketStats/MarketStats.tsx
-msgid "{0} can be used to buy GM for this market up to the specified buying caps."
+msgid "{0} can be used to buy OPTIX for this market up to the specified buying caps."
 msgstr ""
 
 #: src/domain/synthetics/trade/utils/validation.ts
@@ -7135,8 +6998,8 @@ msgid "{0} is above its target weight.<0/><1/>Get lower fees to <2>swap</2> toke
 msgstr "{0} est au-dessus de son poids cible.<0/><1/>Obtenez une réduction des frais pour <2>échanger</2> les tokens pour {1}."
 
 #: src/pages/Dashboard/DashboardV2.tsx
-msgid "{0} is below its target weight.<0/><1/>Get lower fees to <2>buy GLP</2> with {1}, and to <3>swap</3> {2} for other tokens."
-msgstr "{0} est en dessous de son poids cible.<0/><1/>Obtenez une réduction des frais pour <2>acheter GLP</2> avec {1} et d'<3>échanger</3> {2} pour d'autres tokens."
+msgid "{0} is below its target weight.<0/><1/>Get lower fees to <2>buy OPX</2> with {1}, and to <3>swap</3> {2} for other tokens."
+msgstr ""
 
 #: src/components/Exchange/SwapBox.js
 msgid "{0} is required for collateral."
@@ -7158,12 +7021,6 @@ msgstr "{0} prix"
 #: src/components/Glp/GlpSwap.js
 msgid "{0} selected in order form"
 msgstr "{0} sélectionné dans le formulaire d'ordre"
-
-#: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
-#: src/pages/Stake/StakeV2.tsx
-msgid "{0} tokens have been converted to GMX from the {1} esGMX deposited for vesting."
-msgstr ""
 
 #: src/components/Synthetics/ConfirmationBox/ConfirmationBox.tsx
 #: src/components/Synthetics/OrderItem/OrderItem.tsx

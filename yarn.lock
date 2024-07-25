@@ -4847,6 +4847,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@synaps-io/verify-sdk@npm:4.0.48":
+  version: 4.0.48
+  resolution: "@synaps-io/verify-sdk@npm:4.0.48"
+  checksum: 037e42b782264c8960e570779145fbbddc7fb2b0136f89ee1dd7ff2b7b13b747fbfe70007dd9c72bbd316119ca48b1b3b9327b5a54b483c63d1e71bea7e8da56
+  languageName: node
+  linkType: hard
+
 "@tanstack/query-core@npm:5.25.0":
   version: 5.25.0
   resolution: "@tanstack/query-core@npm:5.25.0"
@@ -11194,6 +11201,7 @@ __metadata:
     "@lingui/macro": 3.13.3
     "@lingui/react": 3.13.3
     "@rainbow-me/rainbowkit": 2.0.2
+    "@synaps-io/verify-sdk": 4.0.48
     "@tanstack/react-query": 5.25.0
     "@taskworld.com/rereselect": 0.3.0
     "@testing-library/jest-dom": 5.16.1

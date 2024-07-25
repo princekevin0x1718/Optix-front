@@ -14,7 +14,7 @@ export default function BuyGMXGLP() {
     <SEO title={getPageTitle(t`Buy OPTIX or OPX`)}>
       <div className="BuyGMXGLP page-layout">
         <div className="BuyGMXGLP-container default-container">
-          <PageTitle showNetworkIcon={false} isTop title={t`Optix Protocol Tokens`} subtitle={t`Buy OPX and OPTIX and earn rewards!`} />
+          <PageTitle showNetworkIcon={false} isTop title={t`Optix Protocol Tokens`} subtitle={t`Buy OPTIX and earn rewards!`} />
           <TokenCard />
         </div>
         <Footer />
